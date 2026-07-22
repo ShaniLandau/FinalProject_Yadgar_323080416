@@ -1,0 +1,51 @@
+SubcategoryID,SubcategoryName,CategoryID
+101,T-Shirts & Tops,1
+102,Jeans & Trousers,1
+103,Dresses & Skirts,1
+104,Sneakers & Casual Shoes,1
+105,Formal Wear,1
+106,Activewear,1
+107,Swimwear,1
+108,Outerwear,1
+109,Accessories,1
+110,Bags & Backpacks,1
+111,Smartphones & Accessories,2
+112,Laptops & Tablets,2
+113,Headphones & Speakers,2
+114,Wearable Devices,2
+115,Gaming Accessories,2
+116,Cameras & Photography,2
+117,Smart Home Devices,2
+118,Computer Components,2
+119,Chargers & Power Banks,2
+120,Virtual Reality Gear,2
+121,Skincare Products,3
+122,Haircare Products,3
+123,Makeup & Cosmetics,3
+124,Fragrances,3
+125,Wellness Supplements,3
+126,Men's Grooming,3
+127,Oral Care,3
+128,Bath & Body Products,3
+129,Nail Care,3
+130,Beauty Tools & Brushes,3
+131,Decorative Items,4
+132,Kitchenware,4
+133,Bedding & Linens,4
+134,Lighting & Lamps,4
+135,Small Furniture,4
+136,Storage Solutions,4
+137,Wall Art,4
+138,Planters & Gardening,4
+139,Home Office Supplies,4
+140,Home Fragrances,4
+141,Fitness Equipment,5
+142,Outdoor Apparel,5
+143,Camping Gear,5
+144,Bicycles & Accessories,5
+145,Water Sports Equipment,5
+146,Hiking & Trekking Gear,5
+147,Team Sports Equipment,5
+148,Yoga & Pilates Accessories,5
+149,Winter Sports Gear,5
+150,Travel Accessories,5

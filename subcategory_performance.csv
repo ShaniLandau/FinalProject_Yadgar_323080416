@@ -1,0 +1,51 @@
+CategoryName,SubcategoryName,Revenue,UnitsSold,Orders,Products,RevenueSharePct
+Fashion & Apparel,Swimwear,5287273.64,46229,11672,41,5.61
+Health & Beauty,Haircare Products,4827405.31,45324,11303,39,5.12
+Health & Beauty,Bath & Body Products,4670510.9,40613,10291,36,4.95
+Health & Beauty,Nail Care,4581547.01,41468,10577,37,4.86
+Fashion & Apparel,Bags & Backpacks,4392783.29,41390,10496,36,4.66
+Health & Beauty,Wellness Supplements,4303291.05,40599,10399,36,4.56
+Health & Beauty,Makeup & Cosmetics,4110711.04,36827,9414,32,4.36
+Fashion & Apparel,Accessories,3948463.81,33485,8502,29,4.19
+Health & Beauty,Men's Grooming,3941180.81,32998,8568,29,4.18
+Fashion & Apparel,Outerwear,3938349.7,43192,10882,38,4.18
+Fashion & Apparel,Jeans & Trousers,3798910.75,35861,9137,31,4.03
+Health & Beauty,Skincare Products,3779956.81,40099,10148,35,4.01
+Health & Beauty,Oral Care,3764860.43,41706,10505,36,3.99
+Health & Beauty,Beauty Tools & Brushes,3643407.78,35466,9089,31,3.86
+Fashion & Apparel,Activewear,3559816.64,35165,9027,31,3.77
+Fashion & Apparel,Dresses & Skirts,3306379.08,31917,8212,28,3.51
+Health & Beauty,Fragrances,3282012.6,33092,8570,29,3.48
+Fashion & Apparel,Formal Wear,2653714.87,27617,7202,24,2.81
+Fashion & Apparel,Sneakers & Casual Shoes,2552831.8,32659,8527,29,2.71
+Fashion & Apparel,T-Shirts & Tops,2445606.26,23284,6086,20,2.59
+Sports & Outdoors,Bicycles & Accessories,2078096.2,18682,4827,16,2.2
+Sports & Outdoors,Water Sports Equipment,1363582.48,15545,4176,14,1.45
+Sports & Outdoors,Outdoor Apparel,1066758.53,9367,2449,8,1.13
+Home & Living,Small Furniture,1046962.78,8342,2212,7,1.11
+Home & Living,Kitchenware,938232.37,9128,2435,8,0.99
+Sports & Outdoors,Fitness Equipment,908060.72,6828,1798,6,0.96
+Sports & Outdoors,Camping Gear,905036.72,7877,2078,7,0.96
+Sports & Outdoors,Team Sports Equipment,845957.13,10236,2716,9,0.9
+Home & Living,Home Office Supplies,737753.91,6037,1606,5,0.78
+Sports & Outdoors,Winter Sports Gear,730872.61,8923,2317,8,0.78
+Sports & Outdoors,Hiking & Trekking Gear,677007.0,8060,2123,7,0.72
+Sports & Outdoors,Travel Accessories,577018.59,6798,1809,6,0.61
+Home & Living,Decorative Items,564362.04,5557,1516,5,0.6
+Home & Living,Planters & Gardening,505300.33,4467,1207,4,0.54
+Home & Living,Bedding & Linens,501216.69,6839,1815,6,0.53
+Technology & Gadgets,Virtual Reality Gear,471387.55,3389,914,3,0.5
+Home & Living,Storage Solutions,463760.9,8040,2106,7,0.49
+Home & Living,Wall Art,449041.06,3294,879,3,0.48
+Sports & Outdoors,Yoga & Pilates Accessories,425970.05,4584,1235,4,0.45
+Home & Living,Lighting & Lamps,423352.81,3239,889,3,0.45
+Home & Living,Home Fragrances,399428.81,4639,1260,4,0.42
+Technology & Gadgets,Wearable Devices,389236.31,3172,882,3,0.41
+Technology & Gadgets,Gaming Accessories,245665.41,2155,592,2,0.26
+Technology & Gadgets,Laptops & Tablets,216116.03,1157,305,1,0.23
+Technology & Gadgets,Chargers & Power Banks,152960.0,956,267,1,0.16
+Technology & Gadgets,Headphones & Speakers,142206.0,1038,290,1,0.15
+Technology & Gadgets,Computer Components,125095.43,1217,337,1,0.13
+Technology & Gadgets,Cameras & Photography,104356.14,1186,299,1,0.11
+Technology & Gadgets,Smartphones & Accessories,47162.91,2269,604,2,0.05
+Technology & Gadgets,Smart Home Devices,14650.77,1173,331,1,0.02

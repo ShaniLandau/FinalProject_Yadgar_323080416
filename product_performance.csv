@@ -1,0 +1,801 @@
+ProductID,Name,CategoryName,SubcategoryName,Revenue,UnitsSold,Orders,Customers,AverageSellingPrice,RevenueSharePct
+701,Deluxe Home Office Supplies,Home & Living,Home Office Supplies,257401.9,1310,338,337,196.49,0.273
+494,Deluxe Haircare Products,Health & Beauty,Haircare Products,246002.22,1278,330,326,192.49,0.261
+614,Advanced Haircare Products,Health & Beauty,Haircare Products,243188.05,1295,333,331,187.79,0.258
+82,Premium Accessories,Fashion & Apparel,Accessories,240933.48,1212,326,326,198.79,0.255
+674,Premium Wall Art,Home & Living,Wall Art,238284.15,1335,343,343,178.49,0.253
+166,Compact Activewear,Fashion & Apparel,Activewear,236727.54,1246,330,328,189.99,0.251
+190,Eco T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,234767.96,1204,311,308,194.99,0.249
+765,Deluxe Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,233830.66,1234,329,324,189.49,0.248
+6,Pro T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,233402.65,1235,332,323,188.99,0.247
+282,Ultra Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,232927.74,1226,319,317,189.99,0.247
+177,Compact Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,232830.0,1194,322,317,195.0,0.247
+352,Deluxe Wellness Supplements,Health & Beauty,Wellness Supplements,232598.52,1188,323,318,195.79,0.247
+67,Classic Accessories,Fashion & Apparel,Accessories,232096.24,1256,310,306,184.79,0.246
+641,Ultra Fragrances,Health & Beauty,Fragrances,231464.19,1181,311,310,195.99,0.245
+397,Eco Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,231442.0,1193,321,317,194.0,0.245
+768,Ultra Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,231124.23,1277,327,323,180.99,0.245
+673,Portable Planters & Gardening,Home & Living,Planters & Gardening,229580.82,1218,317,314,188.49,0.243
+638,Ultra Men's Grooming,Health & Beauty,Men's Grooming,229448.08,1192,321,317,192.49,0.243
+187,Advanced Swimwear,Fashion & Apparel,Swimwear,229088.4,1160,320,318,197.49,0.243
+375,Classic Nail Care,Health & Beauty,Nail Care,228447.45,1155,306,303,197.79,0.242
+266,Pro Accessories,Fashion & Apparel,Accessories,228105.0,1233,327,325,185.0,0.242
+542,Ultra Nail Care,Health & Beauty,Nail Care,227382.54,1246,308,305,182.49,0.241
+709,Ultra Home Office Supplies,Home & Living,Home Office Supplies,226526.0,1186,322,316,191.0,0.24
+242,Portable Activewear,Fashion & Apparel,Activewear,226061.57,1193,316,313,189.49,0.24
+630,Premium Nail Care,Health & Beauty,Nail Care,225502.81,1219,335,329,184.99,0.239
+75,Portable Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,225354.29,1151,306,303,195.79,0.239
+387,Eco Oral Care,Health & Beauty,Oral Care,224889.43,1217,325,319,184.79,0.238
+708,Eco Kitchenware,Home & Living,Kitchenware,223250.0,1175,311,305,190.0,0.237
+191,Eco Formal Wear,Fashion & Apparel,Formal Wear,223232.61,1139,301,299,195.99,0.237
+409,Eco Oral Care,Health & Beauty,Oral Care,222894.0,1218,326,323,183.0,0.236
+383,Deluxe Skincare Products,Health & Beauty,Skincare Products,222390.63,1197,313,310,185.79,0.236
+656,Eco Wellness Supplements,Health & Beauty,Wellness Supplements,221747.68,1232,340,335,179.99,0.235
+585,Ultra Men's Grooming,Health & Beauty,Men's Grooming,221264.23,1177,329,325,187.99,0.235
+583,Portable Nail Care,Health & Beauty,Nail Care,221154.0,1189,312,306,186.0,0.235
+354,Eco Bath & Body Products,Health & Beauty,Bath & Body Products,220733.64,1116,307,303,197.79,0.234
+796,Classic Camping Gear,Sports & Outdoors,Camping Gear,220277.0,1217,322,318,181.0,0.234
+29,Deluxe T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,219260.0,1154,314,311,190.0,0.232
+245,Portable Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,218878.2,1180,309,306,185.49,0.232
+758,Classic Fitness Equipment,Sports & Outdoors,Fitness Equipment,218406.0,1227,311,309,178.0,0.232
+569,Ultra Skincare Products,Health & Beauty,Skincare Products,218226.45,1105,296,293,197.49,0.231
+201,Eco T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,217448.43,1257,341,335,172.99,0.231
+525,Deluxe Bath & Body Products,Health & Beauty,Bath & Body Products,216763.5,1150,312,310,188.49,0.23
+309,Compact Laptops & Tablets,Technology & Gadgets,Laptops & Tablets,216116.03,1157,305,299,186.79,0.229
+188,Classic Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,216009.54,1146,323,320,188.49,0.229
+773,Deluxe Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,215874.0,1206,329,326,179.0,0.229
+588,Eco Wellness Supplements,Health & Beauty,Wellness Supplements,215742.45,1155,301,297,186.79,0.229
+298,Premium Swimwear,Fashion & Apparel,Swimwear,215369.0,1100,293,291,195.79,0.228
+33,Premium Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,215156.55,1095,302,300,196.49,0.228
+693,Pro Bedding & Linens,Home & Living,Bedding & Linens,214878.6,1140,300,297,188.49,0.228
+500,Eco Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,214865.86,1214,318,315,176.99,0.228
+640,Advanced Haircare Products,Health & Beauty,Haircare Products,214834.0,1318,338,336,163.0,0.228
+48,Portable Activewear,Fashion & Apparel,Activewear,214604.88,1112,296,295,192.99,0.228
+360,Advanced Men's Grooming,Health & Beauty,Men's Grooming,214452.53,1097,298,294,195.49,0.227
+778,Premium Travel Accessories,Sports & Outdoors,Travel Accessories,214426.44,1156,317,316,185.49,0.227
+323,Premium Virtual Reality Gear,Technology & Gadgets,Virtual Reality Gear,214113.58,1142,324,321,187.49,0.227
+322,Portable Virtual Reality Gear,Technology & Gadgets,Virtual Reality Gear,212532.0,1194,307,303,178.0,0.225
+567,Ultra Nail Care,Health & Beauty,Nail Care,212317.51,1249,315,314,169.99,0.225
+749,Portable Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,211964.49,1201,318,316,176.49,0.225
+157,Classic Swimwear,Fashion & Apparel,Swimwear,211719.69,1231,332,328,171.99,0.225
+566,Portable Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,211500.0,1125,310,306,188.0,0.224
+753,Premium Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,211449.1,1090,300,294,193.99,0.224
+5,Deluxe Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,210168.7,1130,296,293,185.99,0.223
+621,Pro Oral Care,Health & Beauty,Oral Care,209767.06,1214,311,305,172.79,0.222
+584,Advanced Bath & Body Products,Health & Beauty,Bath & Body Products,209536.47,1053,305,301,198.99,0.222
+492,Advanced Bath & Body Products,Health & Beauty,Bath & Body Products,209498.52,1148,293,286,182.49,0.222
+629,Ultra Fragrances,Health & Beauty,Fragrances,209196.63,1137,314,311,183.99,0.222
+303,Premium Activewear,Fashion & Apparel,Activewear,208612.95,1105,276,275,188.79,0.221
+369,Ultra Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,208547.67,1173,330,327,177.79,0.221
+572,Premium Nail Care,Health & Beauty,Nail Care,208502.12,1228,336,327,169.79,0.221
+575,Compact Bath & Body Products,Health & Beauty,Bath & Body Products,207708.57,1083,293,289,191.79,0.22
+676,Advanced Decorative Items,Home & Living,Decorative Items,207167.01,1049,288,286,197.49,0.22
+647,Eco Wellness Supplements,Health & Beauty,Wellness Supplements,206595.71,1129,307,302,182.99,0.219
+430,Premium Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,206537.25,1275,339,333,161.99,0.219
+83,Classic Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,205575.93,1057,298,292,194.49,0.218
+394,Pro Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,205207.17,1223,312,309,167.79,0.218
+580,Eco Skincare Products,Health & Beauty,Skincare Products,204846.02,1198,313,310,170.99,0.217
+657,Ultra Oral Care,Health & Beauty,Oral Care,204724.8,1120,296,294,182.79,0.217
+416,Ultra Fragrances,Health & Beauty,Fragrances,203344.0,1136,311,309,179.0,0.216
+126,Classic Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,203138.0,1202,329,326,169.0,0.215
+215,Eco Swimwear,Fashion & Apparel,Swimwear,203062.34,1066,292,287,190.49,0.215
+238,Premium Accessories,Fashion & Apparel,Accessories,202861.66,1154,305,299,175.79,0.215
+631,Classic Haircare Products,Health & Beauty,Haircare Products,202818.0,1317,342,338,154.0,0.215
+790,Classic Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,202816.64,1216,301,296,166.79,0.215
+538,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,202813.41,1159,310,310,174.99,0.215
+513,Premium Haircare Products,Health & Beauty,Haircare Products,202681.36,1064,312,308,190.49,0.215
+317,Advanced Gaming Accessories,Technology & Gadgets,Gaming Accessories,202625.41,1079,311,304,187.79,0.215
+94,Classic Activewear,Fashion & Apparel,Activewear,202311.0,1143,289,287,177.0,0.215
+227,Compact Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,201872.19,1131,304,301,178.49,0.214
+304,Portable Swimwear,Fashion & Apparel,Swimwear,201334.0,1022,288,286,197.0,0.213
+185,Deluxe Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,201178.2,1180,311,308,170.49,0.213
+268,Classic Swimwear,Fashion & Apparel,Swimwear,201069.0,1100,316,314,182.79,0.213
+738,Ultra Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,200629.44,1056,298,297,189.99,0.213
+362,Classic Haircare Products,Health & Beauty,Haircare Products,200574.0,1013,273,271,198.0,0.213
+379,Compact Bath & Body Products,Health & Beauty,Bath & Body Products,200549.43,1217,311,307,164.79,0.213
+87,Deluxe Swimwear,Fashion & Apparel,Swimwear,200125.24,1076,320,319,185.99,0.212
+757,Compact Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,199170.07,1133,293,292,175.79,0.211
+646,Advanced Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,199100.0,1100,297,292,181.0,0.211
+432,Premium Oral Care,Health & Beauty,Oral Care,198832.0,1156,316,310,172.0,0.211
+775,Advanced Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,198628.77,1163,305,303,170.79,0.211
+558,Portable Bath & Body Products,Health & Beauty,Bath & Body Products,198440.78,1282,337,333,154.79,0.21
+399,Classic Oral Care,Health & Beauty,Oral Care,198365.16,1284,333,328,154.49,0.21
+726,Classic Camping Gear,Sports & Outdoors,Camping Gear,198299.07,1143,320,317,173.49,0.21
+686,Classic Home Fragrances,Home & Living,Home Fragrances,197819.16,1084,318,314,182.49,0.21
+365,Deluxe Men's Grooming,Health & Beauty,Men's Grooming,197670.0,1198,328,324,165.0,0.21
+18,Advanced Outerwear,Fashion & Apparel,Outerwear,197599.23,1137,305,303,173.79,0.21
+273,Ultra Activewear,Fashion & Apparel,Activewear,197251.75,1075,302,297,183.49,0.209
+782,Pro Fitness Equipment,Sports & Outdoors,Fitness Equipment,197064.0,1173,317,313,168.0,0.209
+414,Compact Skincare Products,Health & Beauty,Skincare Products,196767.61,1189,311,307,165.49,0.209
+66,Advanced Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,196694.85,1265,336,333,155.49,0.209
+418,Advanced Wellness Supplements,Health & Beauty,Wellness Supplements,196013.07,1143,299,298,171.49,0.208
+280,Compact Formal Wear,Fashion & Apparel,Formal Wear,195888.0,1113,297,291,176.0,0.208
+505,Portable Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,195372.37,1163,323,317,167.99,0.207
+422,Deluxe Bath & Body Products,Health & Beauty,Bath & Body Products,195099.59,1141,313,311,170.99,0.207
+481,Eco Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,194529.81,1139,304,300,170.79,0.206
+491,Ultra Haircare Products,Health & Beauty,Haircare Products,194409.55,1145,293,290,169.79,0.206
+56,Ultra Outerwear,Fashion & Apparel,Outerwear,194132.1,1290,335,331,150.49,0.206
+343,Deluxe Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,193952.0,1102,297,292,176.0,0.206
+770,Classic Hiking & Trekking Gear,Sports & Outdoors,Hiking & Trekking Gear,193871.92,1208,321,315,160.49,0.206
+150,Compact Outerwear,Fashion & Apparel,Outerwear,193141.0,1079,286,282,179.0,0.205
+32,Advanced Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,192955.0,1295,337,333,149.0,0.205
+669,Classic Small Furniture,Home & Living,Small Furniture,192251.81,1139,315,309,168.79,0.204
+240,Premium Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,192106.46,1274,338,334,150.79,0.204
+589,Portable Men's Grooming,Health & Beauty,Men's Grooming,191999.45,1055,284,283,181.99,0.204
+23,Premium Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,191751.0,1191,310,304,161.0,0.203
+144,Deluxe Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,191423.96,1204,321,319,158.99,0.203
+497,Eco Haircare Products,Health & Beauty,Haircare Products,191383.0,1219,316,312,157.0,0.203
+729,Classic Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,190972.89,1161,312,308,164.49,0.203
+499,Deluxe Nail Care,Health & Beauty,Nail Care,190164.8,1120,290,287,169.79,0.202
+421,Ultra Oral Care,Health & Beauty,Oral Care,190079.91,1059,305,300,179.49,0.202
+243,Compact Formal Wear,Fashion & Apparel,Formal Wear,190067.2,1280,337,332,148.49,0.202
+63,Classic Swimwear,Fashion & Apparel,Swimwear,189834.06,1194,317,312,158.99,0.201
+733,Pro Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,189545.17,1033,285,281,183.49,0.201
+665,Advanced Small Furniture,Home & Living,Small Furniture,189474.12,1188,325,322,159.49,0.201
+677,Compact Small Furniture,Home & Living,Small Furniture,189403.83,1267,331,330,149.49,0.201
+550,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,189253.71,1229,319,317,153.99,0.201
+20,Classic Accessories,Fashion & Apparel,Accessories,189099.81,1119,305,300,168.99,0.201
+109,Advanced Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,188892.0,1188,308,306,159.0,0.2
+248,Ultra Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,188892.0,1188,305,303,159.0,0.2
+509,Advanced Haircare Products,Health & Beauty,Haircare Products,188194.32,1208,312,307,155.79,0.2
+599,Classic Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,187969.14,1186,327,320,158.49,0.199
+206,Pro Formal Wear,Fashion & Apparel,Formal Wear,187746.0,1079,308,302,174.0,0.199
+777,Portable Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,187131.57,1083,293,289,172.79,0.198
+31,Advanced Swimwear,Fashion & Apparel,Swimwear,187130.39,1241,329,327,150.79,0.198
+3,Deluxe Accessories,Fashion & Apparel,Accessories,187060.16,1184,310,307,157.99,0.198
+725,Portable Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,186789.87,1213,320,318,153.99,0.198
+351,Ultra Men's Grooming,Health & Beauty,Men's Grooming,186736.89,1191,331,328,156.79,0.198
+688,Advanced Lighting & Lamps,Home & Living,Lighting & Lamps,185580.57,983,291,288,188.79,0.197
+465,Portable Haircare Products,Health & Beauty,Haircare Products,185172.0,1187,314,313,156.0,0.196
+568,Premium Skincare Products,Health & Beauty,Skincare Products,184868.54,1226,325,323,150.79,0.196
+152,Pro Outerwear,Fashion & Apparel,Outerwear,184723.81,1039,291,289,177.79,0.196
+476,Compact Men's Grooming,Health & Beauty,Men's Grooming,184509.0,1079,302,301,171.0,0.196
+184,Deluxe Outerwear,Fashion & Apparel,Outerwear,184397.64,1036,290,289,177.99,0.196
+521,Classic Men's Grooming,Health & Beauty,Men's Grooming,184357.98,1002,285,283,183.99,0.195
+652,Ultra Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,184239.0,1100,298,293,167.49,0.195
+52,Eco Outerwear,Fashion & Apparel,Outerwear,184137.93,1257,332,325,146.49,0.195
+213,Deluxe Formal Wear,Fashion & Apparel,Formal Wear,183708.0,1134,305,302,162.0,0.195
+581,Eco Skincare Products,Health & Beauty,Skincare Products,183622.18,1142,332,326,160.79,0.195
+544,Portable Fragrances,Health & Beauty,Fragrances,183140.49,1201,333,331,152.49,0.194
+658,Ultra Haircare Products,Health & Beauty,Haircare Products,182524.25,1075,293,291,169.79,0.194
+634,Pro Haircare Products,Health & Beauty,Haircare Products,182497.41,1179,325,322,154.79,0.194
+541,Compact Men's Grooming,Health & Beauty,Men's Grooming,182040.0,1230,315,311,148.0,0.193
+408,Compact Skincare Products,Health & Beauty,Skincare Products,181042.07,1133,313,308,159.79,0.192
+68,Premium Outerwear,Fashion & Apparel,Outerwear,179537.49,1201,314,313,149.49,0.19
+712,Pro Decorative Items,Home & Living,Decorative Items,179364.16,1184,326,322,151.49,0.19
+633,Pro Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,179088.06,1194,318,315,149.99,0.19
+135,Pro Swimwear,Fashion & Apparel,Swimwear,179003.7,1030,288,287,173.79,0.19
+717,Advanced Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,178869.6,1040,265,264,171.99,0.19
+449,Compact Nail Care,Health & Beauty,Nail Care,178441.38,962,288,285,185.49,0.189
+173,Advanced Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,178311.06,1094,311,309,162.99,0.189
+618,Classic Fragrances,Health & Beauty,Fragrances,178054.73,1127,292,289,157.99,0.189
+649,Ultra Wellness Supplements,Health & Beauty,Wellness Supplements,177946.86,1014,273,270,175.49,0.189
+619,Compact Wellness Supplements,Health & Beauty,Wellness Supplements,177776.0,1084,305,299,164.0,0.189
+265,Pro Swimwear,Fashion & Apparel,Swimwear,177757.74,1226,322,321,144.99,0.188
+256,Classic Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,177600.0,1110,290,289,160.0,0.188
+342,Classic Nail Care,Health & Beauty,Nail Care,177253.0,1129,298,293,157.0,0.188
+105,Deluxe Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,177061.33,1217,315,312,145.49,0.188
+4,Ultra Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,176333.28,1072,291,289,164.49,0.187
+610,Premium Wellness Supplements,Health & Beauty,Wellness Supplements,176250.55,1195,309,306,147.49,0.187
+239,Portable Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,176088.58,1102,290,283,159.79,0.187
+731,Compact Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,175910.46,1074,305,302,163.79,0.187
+356,Compact Haircare Products,Health & Beauty,Haircare Products,175784.0,1204,316,313,146.0,0.186
+722,Pro Yoga & Pilates Accessories,Sports & Outdoors,Yoga & Pilates Accessories,175673.54,1246,336,333,140.99,0.186
+196,Premium Formal Wear,Fashion & Apparel,Formal Wear,175667.8,1220,315,314,143.99,0.186
+404,Ultra Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,175460.94,1206,307,305,145.49,0.186
+441,Advanced Nail Care,Health & Beauty,Nail Care,175093.79,1201,339,336,145.79,0.186
+141,Advanced Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,174960.0,972,281,276,180.0,0.186
+682,Pro Small Furniture,Home & Living,Small Furniture,174616.0,1196,334,329,146.0,0.185
+643,Premium Wellness Supplements,Health & Beauty,Wellness Supplements,173900.0,1175,312,311,148.0,0.184
+388,Classic Bath & Body Products,Health & Beauty,Bath & Body Products,173883.0,1167,312,306,149.0,0.184
+442,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,173592.27,1173,301,300,147.99,0.184
+55,Ultra T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,173166.0,1178,315,310,147.0,0.184
+612,Deluxe Wellness Supplements,Health & Beauty,Wellness Supplements,173000.31,1169,311,306,147.99,0.183
+396,Ultra Bath & Body Products,Health & Beauty,Bath & Body Products,172759.29,1221,318,314,141.49,0.183
+180,Eco Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,172589.68,1192,323,321,144.79,0.183
+359,Deluxe Oral Care,Health & Beauty,Oral Care,172516.5,1350,354,347,127.79,0.183
+799,Portable Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,172469.0,1100,289,287,156.79,0.183
+781,Premium Hiking & Trekking Gear,Sports & Outdoors,Hiking & Trekking Gear,172244.8,1120,312,307,153.79,0.183
+635,Pro Bath & Body Products,Health & Beauty,Bath & Body Products,171331.74,1026,286,282,166.99,0.182
+202,Deluxe Formal Wear,Fashion & Apparel,Formal Wear,171034.14,1086,300,296,157.49,0.181
+602,Compact Bath & Body Products,Health & Beauty,Bath & Body Products,170953.83,1167,317,311,146.49,0.181
+257,Premium Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,170823.82,1258,316,313,135.79,0.181
+10,Eco Accessories,Fashion & Apparel,Accessories,170788.8,1120,298,297,152.49,0.181
+488,Ultra Skincare Products,Health & Beauty,Skincare Products,170573.37,1203,304,302,141.79,0.181
+11,Pro Activewear,Fashion & Apparel,Activewear,170549.6,1040,294,287,163.99,0.181
+294,Portable Swimwear,Fashion & Apparel,Swimwear,170266.33,1027,282,279,165.79,0.181
+482,Deluxe Haircare Products,Health & Beauty,Haircare Products,170158.95,1105,294,292,153.99,0.18
+211,Compact Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,169895.07,1233,327,324,137.79,0.18
+28,Advanced Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,169740.17,1223,333,332,138.79,0.18
+791,Compact Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,169606.45,1105,310,308,153.49,0.18
+590,Compact Fragrances,Health & Beauty,Fragrances,169218.0,1106,300,296,153.0,0.179
+444,Classic Skincare Products,Health & Beauty,Skincare Products,169037.75,1225,310,309,137.99,0.179
+681,Classic Kitchenware,Home & Living,Kitchenware,168503.92,1208,316,313,139.49,0.179
+136,Advanced Swimwear,Fashion & Apparel,Swimwear,168450.0,1123,290,283,150.0,0.179
+103,Compact Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,168162.07,1033,287,286,162.79,0.178
+655,Classic Wellness Supplements,Health & Beauty,Wellness Supplements,168132.7,1130,310,303,148.79,0.178
+559,Advanced Men's Grooming,Health & Beauty,Men's Grooming,167888.5,1150,317,315,145.99,0.178
+720,Eco Travel Accessories,Sports & Outdoors,Travel Accessories,167768.67,1273,342,337,131.79,0.178
+514,Classic Haircare Products,Health & Beauty,Haircare Products,167767.0,1321,325,321,127.0,0.178
+424,Premium Wellness Supplements,Health & Beauty,Wellness Supplements,167166.78,1122,311,303,148.99,0.177
+746,Pro Fitness Equipment,Sports & Outdoors,Fitness Equipment,166019.01,1149,290,286,144.49,0.176
+490,Deluxe Fragrances,Health & Beauty,Fragrances,165950.43,1207,326,324,137.49,0.176
+551,Premium Men's Grooming,Health & Beauty,Men's Grooming,165926.49,1231,326,322,134.79,0.176
+536,Pro Men's Grooming,Health & Beauty,Men's Grooming,165698.65,1135,297,289,145.99,0.176
+632,Compact Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,165645.0,1227,323,320,135.0,0.176
+507,Compact Oral Care,Health & Beauty,Oral Care,165105.53,1207,320,318,136.79,0.175
+269,Compact Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,164851.2,1280,341,334,128.79,0.175
+143,Eco Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,164565.0,1219,304,299,135.0,0.175
+134,Portable Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,164034.32,1208,319,314,135.79,0.174
+72,Ultra Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,163650.2,980,268,264,166.99,0.174
+62,Compact Formal Wear,Fashion & Apparel,Formal Wear,163292.08,1192,309,303,136.99,0.173
+454,Advanced Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,162065.13,1047,292,287,154.79,0.172
+235,Portable Swimwear,Fashion & Apparel,Swimwear,162032.31,1089,297,294,148.79,0.172
+412,Deluxe Oral Care,Health & Beauty,Oral Care,161889.03,1257,316,314,128.79,0.172
+145,Eco Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,161475.77,1073,290,288,150.49,0.171
+300,Pro Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,161215.23,1137,321,320,141.79,0.171
+183,Eco Accessories,Fashion & Apparel,Accessories,161117.7,1230,322,314,130.99,0.171
+308,Classic Wearable Devices,Technology & Gadgets,Wearable Devices,160158.76,1124,318,315,142.49,0.17
+594,Eco Men's Grooming,Health & Beauty,Men's Grooming,160137.74,1106,302,300,144.79,0.17
+718,Eco Fitness Equipment,Sports & Outdoors,Fitness Equipment,158621.96,1004,264,262,157.99,0.168
+426,Advanced Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,158286.0,1147,313,309,138.0,0.168
+797,Compact Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,157381.07,1093,296,293,143.99,0.167
+762,Classic Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,157111.71,1249,336,333,125.79,0.167
+531,Eco Bath & Body Products,Health & Beauty,Bath & Body Products,156910.0,1105,307,302,142.0,0.166
+648,Premium Fragrances,Health & Beauty,Fragrances,156843.0,999,276,271,157.0,0.166
+194,Eco Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,156756.64,1136,314,312,137.99,0.166
+225,Eco Outerwear,Fashion & Apparel,Outerwear,156661.76,1024,292,288,152.99,0.166
+53,Premium Formal Wear,Fashion & Apparel,Formal Wear,156450.28,1172,321,315,133.49,0.166
+466,Ultra Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,156339.4,1060,280,278,147.49,0.166
+283,Advanced T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,156145.43,1117,308,305,139.79,0.166
+116,Classic Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,156047.76,1224,317,316,127.49,0.165
+374,Classic Oral Care,Health & Beauty,Oral Care,155604.03,1257,334,333,123.79,0.165
+496,Eco Haircare Products,Health & Beauty,Haircare Products,155158.2,1180,311,308,131.49,0.165
+42,Premium Accessories,Fashion & Apparel,Accessories,154875.96,1124,303,298,137.79,0.164
+470,Classic Nail Care,Health & Beauty,Nail Care,154756.62,1138,298,293,135.99,0.164
+129,Ultra Accessories,Fashion & Apparel,Accessories,154709.49,1131,307,300,136.79,0.164
+193,Deluxe Accessories,Fashion & Apparel,Accessories,154568.01,1299,324,319,118.99,0.164
+741,Ultra Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,154248.83,1277,327,324,120.79,0.164
+329,Classic Haircare Products,Health & Beauty,Haircare Products,153963.61,1189,309,306,129.49,0.163
+263,Portable T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,153956.59,1021,274,272,150.79,0.163
+338,Compact Haircare Products,Health & Beauty,Haircare Products,153078.66,1134,303,298,134.99,0.162
+318,Portable Chargers & Power Banks,Technology & Gadgets,Chargers & Power Banks,152960.0,956,267,267,160.0,0.162
+556,Pro Fragrances,Health & Beauty,Fragrances,152895.96,1204,318,317,126.99,0.162
+452,Portable Haircare Products,Health & Beauty,Haircare Products,152823.0,1263,314,311,121.0,0.162
+644,Deluxe Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,152539.53,1147,301,297,132.99,0.162
+440,Classic Bath & Body Products,Health & Beauty,Bath & Body Products,152384.73,1077,285,284,141.49,0.162
+457,Classic Fragrances,Health & Beauty,Fragrances,151680.0,1264,352,342,120.0,0.161
+124,Compact Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,151384.0,1016,289,286,149.0,0.161
+705,Eco Planters & Gardening,Home & Living,Planters & Gardening,151237.04,1096,291,289,137.99,0.16
+611,Deluxe Nail Care,Health & Beauty,Nail Care,151000.29,1071,311,308,140.99,0.16
+596,Pro Fragrances,Health & Beauty,Fragrances,150655.0,1039,279,276,145.0,0.16
+371,Premium Fragrances,Health & Beauty,Fragrances,149859.27,1023,286,284,146.49,0.159
+565,Compact Nail Care,Health & Beauty,Nail Care,149709.57,1193,317,315,125.49,0.159
+743,Compact Camping Gear,Sports & Outdoors,Camping Gear,149411.05,1145,318,316,130.49,0.158
+469,Premium Men's Grooming,Health & Beauty,Men's Grooming,148980.36,1164,308,306,127.99,0.158
+50,Ultra Swimwear,Fashion & Apparel,Swimwear,148951.0,1231,328,326,121.0,0.158
+64,Eco Activewear,Fashion & Apparel,Activewear,148929.97,1043,282,278,142.79,0.158
+554,Deluxe Men's Grooming,Health & Beauty,Men's Grooming,148841.35,1115,305,301,133.49,0.158
+331,Premium Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,148594.91,1109,307,304,133.99,0.158
+217,Premium Swimwear,Fashion & Apparel,Swimwear,148450.91,1229,337,334,120.79,0.157
+30,Deluxe Swimwear,Fashion & Apparel,Swimwear,148350.0,989,285,280,150.0,0.157
+153,Compact Activewear,Fashion & Apparel,Activewear,148256.31,1119,303,300,132.49,0.157
+628,Compact Haircare Products,Health & Beauty,Haircare Products,147940.65,1235,331,328,119.79,0.157
+210,Portable Activewear,Fashion & Apparel,Activewear,147818.67,1083,299,295,136.49,0.157
+438,Deluxe Wellness Supplements,Health & Beauty,Wellness Supplements,147786.27,1173,336,333,125.99,0.157
+675,Ultra Small Furniture,Home & Living,Small Furniture,147607.8,1220,328,321,120.99,0.157
+668,Pro Storage Solutions,Home & Living,Storage Solutions,147551.67,1173,323,318,125.79,0.156
+348,Premium Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,147432.58,1042,290,287,141.49,0.156
+450,Eco Fragrances,Health & Beauty,Fragrances,146832.0,1064,294,290,138.0,0.156
+431,Portable Skincare Products,Health & Beauty,Skincare Products,146766.0,1203,332,330,122.0,0.156
+19,Ultra T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,146484.8,1120,288,285,130.79,0.155
+275,Portable Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,146464.15,1085,287,284,134.99,0.155
+527,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,146242.77,1263,343,340,115.79,0.155
+289,Deluxe Outerwear,Fashion & Apparel,Outerwear,146214.12,988,266,261,147.99,0.155
+234,Premium Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,146004.3,1170,317,312,124.79,0.155
+622,Classic Skincare Products,Health & Beauty,Skincare Products,145136.92,1108,278,272,130.99,0.154
+172,Compact Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,145047.76,1144,310,299,126.79,0.154
+603,Pro Nail Care,Health & Beauty,Nail Care,144422.76,1124,315,313,128.49,0.153
+16,Pro Accessories,Fashion & Apparel,Accessories,144260.64,1136,296,290,126.99,0.153
+324,Classic Nail Care,Health & Beauty,Nail Care,143891.0,1133,317,317,127.0,0.153
+17,Advanced Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,143860.76,1124,325,319,127.99,0.153
+721,Portable Yoga & Pilates Accessories,Sports & Outdoors,Yoga & Pilates Accessories,143625.0,1149,311,310,125.0,0.152
+545,Deluxe Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,143350.0,1175,301,300,122.0,0.152
+448,Pro Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,143135.92,1208,311,309,118.49,0.152
+637,Deluxe Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,143077.16,1084,310,305,131.99,0.152
+353,Classic Haircare Products,Health & Beauty,Haircare Products,142945.0,1265,342,340,113.0,0.152
+719,Classic Camping Gear,Sports & Outdoors,Camping Gear,142912.0,1232,315,314,116.0,0.152
+307,Eco Activewear,Fashion & Apparel,Activewear,142823.34,1166,334,331,122.49,0.151
+92,Portable Outerwear,Fashion & Apparel,Outerwear,142507.77,1173,315,311,121.49,0.151
+313,Premium Headphones & Speakers,Technology & Gadgets,Headphones & Speakers,142206.0,1038,290,286,137.0,0.151
+484,Advanced Oral Care,Health & Beauty,Oral Care,142199.28,1032,270,270,137.79,0.151
+503,Pro Bath & Body Products,Health & Beauty,Bath & Body Products,142180.17,1133,307,303,125.49,0.151
+270,Portable Accessories,Fashion & Apparel,Accessories,142092.54,1146,322,318,123.99,0.151
+165,Portable Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,140727.6,1240,332,330,113.49,0.149
+57,Eco Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,140577.57,1143,288,288,122.99,0.149
+515,Eco Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,140311.72,1028,277,273,136.49,0.149
+192,Compact Accessories,Fashion & Apparel,Accessories,140250.0,1122,298,296,125.0,0.149
+154,Classic Activewear,Fashion & Apparel,Activewear,140148.32,1168,307,306,119.99,0.149
+311,Advanced Wearable Devices,Technology & Gadgets,Wearable Devices,139810.55,1045,292,288,133.79,0.148
+274,Compact T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,139629.0,1281,347,335,109.0,0.148
+684,Advanced Kitchenware,Home & Living,Kitchenware,138514.81,1169,322,317,118.49,0.147
+728,Deluxe Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,138162.57,1183,326,325,116.79,0.147
+767,Advanced Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,137888.0,1112,297,292,124.0,0.146
+107,Compact Outerwear,Fashion & Apparel,Outerwear,137618.0,1027,280,278,134.0,0.146
+653,Advanced Haircare Products,Health & Beauty,Haircare Products,137035.08,1092,285,281,125.49,0.145
+772,Deluxe Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,136830.96,1224,319,313,111.79,0.145
+560,Advanced Oral Care,Health & Beauty,Oral Care,136632.2,1180,319,318,115.79,0.145
+228,Eco T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,136572.0,1198,315,312,114.0,0.145
+403,Premium Skincare Products,Health & Beauty,Skincare Products,136152.0,1116,304,303,122.0,0.144
+345,Eco Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,136099.11,1139,302,299,119.49,0.144
+38,Classic Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,136017.0,1071,309,308,127.0,0.144
+176,Pro Outerwear,Fashion & Apparel,Outerwear,135660.0,1190,331,326,114.0,0.144
+222,Classic Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,135642.0,1443,386,383,94.0,0.144
+118,Compact Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,135487.17,923,256,254,146.79,0.144
+463,Premium Skincare Products,Health & Beauty,Skincare Products,135304.0,1301,314,312,104.0,0.143
+69,Classic Outerwear,Fashion & Apparel,Outerwear,135024.0,1164,313,311,116.0,0.143
+26,Eco Swimwear,Fashion & Apparel,Swimwear,134920.03,1097,291,287,122.99,0.143
+344,Compact Wellness Supplements,Health & Beauty,Wellness Supplements,134431.0,1111,295,292,121.0,0.143
+78,Advanced Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,134019.69,1031,273,272,129.99,0.142
+605,Advanced Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,133968.45,1155,297,297,115.99,0.142
+543,Compact Nail Care,Health & Beauty,Nail Care,133956.11,1109,292,289,120.79,0.142
+81,Portable Formal Wear,Fashion & Apparel,Formal Wear,133725.42,1098,315,314,121.79,0.142
+487,Portable Skincare Products,Health & Beauty,Skincare Products,133693.95,1105,307,305,120.99,0.142
+77,Advanced Outerwear,Fashion & Apparel,Outerwear,133396.02,1098,296,293,121.49,0.141
+489,Eco Wellness Supplements,Health & Beauty,Wellness Supplements,133146.0,1138,294,293,117.0,0.141
+249,Compact Swimwear,Fashion & Apparel,Swimwear,132900.47,1103,299,297,120.49,0.141
+41,Advanced Accessories,Fashion & Apparel,Accessories,132866.62,1178,321,316,112.79,0.141
+429,Pro Nail Care,Health & Beauty,Nail Care,132710.0,1154,314,314,115.0,0.141
+587,Advanced Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,132678.0,1134,302,298,117.0,0.141
+608,Eco Oral Care,Health & Beauty,Oral Care,132451.56,1164,310,308,113.79,0.14
+336,Classic Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,132313.86,1214,332,329,108.99,0.14
+121,Portable Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,130836.72,1128,305,302,115.99,0.139
+576,Classic Wellness Supplements,Health & Beauty,Wellness Supplements,130713.38,1162,315,314,112.49,0.139
+660,Eco Bath & Body Products,Health & Beauty,Bath & Body Products,130644.0,1146,298,294,114.0,0.139
+2,Portable Outerwear,Fashion & Apparel,Outerwear,130628.0,1156,290,287,113.0,0.139
+328,Advanced Oral Care,Health & Beauty,Oral Care,130390.46,1154,297,294,112.99,0.138
+420,Classic Bath & Body Products,Health & Beauty,Bath & Body Products,130267.71,1179,313,311,110.49,0.138
+460,Deluxe Nail Care,Health & Beauty,Nail Care,130220.51,1099,283,282,118.49,0.138
+51,Ultra Swimwear,Fashion & Apparel,Swimwear,130124.61,1089,286,284,119.49,0.138
+349,Eco Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,129217.32,1308,346,343,98.79,0.137
+272,Pro Activewear,Fashion & Apparel,Activewear,128213.5,1150,307,305,111.49,0.136
+402,Classic Oral Care,Health & Beauty,Oral Care,128130.66,1134,303,298,112.99,0.136
+411,Pro Bath & Body Products,Health & Beauty,Bath & Body Products,127947.95,1105,300,299,115.79,0.136
+241,Classic Activewear,Fashion & Apparel,Activewear,127548.0,1181,317,312,108.0,0.135
+607,Portable Bath & Body Products,Health & Beauty,Bath & Body Products,127375.65,1185,306,304,107.49,0.135
+102,Compact Accessories,Fashion & Apparel,Accessories,127332.0,1179,311,305,108.0,0.135
+697,Compact Lighting & Lamps,Home & Living,Lighting & Lamps,127039.0,1100,285,280,115.49,0.135
+593,Pro Wellness Supplements,Health & Beauty,Wellness Supplements,126989.73,927,270,264,136.99,0.135
+13,Classic Accessories,Fashion & Apparel,Accessories,126974.1,1090,301,294,116.49,0.135
+367,Advanced Nail Care,Health & Beauty,Nail Care,126905.18,1042,284,282,121.79,0.135
+290,Premium Accessories,Fashion & Apparel,Accessories,126496.0,1072,283,279,118.0,0.134
+713,Portable Wall Art,Home & Living,Wall Art,126262.97,953,254,251,132.49,0.134
+474,Compact Men's Grooming,Health & Beauty,Men's Grooming,125952.0,1312,329,325,96.0,0.134
+553,Classic Nail Care,Health & Beauty,Nail Care,125252.06,1094,305,302,114.49,0.133
+175,Ultra Outerwear,Fashion & Apparel,Outerwear,125145.0,1215,318,315,103.0,0.133
+321,Classic Computer Components,Technology & Gadgets,Computer Components,125095.43,1217,337,330,102.79,0.133
+237,Eco Accessories,Fashion & Apparel,Accessories,124914.0,1146,299,294,109.0,0.132
+597,Deluxe Nail Care,Health & Beauty,Nail Care,124863.9,1110,306,303,112.49,0.132
+224,Compact Outerwear,Fashion & Apparel,Outerwear,124757.64,1116,307,303,111.79,0.132
+305,Premium Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,124471.94,1286,327,324,96.79,0.132
+534,Portable Men's Grooming,Health & Beauty,Men's Grooming,124221.05,1145,334,329,108.49,0.132
+306,Pro Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,124197.81,1119,309,303,110.99,0.132
+171,Portable Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,124021.12,1088,311,306,113.99,0.132
+296,Ultra Formal Wear,Fashion & Apparel,Formal Wear,123876.0,1147,303,300,108.0,0.131
+46,Compact Accessories,Fashion & Apparel,Accessories,123424.0,1064,306,303,116.0,0.131
+616,Pro Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,123375.0,987,276,274,125.0,0.131
+464,Portable Bath & Body Products,Health & Beauty,Bath & Body Products,123099.0,1109,294,292,111.0,0.131
+158,Advanced Activewear,Fashion & Apparel,Activewear,122959.26,1374,357,352,89.49,0.13
+43,Premium Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,122784.63,1137,309,303,107.99,0.13
+271,Eco Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,122274.55,1145,299,294,106.79,0.13
+613,Portable Oral Care,Health & Beauty,Oral Care,121893.39,1161,314,312,104.99,0.129
+326,Portable Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,121537.26,1194,332,327,101.79,0.129
+471,Ultra Men's Grooming,Health & Beauty,Men's Grooming,121247.1,1290,318,313,93.99,0.129
+279,Portable Swimwear,Fashion & Apparel,Swimwear,121099.0,1111,300,296,109.0,0.128
+703,Portable Kitchenware,Home & Living,Kitchenware,120974.48,1112,301,298,108.79,0.128
+711,Deluxe Storage Solutions,Home & Living,Storage Solutions,120852.71,1279,342,339,94.49,0.128
+258,Portable T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,120434.1,1090,296,293,110.49,0.128
+455,Compact Skincare Products,Health & Beauty,Skincare Products,120230.0,1093,299,295,110.0,0.127
+267,Classic Formal Wear,Fashion & Apparel,Formal Wear,120165.27,1073,309,306,111.99,0.127
+382,Advanced Men's Grooming,Health & Beauty,Men's Grooming,119925.17,1123,312,310,106.79,0.127
+428,Portable Bath & Body Products,Health & Beauty,Bath & Body Products,119756.0,1274,347,345,94.0,0.127
+532,Pro Wellness Supplements,Health & Beauty,Wellness Supplements,119430.29,1171,310,300,101.99,0.127
+178,Premium Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,119413.07,1043,278,272,114.49,0.127
+651,Deluxe Skincare Products,Health & Beauty,Skincare Products,119274.0,1158,318,316,103.0,0.126
+358,Portable Nail Care,Health & Beauty,Nail Care,119140.0,1036,289,284,115.0,0.126
+44,Classic Activewear,Fashion & Apparel,Activewear,119038.0,1123,306,303,106.0,0.126
+393,Portable Fragrances,Health & Beauty,Fragrances,118953.45,1155,318,314,102.99,0.126
+606,Advanced Bath & Body Products,Health & Beauty,Bath & Body Products,118573.02,1098,312,311,107.99,0.126
+122,Eco Accessories,Fashion & Apparel,Accessories,118170.97,1153,321,319,102.49,0.125
+284,Advanced Swimwear,Fashion & Apparel,Swimwear,117497.69,1181,323,320,99.49,0.125
+685,Classic Bedding & Linens,Home & Living,Bedding & Linens,116994.0,1258,334,330,93.0,0.124
+617,Portable Fragrances,Health & Beauty,Fragrances,116554.72,1168,297,295,99.79,0.124
+108,Portable Activewear,Fashion & Apparel,Activewear,116307.54,1146,319,314,101.49,0.123
+508,Portable Wellness Supplements,Health & Beauty,Wellness Supplements,115331.79,1171,326,319,98.49,0.122
+251,Compact Swimwear,Fashion & Apparel,Swimwear,115324.91,1109,295,294,103.99,0.122
+230,Premium Outerwear,Fashion & Apparel,Outerwear,114773.12,1088,299,298,105.49,0.122
+117,Compact Swimwear,Fashion & Apparel,Swimwear,114316.74,1206,313,311,94.79,0.121
+91,Pro T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,114266.0,1178,320,314,97.0,0.121
+785,Premium Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,114201.24,1156,303,299,98.79,0.121
+39,Portable Accessories,Fashion & Apparel,Accessories,113489.54,1126,302,301,100.79,0.12
+501,Ultra Men's Grooming,Health & Beauty,Men's Grooming,113282.55,1245,324,320,90.99,0.12
+291,Pro Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,112666.35,1065,296,294,105.79,0.119
+261,Advanced Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,111985.26,1194,307,305,93.79,0.119
+95,Deluxe Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,111780.0,1035,277,276,108.0,0.119
+111,Ultra Formal Wear,Fashion & Apparel,Formal Wear,111682.11,1039,287,285,107.49,0.118
+714,Premium Bedding & Linens,Home & Living,Bedding & Linens,111636.21,1029,283,280,108.49,0.118
+106,Premium Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,111156.48,1152,320,309,96.49,0.118
+672,Classic Lighting & Lamps,Home & Living,Lighting & Lamps,110733.24,1156,320,319,95.79,0.117
+512,Premium Bath & Body Products,Health & Beauty,Bath & Body Products,110342.54,1046,282,279,105.49,0.117
+395,Eco Men's Grooming,Health & Beauty,Men's Grooming,110319.63,1087,298,296,101.49,0.117
+214,Ultra Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,110054.0,1123,302,299,98.0,0.117
+65,Eco Swimwear,Fashion & Apparel,Swimwear,109639.25,1075,295,292,101.99,0.116
+645,Advanced Bath & Body Products,Health & Beauty,Bath & Body Products,109639.25,1075,297,295,101.99,0.116
+615,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,108652.32,1008,286,281,107.79,0.115
+216,Premium Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,107980.86,1014,297,293,106.49,0.115
+789,Portable Hiking & Trekking Gear,Sports & Outdoors,Hiking & Trekking Gear,107946.65,1085,279,277,99.49,0.114
+203,Classic Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,107394.3,1170,308,306,91.79,0.114
+334,Portable Skincare Products,Health & Beauty,Skincare Products,107220.83,1117,313,312,95.99,0.114
+423,Eco Skincare Products,Health & Beauty,Skincare Products,106939.89,1191,318,316,89.79,0.113
+579,Compact Nail Care,Health & Beauty,Nail Care,106868.19,1131,306,305,94.49,0.113
+45,Ultra Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,106725.14,1286,340,334,82.99,0.113
+125,Ultra Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,106227.2,1280,330,327,82.99,0.113
+786,Portable Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,105926.73,1127,294,291,93.99,0.112
+370,Portable Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,105862.41,1179,306,304,89.79,0.112
+25,Ultra Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,105809.11,1189,321,317,88.99,0.112
+93,Portable Swimwear,Fashion & Apparel,Swimwear,105705.0,1215,314,310,87.0,0.112
+400,Classic Wellness Supplements,Health & Beauty,Wellness Supplements,105419.22,1178,311,309,89.49,0.112
+127,Portable Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,105052.58,1142,320,318,91.99,0.111
+221,Advanced Accessories,Fashion & Apparel,Accessories,104892.84,1116,307,305,93.99,0.111
+406,Deluxe Nail Care,Health & Beauty,Nail Care,104752.53,1097,289,287,95.49,0.111
+262,Premium Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,104650.0,1150,309,308,91.0,0.111
+310,Compact Cameras & Photography,Technology & Gadgets,Cameras & Photography,104356.14,1186,299,294,87.99,0.111
+736,Premium Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,104316.66,1134,305,302,91.99,0.111
+702,Ultra Home Office Supplies,Home & Living,Home Office Supplies,104144.0,1132,305,302,92.0,0.11
+355,Deluxe Wellness Supplements,Health & Beauty,Wellness Supplements,103994.28,972,305,303,106.99,0.11
+264,Classic Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,103960.98,1202,335,331,86.49,0.11
+219,Pro Swimwear,Fashion & Apparel,Swimwear,103938.45,1155,307,305,89.99,0.11
+159,Eco Swimwear,Fashion & Apparel,Swimwear,103824.0,927,249,247,112.0,0.11
+199,Deluxe Swimwear,Fashion & Apparel,Swimwear,103558.0,1138,295,295,91.0,0.11
+740,Classic Camping Gear,Sports & Outdoors,Camping Gear,102972.87,1053,271,267,97.79,0.109
+149,Ultra Swimwear,Fashion & Apparel,Swimwear,102909.17,1183,331,327,86.99,0.109
+698,Classic Small Furniture,Home & Living,Small Furniture,102621.22,1118,297,293,91.79,0.109
+36,Compact Swimwear,Fashion & Apparel,Swimwear,102500.08,1192,319,315,85.99,0.109
+112,Classic Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,102317.67,1183,321,315,86.49,0.108
+47,Pro Swimwear,Fashion & Apparel,Swimwear,101328.74,1126,304,301,89.99,0.107
+475,Deluxe Nail Care,Health & Beauty,Nail Care,101089.89,1011,282,280,99.99,0.107
+592,Premium Wellness Supplements,Health & Beauty,Wellness Supplements,101003.65,1135,294,290,88.99,0.107
+209,Portable Swimwear,Fashion & Apparel,Swimwear,100116.0,927,263,261,108.0,0.106
+670,Compact Home Office Supplies,Home & Living,Home Office Supplies,99702.01,1219,329,323,81.79,0.106
+226,Deluxe Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,99604.68,1132,304,300,87.99,0.106
+164,Ultra Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,99291.15,1185,332,329,83.79,0.105
+130,Premium Outerwear,Fashion & Apparel,Outerwear,99204.03,1147,317,313,86.49,0.105
+642,Deluxe Men's Grooming,Health & Beauty,Men's Grooming,99168.6,1140,310,307,86.99,0.105
+689,Premium Kitchenware,Home & Living,Kitchenware,98771.18,1042,281,280,94.79,0.105
+479,Ultra Skincare Products,Health & Beauty,Skincare Products,98601.69,1181,300,297,83.49,0.105
+727,Deluxe Fitness Equipment,Sports & Outdoors,Fitness Equipment,97275.63,1087,295,289,89.49,0.103
+598,Ultra Men's Grooming,Health & Beauty,Men's Grooming,96990.0,1000,288,287,96.99,0.103
+604,Eco Oral Care,Health & Beauty,Oral Care,96944.0,1168,324,319,83.0,0.103
+140,Eco T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,96819.87,1113,300,295,86.99,0.103
+405,Portable Skincare Products,Health & Beauty,Skincare Products,96560.0,1207,313,308,80.0,0.102
+523,Pro Oral Care,Health & Beauty,Oral Care,96553.89,1291,342,333,74.79,0.102
+292,Portable Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,96480.0,1206,319,315,80.0,0.102
+493,Premium Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,96406.8,920,257,252,104.79,0.102
+49,Portable Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,96162.0,1034,297,296,93.0,0.102
+483,Deluxe Haircare Products,Health & Beauty,Haircare Products,96123.69,1131,306,301,84.99,0.102
+699,Compact Home Fragrances,Home & Living,Home Fragrances,95546.98,1202,311,307,79.49,0.101
+437,Eco Nail Care,Health & Beauty,Nail Care,95196.85,1015,283,283,93.79,0.101
+537,Premium Men's Grooming,Health & Beauty,Men's Grooming,94993.56,1044,296,293,90.99,0.101
+302,Classic Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,94686.0,1101,298,294,86.0,0.1
+252,Deluxe Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,94684.3,1070,310,305,88.49,0.1
+281,Premium Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,94202.44,1156,306,302,81.49,0.1
+446,Portable Bath & Body Products,Health & Beauty,Bath & Body Products,94080.0,1176,308,304,80.0,0.1
+704,Premium Kitchenware,Home & Living,Kitchenware,93883.86,1134,315,312,82.79,0.1
+511,Pro Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,93830.55,1045,297,294,89.79,0.099
+339,Deluxe Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,93614.92,1108,311,308,84.49,0.099
+663,Pro Bath & Body Products,Health & Beauty,Bath & Body Products,93360.0,1167,298,293,80.0,0.099
+189,Premium Accessories,Fashion & Apparel,Accessories,93299.85,1215,310,309,76.79,0.099
+260,Deluxe T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,92935.77,1223,313,311,75.99,0.099
+533,Premium Skincare Products,Health & Beauty,Skincare Products,92565.0,1089,296,291,85.0,0.098
+392,Premium Oral Care,Health & Beauty,Oral Care,92518.14,1066,297,290,86.79,0.098
+119,Eco Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,92077.66,1154,304,298,79.79,0.098
+293,Eco Accessories,Fashion & Apparel,Accessories,91840.84,1196,315,309,76.79,0.097
+761,Pro Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,91440.0,1143,324,320,80.0,0.097
+381,Portable Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,91440.0,1270,329,323,72.0,0.097
+486,Pro Nail Care,Health & Beauty,Nail Care,91283.87,1163,311,308,78.49,0.097
+510,Portable Wellness Supplements,Health & Beauty,Wellness Supplements,90542.09,1091,301,298,82.99,0.096
+320,Premium Wearable Devices,Technology & Gadgets,Wearable Devices,89267.0,1003,273,271,89.0,0.095
+735,Portable Hiking & Trekking Gear,Sports & Outdoors,Hiking & Trekking Gear,88365.31,1219,325,323,72.49,0.094
+752,Compact Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,87989.0,1100,280,277,79.99,0.093
+104,Classic Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,87887.01,1149,317,313,76.49,0.093
+133,Eco Outerwear,Fashion & Apparel,Outerwear,87374.0,1106,301,297,79.0,0.093
+276,Ultra Formal Wear,Fashion & Apparel,Formal Wear,86888.99,1151,314,310,75.49,0.092
+114,Compact Outerwear,Fashion & Apparel,Outerwear,86775.0,1157,312,308,75.0,0.092
+70,Compact Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,86433.7,1130,318,312,76.49,0.092
+480,Eco Nail Care,Health & Beauty,Nail Care,86400.6,1140,315,312,75.79,0.092
+253,Pro Formal Wear,Fashion & Apparel,Formal Wear,86170.0,1231,343,338,70.0,0.091
+413,Ultra Wellness Supplements,Health & Beauty,Wellness Supplements,86124.36,1164,320,313,73.99,0.091
+458,Ultra Wellness Supplements,Health & Beauty,Wellness Supplements,85922.1,990,281,274,86.79,0.091
+694,Portable Planters & Gardening,Home & Living,Planters & Gardening,85829.27,1073,311,308,79.99,0.091
+197,Pro Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,85589.3,1070,281,280,79.99,0.091
+700,Deluxe Decorative Items,Home & Living,Decorative Items,85483.0,1171,309,307,73.0,0.091
+447,Classic Wellness Supplements,Health & Beauty,Wellness Supplements,84630.0,1085,295,292,78.0,0.09
+690,Portable Wall Art,Home & Living,Wall Art,84493.94,1006,287,286,83.99,0.09
+156,Pro Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,84011.49,1151,308,302,72.99,0.089
+84,Eco Activewear,Fashion & Apparel,Activewear,82981.86,1114,308,304,74.49,0.088
+415,Deluxe Fragrances,Health & Beauty,Fragrances,82817.45,1255,322,315,65.99,0.088
+570,Portable Fragrances,Health & Beauty,Fragrances,82598.94,1206,318,309,68.49,0.088
+577,Portable Haircare Products,Health & Beauty,Haircare Products,82120.85,1165,297,296,70.49,0.087
+769,Eco Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,81972.0,1242,328,327,66.0,0.087
+204,Portable Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,81840.27,1013,288,286,80.79,0.087
+600,Premium Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,81437.0,1147,293,288,71.0,0.086
+730,Compact Yoga & Pilates Accessories,Sports & Outdoors,Yoga & Pilates Accessories,81338.07,1133,299,295,71.79,0.086
+231,Advanced Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,81216.64,1216,310,308,66.79,0.086
+14,Advanced Swimwear,Fashion & Apparel,Swimwear,81194.1,1090,307,304,74.49,0.086
+148,Portable Outerwear,Fashion & Apparel,Outerwear,80985.98,1102,303,301,73.49,0.086
+364,Pro Bath & Body Products,Health & Beauty,Bath & Body Products,80964.0,1038,279,275,78.0,0.086
+34,Compact Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,80945.64,1236,332,330,65.49,0.086
+7,Premium Outerwear,Fashion & Apparel,Outerwear,80839.5,1050,286,283,76.99,0.086
+522,Portable Haircare Products,Health & Beauty,Haircare Products,80800.0,1010,264,262,80.0,0.086
+244,Ultra Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,80722.95,1205,327,322,66.99,0.086
+85,Eco Activewear,Fashion & Apparel,Activewear,80640.72,1128,317,312,71.49,0.086
+478,Premium Fragrances,Health & Beauty,Fragrances,80214.58,1102,297,297,72.79,0.085
+506,Premium Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,79950.0,975,273,272,82.0,0.085
+564,Premium Fragrances,Health & Beauty,Fragrances,79847.9,1210,338,333,65.99,0.085
+417,Compact Skincare Products,Health & Beauty,Skincare Products,79737.21,1029,284,283,77.49,0.085
+410,Classic Nail Care,Health & Beauty,Nail Care,79588.53,1197,317,312,66.49,0.084
+378,Ultra Fragrances,Health & Beauty,Fragrances,79585.38,1162,314,311,68.49,0.084
+368,Classic Fragrances,Health & Beauty,Fragrances,79243.29,1071,304,301,73.99,0.084
+170,Deluxe Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,78808.74,1126,300,298,69.99,0.084
+168,Classic Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,78767.0,1079,293,291,73.0,0.084
+277,Deluxe T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,78662.0,1063,298,296,74.0,0.083
+407,Premium Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,78616.0,1268,329,324,62.0,0.083
+40,Deluxe Activewear,Fashion & Apparel,Activewear,78591.0,1139,295,294,69.0,0.083
+763,Classic Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,78548.0,1076,278,275,73.0,0.083
+754,Ultra Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,78490.87,1163,298,294,67.49,0.083
+132,Ultra Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,78161.87,1153,299,299,67.79,0.083
+160,Compact Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,78038.85,1115,296,293,69.99,0.083
+233,Ultra Outerwear,Fashion & Apparel,Outerwear,77100.0,1028,276,274,75.0,0.082
+624,Pro Bath & Body Products,Health & Beauty,Bath & Body Products,76779.03,1097,299,297,69.99,0.081
+60,Portable Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,76746.37,1163,308,305,65.99,0.081
+373,Classic Bath & Body Products,Health & Beauty,Bath & Body Products,76700.94,986,267,262,77.79,0.081
+384,Compact Bath & Body Products,Health & Beauty,Bath & Body Products,76568.94,1206,311,308,63.49,0.081
+137,Premium Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,76451.04,1296,341,333,58.99,0.081
+186,Advanced Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,76164.27,1213,320,316,62.79,0.081
+639,Portable Men's Grooming,Health & Beauty,Men's Grooming,75875.76,1224,323,322,61.99,0.08
+504,Advanced Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,75817.17,1233,329,324,61.49,0.08
+779,Compact Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,75027.15,1035,290,288,72.49,0.08
+623,Portable Bath & Body Products,Health & Beauty,Bath & Body Products,74621.0,1051,294,289,71.0,0.079
+341,Advanced Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,74136.9,1110,295,294,66.79,0.079
+787,Eco Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,74052.0,1122,314,313,66.0,0.079
+347,Ultra Wellness Supplements,Health & Beauty,Wellness Supplements,73737.31,1219,321,313,60.49,0.078
+346,Compact Nail Care,Health & Beauty,Nail Care,72927.14,1186,314,312,61.49,0.077
+502,Pro Men's Grooming,Health & Beauty,Men's Grooming,72895.32,1108,303,301,65.79,0.077
+793,Advanced Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,72362.22,978,277,277,73.99,0.077
+574,Classic Haircare Products,Health & Beauty,Haircare Products,71757.0,1071,290,286,67.0,0.076
+181,Compact Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,71580.0,1193,329,325,60.0,0.076
+723,Deluxe Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,71410.26,1074,284,281,66.49,0.076
+120,Advanced Activewear,Fashion & Apparel,Activewear,70793.1,1190,339,335,59.49,0.075
+755,Portable Fitness Equipment,Sports & Outdoors,Fitness Equipment,70674.12,1188,330,329,59.49,0.075
+207,Ultra Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,70452.99,1101,306,304,63.99,0.075
+286,Eco Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,70334.03,1157,326,321,60.79,0.075
+774,Deluxe Travel Accessories,Sports & Outdoors,Travel Accessories,70245.0,1115,298,295,63.0,0.074
+563,Classic Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,70066.35,1065,290,288,65.79,0.074
+138,Deluxe Outerwear,Fashion & Apparel,Outerwear,70060.0,1130,311,307,62.0,0.074
+666,Eco Storage Solutions,Home & Living,Storage Solutions,69685.11,1089,299,289,63.99,0.074
+473,Pro Oral Care,Health & Beauty,Oral Care,68940.0,1149,306,302,60.0,0.073
+376,Advanced Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,68211.99,1351,366,361,50.49,0.072
+151,Pro Formal Wear,Fashion & Apparel,Formal Wear,68044.35,1265,337,334,53.79,0.072
+335,Portable Wellness Supplements,Health & Beauty,Wellness Supplements,66678.6,1140,310,307,58.49,0.071
+161,Deluxe Outerwear,Fashion & Apparel,Outerwear,66633.0,1169,319,316,57.0,0.071
+195,Classic Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,66630.91,1159,307,301,57.49,0.071
+443,Ultra Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,66538.23,1237,338,332,53.79,0.071
+695,Pro Kitchenware,Home & Living,Kitchenware,66481.73,1127,305,303,58.99,0.07
+113,Premium Formal Wear,Fashion & Apparel,Formal Wear,65826.0,1242,311,310,53.0,0.07
+516,Premium Wellness Supplements,Health & Beauty,Wellness Supplements,65593.0,979,281,278,67.0,0.07
+86,Advanced Activewear,Fashion & Apparel,Activewear,65470.83,1077,301,299,60.79,0.069
+58,Pro Activewear,Fashion & Apparel,Activewear,65438.21,899,265,263,72.79,0.069
+425,Classic Fragrances,Health & Beauty,Fragrances,64446.29,1121,290,287,57.49,0.068
+377,Eco Haircare Products,Health & Beauty,Haircare Products,64444.49,1151,296,291,55.99,0.068
+546,Ultra Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,63940.58,1142,309,309,55.99,0.068
+35,Eco Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,63862.28,1172,318,314,54.49,0.068
+97,Premium Swimwear,Fashion & Apparel,Swimwear,63661.59,1121,319,316,56.79,0.068
+742,Deluxe Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,63617.88,1212,318,315,52.49,0.067
+750,Portable Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,63531.78,1222,316,312,51.99,0.067
+74,Classic Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,62765.36,1064,277,272,58.99,0.067
+259,Compact Outerwear,Fashion & Apparel,Outerwear,62609.01,1149,313,305,54.49,0.066
+220,Eco Formal Wear,Fashion & Apparel,Formal Wear,62123.23,1027,290,287,60.49,0.066
+625,Ultra Skincare Products,Health & Beauty,Skincare Products,61914.0,1214,323,320,51.0,0.066
+436,Advanced Oral Care,Health & Beauty,Oral Care,61900.74,1226,329,325,50.49,0.066
+626,Deluxe Skincare Products,Health & Beauty,Skincare Products,61832.0,1048,286,282,59.0,0.066
+671,Premium Home Fragrances,Home & Living,Home Fragrances,61777.51,1069,298,295,57.79,0.066
+620,Advanced Wellness Supplements,Health & Beauty,Wellness Supplements,61315.19,1061,308,305,57.79,0.065
+578,Portable Haircare Products,Health & Beauty,Haircare Products,60526.0,1142,306,303,53.0,0.064
+340,Compact Bath & Body Products,Health & Beauty,Bath & Body Products,60228.79,1021,280,278,58.99,0.064
+739,Premium Travel Accessories,Sports & Outdoors,Travel Accessories,59982.99,1181,303,302,50.79,0.064
+15,Eco Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,59802.93,957,259,259,62.49,0.063
+361,Ultra Skincare Products,Health & Beauty,Skincare Products,59758.28,1132,298,298,52.79,0.063
+229,Premium Accessories,Fashion & Apparel,Accessories,59662.08,1152,314,311,51.79,0.063
+8,Deluxe Activewear,Fashion & Apparel,Activewear,59449.26,1194,315,314,49.79,0.063
+218,Compact Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,59388.75,1125,302,300,52.79,0.063
+520,Classic Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,59025.16,1004,288,283,58.79,0.063
+548,Eco Fragrances,Health & Beauty,Fragrances,58719.87,1163,321,319,50.49,0.062
+456,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,58647.11,1139,305,302,51.49,0.062
+337,Advanced Oral Care,Health & Beauty,Oral Care,58130.03,1097,289,285,52.99,0.062
+744,Compact Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,57913.73,1187,305,298,48.79,0.061
+745,Deluxe Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,57650.42,1058,293,288,54.49,0.061
+146,Ultra Outerwear,Fashion & Apparel,Outerwear,57516.72,1128,294,292,50.99,0.061
+179,Eco Outerwear,Fashion & Apparel,Outerwear,55634.27,1223,332,330,45.49,0.059
+363,Pro Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,55623.71,1279,343,337,43.49,0.059
+76,Ultra Outerwear,Fashion & Apparel,Outerwear,55323.92,1048,265,262,52.79,0.059
+716,Compact Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,55212.55,995,281,277,55.49,0.059
+208,Advanced Activewear,Fashion & Apparel,Activewear,54978.0,1122,305,303,49.0,0.058
+636,Classic Skincare Products,Health & Beauty,Skincare Products,54650.0,1093,301,299,50.0,0.058
+800,Pro Camping Gear,Sports & Outdoors,Camping Gear,54426.49,1031,273,272,52.79,0.058
+477,Classic Haircare Products,Health & Beauty,Haircare Products,54010.53,1107,294,290,48.79,0.057
+715,Classic Decorative Items,Home & Living,Decorative Items,53882.37,1203,321,318,44.79,0.057
+24,Eco Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,53278.71,1049,285,285,50.79,0.056
+61,Deluxe Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,53064.0,1206,327,325,44.0,0.056
+795,Portable Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,52316.0,1189,331,326,44.0,0.055
+747,Pro Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,52264.43,1117,295,292,46.79,0.055
+547,Portable Haircare Products,Health & Beauty,Haircare Products,52090.77,1163,311,309,44.79,0.055
+37,Classic Swimwear,Fashion & Apparel,Swimwear,51899.94,1086,273,263,47.79,0.055
+751,Pro Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,51686.0,1202,322,318,43.0,0.055
+96,Advanced Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,51570.0,1146,300,299,45.0,0.055
+22,Ultra Swimwear,Fashion & Apparel,Swimwear,51383.28,1032,280,279,49.79,0.054
+683,Advanced Small Furniture,Home & Living,Small Furniture,50988.0,1214,308,304,42.0,0.054
+517,Premium Bath & Body Products,Health & Beauty,Bath & Body Products,50627.61,1089,291,287,46.49,0.054
+764,Eco Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,50539.39,1111,296,291,45.49,0.054
+591,Classic Oral Care,Health & Beauty,Oral Care,50311.94,1106,292,289,45.49,0.053
+582,Classic Skincare Products,Health & Beauty,Skincare Products,50227.13,1147,305,302,43.79,0.053
+110,Ultra Activewear,Fashion & Apparel,Activewear,50143.97,1153,298,294,43.49,0.053
+691,Pro Home Office Supplies,Home & Living,Home Office Supplies,49980.0,1190,326,322,42.0,0.053
+139,Portable Activewear,Fashion & Apparel,Activewear,49392.0,1176,312,310,42.0,0.052
+212,Eco Outerwear,Fashion & Apparel,Outerwear,47628.63,1197,313,306,39.79,0.051
+609,Pro Skincare Products,Health & Beauty,Skincare Products,47307.0,1213,331,330,39.0,0.05
+330,Compact Oral Care,Health & Beauty,Oral Care,46595.07,1233,312,305,37.79,0.049
+784,Premium Hiking & Trekking Gear,Sports & Outdoors,Hiking & Trekking Gear,46235.98,1162,310,305,39.79,0.049
+316,Classic Virtual Reality Gear,Technology & Gadgets,Virtual Reality Gear,44741.97,1053,286,286,42.49,0.047
+453,Eco Haircare Products,Health & Beauty,Haircare Products,44327.67,1173,313,309,37.79,0.047
+679,Ultra Home Fragrances,Home & Living,Home Fragrances,44285.16,1284,336,326,34.49,0.047
+687,Eco Storage Solutions,Home & Living,Storage Solutions,44063.14,1166,292,287,37.79,0.047
+366,Pro Fragrances,Health & Beauty,Fragrances,44023.26,1074,299,297,40.99,0.047
+390,Premium Skincare Products,Health & Beauty,Skincare Products,43953.0,1127,294,291,39.0,0.047
+295,Classic Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,43890.0,1155,309,301,38.0,0.047
+724,Classic Travel Accessories,Sports & Outdoors,Travel Accessories,43871.49,1131,307,300,38.79,0.047
+662,Eco Wellness Supplements,Health & Beauty,Wellness Supplements,43396.0,1142,307,303,38.0,0.046
+71,Deluxe Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,43277.14,1186,339,334,36.49,0.046
+312,Portable Gaming Accessories,Technology & Gadgets,Gaming Accessories,43040.0,1076,283,280,40.0,0.046
+99,Pro Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,42692.58,1302,352,343,32.79,0.045
+530,Premium Fragrances,Health & Beauty,Fragrances,42476.17,1133,299,299,37.49,0.045
+562,Eco Nail Care,Health & Beauty,Nail Care,42383.66,1034,291,289,40.99,0.045
+131,Pro Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,42282.87,1113,296,294,37.99,0.045
+706,Compact Storage Solutions,Home & Living,Storage Solutions,42096.34,1066,284,280,39.49,0.045
+205,Ultra Outerwear,Fashion & Apparel,Outerwear,41952.0,1311,343,341,32.0,0.044
+9,Eco Activewear,Fashion & Apparel,Activewear,41921.0,1133,319,318,37.0,0.044
+595,Compact Haircare Products,Health & Beauty,Haircare Products,41712.41,1159,326,320,35.99,0.044
+380,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,41416.15,1135,315,313,36.49,0.044
+524,Compact Oral Care,Health & Beauty,Oral Care,41413.89,991,294,292,41.79,0.044
+100,Deluxe Accessories,Fashion & Apparel,Accessories,41261.28,1072,296,293,38.49,0.044
+232,Pro Outerwear,Fashion & Apparel,Outerwear,40600.56,1144,296,295,35.49,0.043
+332,Premium Wellness Supplements,Health & Beauty,Wellness Supplements,40526.69,1081,301,298,37.49,0.043
+98,Compact Swimwear,Fashion & Apparel,Swimwear,40472.94,1306,336,333,30.99,0.043
+59,Eco T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,38657.0,1247,345,339,31.0,0.041
+710,Portable Planters & Gardening,Home & Living,Planters & Gardening,38653.2,1080,292,290,35.79,0.041
+680,Pro Decorative Items,Home & Living,Decorative Items,38465.5,950,281,278,40.49,0.041
+462,Portable Haircare Products,Health & Beauty,Haircare Products,38340.0,1065,298,296,36.0,0.041
+734,Premium Winter Sports Gear,Sports & Outdoors,Winter Sports Gear,37504.0,1172,307,304,32.0,0.04
+535,Deluxe Wellness Supplements,Health & Beauty,Wellness Supplements,37353.25,1175,309,306,31.79,0.04
+759,Premium Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,37204.37,1163,316,312,31.99,0.039
+539,Advanced Bath & Body Products,Health & Beauty,Bath & Body Products,37033.84,1096,298,294,33.79,0.039
+182,Ultra Outerwear,Fashion & Apparel,Outerwear,37012.43,1157,310,309,31.99,0.039
+350,Advanced Haircare Products,Health & Beauty,Haircare Products,36917.69,1231,334,332,29.99,0.039
+627,Eco Skincare Products,Health & Beauty,Skincare Products,36745.79,1021,274,271,35.99,0.039
+776,Premium Camping Gear,Sports & Outdoors,Camping Gear,36738.24,1056,283,277,34.79,0.039
+495,Pro Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,36453.78,1122,315,307,32.49,0.039
+794,Portable Hiking & Trekking Gear,Sports & Outdoors,Hiking & Trekking Gear,36289.0,1100,285,282,32.99,0.038
+142,Classic Formal Wear,Fashion & Apparel,Formal Wear,36085.88,1172,313,307,30.79,0.038
+798,Eco Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,35008.23,1137,315,313,30.79,0.037
+147,Classic Accessories,Fashion & Apparel,Accessories,34841.84,1096,295,291,31.79,0.037
+540,Portable Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,33615.0,1245,320,315,27.0,0.036
+519,Ultra Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,33468.84,1116,300,295,29.99,0.035
+788,Eco Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,33466.0,1154,307,305,29.0,0.035
+783,Premium Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,33396.48,1152,329,326,28.99,0.035
+391,Advanced Haircare Products,Health & Beauty,Haircare Products,33221.28,1072,281,277,30.99,0.035
+174,Ultra T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,32967.0,1221,341,337,27.0,0.035
+21,Advanced Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,32820.0,1094,281,276,30.0,0.035
+529,Deluxe Fragrances,Health & Beauty,Fragrances,32747.4,1260,338,333,25.99,0.035
+236,Deluxe Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,32720.31,1169,321,317,27.99,0.035
+528,Ultra Oral Care,Health & Beauty,Oral Care,32593.81,1069,294,290,30.49,0.035
+419,Premium Wellness Supplements,Health & Beauty,Wellness Supplements,32383.22,1178,319,315,27.49,0.034
+748,Pro Hiking & Trekking Gear,Sports & Outdoors,Hiking & Trekking Gear,32053.34,1166,314,310,27.49,0.034
+451,Premium Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,32026.14,1086,282,278,29.49,0.034
+472,Pro Skincare Products,Health & Beauty,Skincare Products,31800.0,1325,337,334,24.0,0.034
+285,Ultra Formal Wear,Fashion & Apparel,Formal Wear,31515.38,1222,328,326,25.79,0.033
+88,Advanced Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,31465.0,1015,290,290,31.0,0.033
+327,Compact Oral Care,Health & Beauty,Oral Care,31436.0,1084,290,288,29.0,0.033
+250,Advanced Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,31377.36,1064,301,294,29.49,0.033
+552,Compact Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,31076.95,1205,312,311,25.79,0.033
+297,Ultra Activewear,Fashion & Apparel,Activewear,31065.49,1151,295,292,26.99,0.033
+555,Portable Fragrances,Health & Beauty,Fragrances,30856.0,1064,299,295,29.0,0.033
+459,Portable Skincare Products,Health & Beauty,Skincare Products,30363.0,1047,296,292,29.0,0.032
+518,Portable Bath & Body Products,Health & Beauty,Bath & Body Products,30019.56,1164,318,316,25.79,0.032
+155,Ultra Outerwear,Fashion & Apparel,Outerwear,29710.08,1152,311,309,25.79,0.032
+573,Classic Haircare Products,Health & Beauty,Haircare Products,29150.0,1166,311,305,25.0,0.031
+586,Eco Oral Care,Health & Beauty,Oral Care,28833.22,1118,308,305,25.79,0.031
+288,Pro Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,28269.0,1047,291,288,27.0,0.03
+319,Eco Smartphones & Accessories,Technology & Gadgets,Smartphones & Accessories,28238.73,1187,310,304,23.79,0.03
+678,Pro Kitchenware,Home & Living,Kitchenware,27852.39,1161,314,309,23.99,0.03
+434,Classic Oral Care,Health & Beauty,Oral Care,27289.13,1187,320,317,22.99,0.029
+756,Portable Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,27070.68,1092,300,298,24.79,0.029
+661,Deluxe Fragrances,Health & Beauty,Fragrances,26990.26,1174,311,308,22.99,0.029
+287,Premium Formal Wear,Fashion & Apparel,Formal Wear,26760.36,1164,325,321,22.99,0.028
+561,Ultra Nail Care,Health & Beauty,Nail Care,26495.31,989,284,281,26.79,0.028
+299,Deluxe Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,26286.0,1011,277,275,26.0,0.028
+115,Premium Accessories,Fashion & Apparel,Accessories,26178.36,1164,320,318,22.49,0.028
+435,Ultra Oral Care,Health & Beauty,Oral Care,25763.48,1052,291,287,24.49,0.027
+372,Compact Nail Care,Health & Beauty,Nail Care,25453.39,1061,272,268,23.99,0.027
+766,Premium Yoga & Pilates Accessories,Sports & Outdoors,Yoga & Pilates Accessories,25333.44,1056,296,295,23.99,0.027
+485,Pro Oral Care,Health & Beauty,Oral Care,25200.54,1146,303,296,21.99,0.027
+12,Pro Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,25123.87,1153,313,309,21.79,0.027
+760,Portable Team Sports Equipment,Sports & Outdoors,Team Sports Equipment,24901.62,1038,278,275,23.99,0.026
+667,Pro Bedding & Linens,Home & Living,Bedding & Linens,24833.88,1212,314,310,20.49,0.026
+325,Premium Oral Care,Health & Beauty,Oral Care,24828.96,1104,304,298,22.49,0.026
+169,Portable Outerwear,Fashion & Apparel,Outerwear,24781.68,1192,320,316,20.79,0.026
+90,Portable T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,24429.6,1040,287,284,23.49,0.026
+771,Advanced Outdoor Apparel,Sports & Outdoors,Outdoor Apparel,24226.07,1243,317,310,19.49,0.026
+732,Premium Bicycles & Accessories,Sports & Outdoors,Bicycles & Accessories,24090.29,1121,307,303,21.49,0.026
+79,Eco Swimwear,Fashion & Apparel,Swimwear,23688.63,1197,319,319,19.79,0.025
+27,Compact Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,23681.98,1102,309,306,21.49,0.025
+357,Compact Bath & Body Products,Health & Beauty,Bath & Body Products,23148.81,1219,335,330,18.99,0.025
+707,Compact Storage Solutions,Home & Living,Storage Solutions,22798.08,1152,287,281,19.79,0.024
+128,Premium T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,21984.61,1189,323,322,18.49,0.023
+333,Ultra Oral Care,Health & Beauty,Oral Care,21852.0,1214,310,307,18.0,0.023
+526,Ultra Skincare Products,Health & Beauty,Skincare Products,21263.5,1150,314,312,18.49,0.023
+659,Advanced Nail Care,Health & Beauty,Nail Care,20862.0,1098,296,293,19.0,0.022
+386,Premium Oral Care,Health & Beauty,Oral Care,20756.07,1093,299,298,18.99,0.022
+780,Compact Travel Accessories,Sports & Outdoors,Travel Accessories,20724.0,942,261,259,22.0,0.022
+200,Deluxe Formal Wear,Fashion & Apparel,Formal Wear,20536.0,1208,314,312,17.0,0.022
+401,Portable Skincare Products,Health & Beauty,Skincare Products,20214.0,1123,302,292,18.0,0.021
+101,Portable Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,19926.0,1107,299,295,18.0,0.021
+692,Classic Bedding & Linens,Home & Living,Bedding & Linens,19924.8,1120,299,299,17.79,0.021
+255,Advanced Swimwear,Fashion & Apparel,Swimwear,19778.62,1178,308,306,16.79,0.021
+433,Advanced Beauty Tools & Brushes,Health & Beauty,Beauty Tools & Brushes,19728.72,1128,299,294,17.49,0.021
+601,Pro Nail Care,Health & Beauty,Nail Care,19720.0,1160,307,304,17.0,0.021
+73,Portable Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,19711.23,1127,294,291,17.49,0.021
+163,Classic Dresses & Skirts,Fashion & Apparel,Dresses & Skirts,19588.8,1120,308,306,17.49,0.021
+123,Eco Activewear,Fashion & Apparel,Activewear,19569.0,1100,298,298,17.79,0.021
+468,Advanced Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,19425.22,1178,323,322,16.49,0.021
+427,Deluxe Haircare Products,Health & Beauty,Haircare Products,19270.36,964,266,265,19.99,0.02
+301,Deluxe Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,19008.0,1188,315,310,16.0,0.02
+314,Advanced Smartphones & Accessories,Technology & Gadgets,Smartphones & Accessories,18924.18,1082,295,290,17.49,0.02
+80,Advanced Outerwear,Fashion & Apparel,Outerwear,18789.37,1213,321,320,15.49,0.02
+167,Ultra Outerwear,Fashion & Apparel,Outerwear,17764.89,1111,303,299,15.99,0.019
+162,Ultra Formal Wear,Fashion & Apparel,Formal Wear,17313.45,1155,308,308,14.99,0.018
+664,Portable Storage Solutions,Home & Living,Storage Solutions,16713.85,1115,301,295,14.99,0.018
+445,Pro Oral Care,Health & Beauty,Oral Care,16634.52,1148,309,306,14.49,0.018
+549,Advanced Haircare Products,Health & Beauty,Haircare Products,16410.0,1094,296,295,15.0,0.017
+198,Compact Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,16012.63,1187,304,298,13.49,0.017
+1,Eco Formal Wear,Fashion & Apparel,Formal Wear,15916.32,1008,294,291,15.79,0.017
+792,Portable Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,15904.71,1179,312,309,13.49,0.017
+439,Classic Nail Care,Health & Beauty,Nail Care,15729.34,1166,294,289,13.49,0.017
+385,Eco Wellness Supplements,Health & Beauty,Wellness Supplements,15600.99,1201,324,320,12.99,0.017
+398,Deluxe Makeup & Cosmetics,Health & Beauty,Makeup & Cosmetics,15411.04,976,271,266,15.79,0.016
+650,Advanced Haircare Products,Health & Beauty,Haircare Products,15250.26,1174,309,307,12.99,0.016
+54,Portable Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,14772.45,1155,317,312,12.79,0.016
+315,Compact Smart Home Devices,Technology & Gadgets,Smart Home Devices,14650.77,1173,331,329,12.49,0.016
+557,Eco Wellness Supplements,Health & Beauty,Wellness Supplements,14372.01,1219,321,318,11.79,0.015
+737,Classic Water Sports Equipment,Sports & Outdoors,Water Sports Equipment,13620.64,1136,325,322,11.99,0.014
+278,Compact T-Shirts & Tops,Fashion & Apparel,T-Shirts & Tops,13617.45,1155,306,303,11.79,0.014
+223,Advanced Swimwear,Fashion & Apparel,Swimwear,13498.29,1251,313,311,10.79,0.014
+389,Classic Men's Grooming,Health & Beauty,Men's Grooming,13288.81,1039,286,283,12.79,0.014
+696,Classic Bedding & Linens,Home & Living,Bedding & Linens,12949.2,1080,294,289,11.99,0.014
+461,Compact Fragrances,Health & Beauty,Fragrances,12803.94,1086,294,291,11.79,0.014
+254,Premium Jeans & Trousers,Fashion & Apparel,Jeans & Trousers,12577.51,1199,309,307,10.49,0.013
+247,Pro Bags & Backpacks,Fashion & Apparel,Bags & Backpacks,12030.03,1047,293,293,11.49,0.013
+498,Portable Men's Grooming,Health & Beauty,Men's Grooming,11750.31,1089,295,293,10.79,0.012
+467,Advanced Nail Care,Health & Beauty,Nail Care,11708.31,1019,292,291,11.49,0.012
+571,Premium Men's Grooming,Health & Beauty,Men's Grooming,11319.7,1030,285,282,10.99,0.012
+246,Deluxe Activewear,Fashion & Apparel,Activewear,11220.0,1122,283,280,10.0,0.012
+89,Classic Sneakers & Casual Shoes,Fashion & Apparel,Sneakers & Casual Shoes,10731.27,1023,293,288,10.49,0.011
+654,Portable Skincare Products,Health & Beauty,Skincare Products,10373.0,943,272,272,11.0,0.011

@@ -1,0 +1,33 @@
+File,Column,IssueType,AffectedRows,PlannedAction
+users.csv,FirstName,Missing values,16,Recover from email when possible; otherwise set to Unknown
+users.csv,LastName,Missing values,13,Recover from email when possible; otherwise set to Unknown
+users.csv,Email,Missing values,16,Set missing values to Unknown
+users.csv,Password,Missing values,20,Remove column because it is irrelevant and sensitive
+users.csv,Address,Missing values,21,Set missing values to Unknown
+users.csv,City,Missing values,22,Set missing values to Unknown
+users.csv,Country,Missing values,14,Set missing values to Unknown
+users.csv,PhoneNumber,Missing values,13,Set missing values to Unknown
+users.csv,BirthDate,Missing values,20,Keep as missing; do not invent a birth date
+users.csv,MaritalStatus,Missing values,19,Replace missing values with Unknown
+users.csv,Gender,Missing values,23,Replace missing values with Unknown
+users.csv,AnnualIncome,Missing values,18,Impute with median and add missing-value flag
+users.csv,TotalChildren,Missing values,13,Impute with median and add missing-value flag
+users.csv,EducationLevel,Missing values,24,Replace missing values with Unknown
+users.csv,Occupation,Missing values,21,Replace missing values with Unknown
+users.csv,CarOwner,Missing values,17,Replace missing values with Unknown
+users.csv,FirstName,Leading or trailing whitespace,1,Remove outer whitespace using strip()
+users.csv,Address,Leading or trailing whitespace,598,Remove outer whitespace using strip()
+users.csv,CarOwner,Corrupted categorical value,16,Restore the valid category detected at the beginning of the value
+users.csv,EducationLevel,Corrupted categorical value,21,Restore the valid category detected at the beginning of the value
+users.csv,Gender,Corrupted categorical value,22,Restore the valid category detected at the beginning of the value
+users.csv,MaritalStatus,Corrupted categorical value,18,Restore the valid category detected at the beginning of the value
+users.csv,Occupation,Corrupted categorical value,12,Restore the valid category detected at the beginning of the value
+users.csv,BirthDate,Invalid date format,16,Extract the valid YYYY-MM-DD date from the beginning of the value
+users.csv,Email,Invalid business format,19,Remove corrupted suffix appearing after @mycompany.com
+users.csv,City,Invalid business format,19,Match the corrupted value to a valid city from regions.csv
+users.csv,Country,Invalid business format,14,Match the corrupted value to a valid country from regions.csv
+users.csv,FirstName / LastName,Invalid business format,42,Recover the correct names from the valid email address
+orders_2022.csv,TotalAmount,Cross-table total inconsistency,459,Keep TotalAmount as reference; correct inflated detail quantities by factor 2
+order_details_2022.csv,Quantity / TotalPrice,Systematic multiplication error,1412,Divide Quantity and TotalPrice by 2; retain UnitPrice
+orders_2023.csv,TotalAmount,Cross-table total inconsistency,263,Keep TotalAmount as reference; correct inflated detail quantities by factor 3
+order_details_2023.csv,Quantity / TotalPrice,Systematic multiplication error,766,Divide Quantity and TotalPrice by 3; retain UnitPrice

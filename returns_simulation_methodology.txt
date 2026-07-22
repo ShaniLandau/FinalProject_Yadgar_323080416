@@ -1,0 +1,17 @@
+BONUS RETURNS TABLE – SIMULATION METHODOLOGY
+
+The supplied source dataset does not contain return transactions.
+Therefore, returns.csv was created as a transparent simulated bonus table.
+
+Method:
+1. Order details were linked to orders through OrderID.
+2. Products and categories were linked through ProductID.
+3. Category-specific return probabilities were applied.
+4. Returned quantity was limited to the quantity originally purchased.
+5. Return dates were placed 3–30 days after the order date.
+6. Return amounts were calculated as ReturnedQuantity multiplied by UnitPrice.
+7. A fixed random seed of 42 guarantees reproducible results.
+
+The simulated table is used only for bonus analysis.
+It does not modify the supplied or cleaned source CSV files.
+Every simulated row is marked SimulatedBonusData = True.

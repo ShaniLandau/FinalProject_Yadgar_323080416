@@ -1,0 +1,173 @@
+ArielLeaf Data Cleaning - Cleaning Decisions
+Project: Group J
+Submission Track: Coding Vibe
+Environment: Google Colab / Python
+Date: 2026-07-17
+
+============================================================
+1. NUMBER OF SOURCE FILES
+============================================================
+
+The assignment refers to nine ArielLeaf CSV datasets, while the
+provided Group J archive contains 14 physical CSV files.
+
+Orders and Order Details are each divided into four annual files
+for 2020-2023. All 14 files were audited and cleaned separately.
+Cross-file checks were also performed on the combined logical
+tables.
+
+============================================================
+2. PRESERVATION OF SOURCE DATA
+============================================================
+
+The original files were preserved without modification under:
+data/original/
+
+All transformations were performed on copies and exported to:
+data/cleaned/
+
+No original source file was overwritten.
+
+============================================================
+3. DUPLICATES
+============================================================
+
+No exact duplicate rows or duplicate primary keys were found.
+Therefore, no rows were removed.
+
+Repeated UserID values in Orders and repeated ProductID values
+in Order Details were retained because they represent valid
+one-to-many business relationships.
+
+============================================================
+4. MISSING TEXT VALUES
+============================================================
+
+Missing descriptive and categorical text values were replaced
+with "Unknown". This preserved all customer records without
+assigning an unsupported category.
+
+============================================================
+5. MISSING NUMERIC VALUES
+============================================================
+
+Missing AnnualIncome values were imputed using the median
+(49,865). Missing TotalChildren values were imputed using the
+median (1).
+
+The median was selected because it is less sensitive to extreme
+values than the mean.
+
+The following flag columns were added:
+- AnnualIncomeWasMissing
+- TotalChildrenWasMissing
+
+============================================================
+6. MISSING BIRTH DATES
+============================================================
+
+Twenty missing BirthDate values were not imputed because
+inventing a date would create false age information.
+
+A BirthDateWasMissing flag was added so these records remain
+identifiable during age-based analysis.
+
+============================================================
+7. CORRUPTED CATEGORICAL VALUES
+============================================================
+
+Corrupted categorical values contained a valid category followed
+by a random suffix. The valid category was restored only in
+fields with a controlled list of permitted values.
+
+Examples:
+- A corrupted Female value was restored to Female.
+- A corrupted Married value was restored to Married.
+- A corrupted Yes value was restored to Yes.
+
+Names, addresses and multilingual text were not normalized only
+because of capitalization differences, since these differences
+may represent valid spelling or language variations.
+
+============================================================
+8. NAME RECOVERY
+============================================================
+
+Forty-two inconsistent first or last names were compared with
+the valid name portion of the customer's email address.
+
+Random suffixes were removed. Where a name was missing or fully
+corrupted, it was recovered from the valid email address.
+
+============================================================
+9. EMAIL, CITY AND COUNTRY REPAIR
+============================================================
+
+Nineteen email values contained a valid company email followed
+by a random suffix. Only the suffix after @mycompany.com was
+removed.
+
+Corrupted City and Country values were restored only when their
+valid prefix matched a value appearing in regions.csv:
+- 19 City values
+- 14 Country values
+
+============================================================
+10. DATE REPAIR
+============================================================
+
+Sixteen BirthDate values contained a valid YYYY-MM-DD date
+followed by a random suffix. The valid date component was
+extracted and converted to a date type.
+
+No future order dates or order dates assigned to the wrong
+annual file were found.
+
+============================================================
+11. ORDER DETAIL MULTIPLICATION ERROR
+============================================================
+
+A cross-table check found 722 orders whose TotalAmount did not
+match the sum of their detail rows.
+
+The pattern was systematic:
+- 459 orders in 2022 had detail quantities and totals multiplied
+  by exactly 2.
+- 263 orders in 2023 had detail quantities and totals multiplied
+  by exactly 3.
+
+The quantities were divisible by the corresponding factor.
+Dividing Quantity and TotalPrice by that factor reconciled every
+affected order exactly.
+
+Therefore:
+- 1,412 detail rows in 2022 were divided by 2.
+- 766 detail rows in 2023 were divided by 3.
+- TotalAmount and UnitPrice were retained unchanged.
+
+After correction, zero order-total mismatches remained.
+
+============================================================
+12. PASSWORD COLUMN
+============================================================
+
+The Password column was removed because it is sensitive,
+irrelevant to business analysis, and should not be exposed in
+the dashboard.
+
+============================================================
+13. ROW RETENTION AND FINAL VALIDATION
+============================================================
+
+No rows were deleted from any file. Row counts before and after
+cleaning are identical for all 14 files.
+
+Post-cleaning validation confirmed:
+- No unexpected missing values
+- No exact duplicate rows
+- No duplicate primary keys
+- No invalid numeric values
+- No invalid categorical values
+- No leading or trailing whitespace
+- No order-total mismatches
+- No orphan foreign keys

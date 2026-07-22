@@ -1,0 +1,10 @@
+Check,IssueCount,Status
+Exactly 14 cleaned CSV files,0,PASS
+No exact duplicate rows,0,PASS
+No duplicate primary keys,0,PASS
+No unexpected missing values,0,PASS
+No leading or trailing whitespace,0,PASS
+No invalid categorical values,0,PASS
+No invalid numeric values,0,PASS
+Order totals match order details,0,PASS
+No orphan foreign keys,0,PASS

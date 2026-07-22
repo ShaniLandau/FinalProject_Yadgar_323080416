@@ -1,0 +1,6 @@
+File,Column,RuleChecked,AffectedRows
+users.csv,UserID,Must match USR followed by 5 digits,0
+users.csv,Email,Must end with @mycompany.com,19
+users.csv,City,Must exist in regions.csv,19
+users.csv,Country,Must exist in regions.csv,14
+users.csv,FirstName / LastName,Names must correspond to email name,42

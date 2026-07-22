@@ -1,0 +1,15 @@
+File,PrimaryKey,TotalRows,ExactDuplicateRows,DuplicatePrimaryKeyRows,UniquePrimaryKeyValues
+categories.csv,CategoryID,5,0,0,5
+dates.csv,Date,1461,0,0,1461
+order_details_2020.csv,OrderDetailID,62176,0,0,62176
+order_details_2021.csv,OrderDetailID,61814,0,0,61814
+order_details_2022.csv,OrderDetailID,61265,0,0,61265
+order_details_2023.csv,OrderDetailID,60554,0,0,60554
+orders_2020.csv,OrderID,20591,0,0,20591
+orders_2021.csv,OrderID,20583,0,0,20583
+orders_2022.csv,OrderID,20431,0,0,20431
+orders_2023.csv,OrderID,20240,0,0,20240
+products.csv,ProductID,800,0,0,800
+regions.csv,regionID,65,0,0,65
+subcategories.csv,SubcategoryID,50,0,0,50
+users.csv,UserID,15000,0,0,15000

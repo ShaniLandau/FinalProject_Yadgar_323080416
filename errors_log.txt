@@ -1,0 +1,375 @@
+ArielLeaf Data Cleaning - Errors Log
+Student: Hadar Yadgar
+Project: Group J
+Submission Track: Coding Vibe
+Environment: Google Colab / Python
+Date: 2026-07-17
+
+============================================================
+ERROR 1 - DATE QUALITY CHECK
+============================================================
+
+Stage:
+Checking invalid and future dates.
+
+Error message:
+TypeError: cannot convert the series to <class 'int'>
+
+Cause:
+The code attempted to convert a pandas Boolean Series to an
+integer before counting its True values. The .sum() operation
+was placed outside the int() conversion.
+
+Original logic:
+int(boolean_series).sum()
+
+Correction:
+The Boolean values were counted first, and only the resulting
+single number was converted to an integer.
+
+Corrected logic:
+int(boolean_series.sum())
+
+Result:
+The corrected code executed successfully and identified 16
+non-empty BirthDate values with invalid formatting. No data was
+modified or lost as a result of the error.
+
+============================================================
+ERROR 2 - CLEANING DECISIONS FILE CREATION
+============================================================
+
+Stage:
+Creating cleaning_decisions.txt.
+
+Error message:
+NameError: name 'cleaning_decisions_path' is not defined
+
+Cause:
+Only the final print statements were executed before the
+variable cleaning_decisions_path had been defined.
+
+Correction:
+The complete code cell was executed. It defined the content,
+created the file path, wrote the text file, and then printed the
+successful result.
+
+Result:
+cleaning_decisions.txt was created successfully in the
+documentation folder. No data files were affected.
+
+============================================================
+FINAL NOTES
+============================================================
+
+A total of two runtime errors occurred during the data-cleaning
+phase. Both errors were corrected and verified.
+
+No additional runtime errors occurred during data loading,
+quality auditing, cleaning, CSV export, or post-cleaning
+validation.
+
+The cross-table consistency check added after the initial
+numeric checks was an analytical enhancement rather than a
+runtime error. It is documented in prompts_log.txt and
+cleaning_decisions.txt.
+
+
+============================================================
+DASHBOARD DEVELOPMENT ERRORS AND CORRECTIONS
+============================================================
+
+ERROR 3 - Home page routing replacement
+
+Error message:
+ValueError: Home-page connection was not found in app.py.
+
+Cause:
+The replacement expected render_home(), but the original
+Home page was written directly inside the routing block.
+
+Correction:
+The routing lines were inspected and the entire block between
+Home and Executive Overview was replaced using exact markers.
+
+Result:
+The new Home-page module was connected successfully.
+
+------------------------------------------------------------
+
+ERROR 4 - Flexible Home route search
+
+Error message:
+ValueError: The Home navigation line could not be identified.
+
+Cause:
+The second search still assumed that the old page called a
+render_home function, which was not present in app.py.
+
+Correction:
+A read-only diagnostic printed the relevant routing lines.
+The exact structure was then used for the final replacement.
+
+Result:
+The correct Home route was identified and replaced.
+
+------------------------------------------------------------
+
+ERROR 5 - Incomplete Home-page code input
+
+Error message:
+SyntaxError: incomplete input.
+
+Cause:
+A long Colab cell was pasted without the closing delimiter.
+
+Correction:
+The Home-page code was shortened and the complete closing
+lines were verified before execution.
+
+Result:
+home.py was created and executed successfully.
+
+------------------------------------------------------------
+
+ERROR 6 - Home HTML displayed as code
+
+Issue:
+The upper Home-page HTML appeared as literal code.
+
+Cause:
+Blank lines interrupted the Markdown HTML block.
+
+Correction:
+The Hero section was rewritten as continuous HTML.
+
+Result:
+The Home page rendered correctly.
+
+------------------------------------------------------------
+
+ERROR 7 - Incomplete README input
+
+Error message:
+SyntaxError: incomplete input.
+
+Cause:
+The first long README cell was pasted without its closing
+text delimiter.
+
+Correction:
+README content was rewritten as a shorter list of lines.
+
+Result:
+README.md was created successfully in the project root.
+
+
+============================================================
+ERROR 8 - RETURNS HERO HTML RENDERING
+============================================================
+
+Stage:
+Visual inspection of the Returns Intelligence bonus page.
+
+Observed issue:
+The hero title and description were displayed as literal HTML code
+instead of rendered page content.
+
+Cause:
+The indented multiline HTML string was interpreted by Markdown as
+a code block.
+
+Correction:
+The HTML string was passed through textwrap.dedent before rendering.
+A Returns Intelligence shortcut was also added to the Home page.
+
+Result:
+The hero content renders as formatted HTML, and the bonus page is
+accessible from both the sidebar and the Home page.
+
+
+============================================================
+ERROR 9 - MARKDOWN HTML DISPLAY FOLLOW-UP
+============================================================
+
+Stage:
+Visual validation of the Returns page and its Home shortcut.
+
+Observed issue:
+Using textwrap.dedent did not fully prevent nested HTML elements
+from appearing as code blocks.
+
+Correction:
+The two affected HTML components were changed from st.markdown
+to Streamlit's dedicated st.html renderer.
+
+Result:
+The Returns hero and Home bonus card render as formatted HTML.
+
+
+============================================================
+ERROR 10 - HIDDEN INSIGHT TOGGLE LABEL
+============================================================
+
+Stage:
+Interactive testing of the hidden business insight.
+
+Observed issue:
+After adding open-and-close behavior, the button label reflected
+the previous state. The open insight still displayed the Reveal
+label, while the closed state displayed the Hide label.
+
+Cause:
+Streamlit calculated the button label before the session-state value
+was changed during the same execution cycle.
+
+Correction:
+st.rerun() was added immediately after toggling the session-state
+value.
+
+Result:
+The button now displays Reveal when the insight is closed and Hide
+when the insight is open.
+
+
+============================================================
+ERROR 11 - Dynamic tooltip contrast correction
+============================================================
+
+Stage:
+Improving the readability of the dynamic tooltip on the
+Executive Overview revenue chart.
+
+Error message:
+ValueError: Expected one tooltip style location, found 0
+
+Cause:
+The correction code searched for an exact one-line version of
+trend_figure.update_layout(), while the existing dashboard code
+used a different multiline structure.
+
+Correction:
+The tooltip styling was inserted immediately before the unique
+revenue-trend st.plotly_chart() call instead of relying on the
+previous exact string.
+
+Result:
+The dashboard file passed Python syntax validation. The tooltip
+now uses a white background, dark navy text and a teal border.
+No data or calculations were modified.
+
+
+============================================================
+ERROR 13 - Global CSS overrode drilldown contrast
+============================================================
+
+Stage:
+Second visual review of the product click-through drilldown.
+
+Issue:
+The first contrast correction compiled successfully, but the
+visible chart labels and KPI values remained too light.
+
+Cause:
+Stronger global dashboard CSS rules overrode the Plotly and
+Streamlit metric colors.
+
+Correction:
+High-specificity CSS was applied directly to Plotly SVG tick and
+axis-title elements. Standard Streamlit metrics were replaced
+with independent HTML KPI cards using explicit dark text colors.
+
+Result:
+The drilldown remains interactive while the vertical-chart
+labels, horizontal-chart labels and KPI values use strong dark
+contrast. No business calculations or data were changed.
+
+
+============================================================
+ERROR 14 - FINAL ZIP PORTABILITY TEST ENVIRONMENT
+============================================================
+
+Stage:
+Launching the dashboard directly from the extracted final ZIP.
+
+Error messages:
+1. No module named streamlit
+2. Streamlit command was not found in the current Colab environment
+
+Cause:
+The Google Colab runtime had restarted. Packages installed during the
+previous session were therefore no longer available in the new runtime.
+
+Correction:
+The dependencies were installed again from the requirements.txt file
+included inside the extracted submission. The application was then
+launched with the active Python environment.
+
+Result:
+The dashboard started successfully from the extracted final ZIP and
+the Streamlit health endpoint returned HTTP 200. This also confirmed
+that the included requirements.txt supports restoration in a fresh
+environment.
+
+
+Additional portability-test correction:
+The first browser preview remained on the loading screen because
+Streamlit rejected the WebSocket origin generated by the Google Colab
+proxy. The test server was restarted with CORS and XSRF protection
+disabled for this temporary Colab preview only. The project files were
+not changed.
+
+Result:
+The Colab proxy WebSocket connected successfully and the extracted
+dashboard became accessible in the browser.
+
+
+============================================================
+ERROR 15 - RETURNS CHART TEXT CONTRAST
+============================================================
+
+Stage:
+Visual review of the Returns Intelligence bonus page.
+
+Issue:
+Axis labels, tick values and the chart legend were too light against
+the white chart background and were difficult to read.
+
+Cause:
+The dashboard's global visual styling applied pale text colors to the
+Plotly charts on the Returns Intelligence page.
+
+Correction:
+A page-specific Plotly contrast function was added. It applies dark
+navy text to axes and legends, stronger grid lines, readable hover
+labels, and suitable text colors for the donut chart.
+
+Result:
+The return trend, category bar chart and return-reason donut chart are
+readable without changing the data, calculations or filters.
+
+
+============================================================
+ERROR 16 - RETURNS CONTRAST OVERRIDDEN BY GLOBAL CSS
+============================================================
+
+Stage:
+Visual verification of the Returns Intelligence chart contrast.
+
+Issue:
+The first Plotly layout correction executed successfully, but chart
+axes, legend labels, filter titles and KPI values remained too light.
+
+Cause:
+A global dashboard CSS rule used higher priority than the Plotly layout
+settings and continued to force pale text colors.
+
+Correction:
+A page-level CSS override with explicit selectors and !important
+priority was added to the Returns Intelligence view. The correction
+targets Plotly SVG labels, legends, hover text, KPI values and filter
+labels while preserving white text inside the donut slices.
+
+Result:
+Text on the Returns Intelligence page is displayed with strong,
+readable contrast. Data, calculations and filters were not changed.

@@ -1,0 +1,90 @@
+File,Column,InvalidValue,AffectedRows,SuggestedCorrection
+users.csv,MaritalStatus,Divorced ^.=,1,Divorced
+users.csv,MaritalStatus,Divorced +xZ,1,Divorced
+users.csv,MaritalStatus,Divorced j`),1,Divorced
+users.csv,MaritalStatus,Married kL>,1,Married
+users.csv,MaritalStatus,"Single :""?",1,Single
+users.csv,MaritalStatus,Married p.A,1,Married
+users.csv,MaritalStatus,Married Goq,1,Married
+users.csv,MaritalStatus,Divorced PZ\,1,Divorced
+users.csv,MaritalStatus,Divorced r?&,1,Divorced
+users.csv,MaritalStatus,Divorced WRT,1,Divorced
+users.csv,MaritalStatus,Single ^\H,1,Single
+users.csv,MaritalStatus,Married -BL,1,Married
+users.csv,MaritalStatus,Single \*d,1,Single
+users.csv,MaritalStatus,Single r-=,1,Single
+users.csv,MaritalStatus,Single kCL,1,Single
+users.csv,MaritalStatus,Single BQR,1,Single
+users.csv,MaritalStatus,Divorced #KY,1,Divorced
+users.csv,MaritalStatus,Single ex\,1,Single
+users.csv,Gender,Male 'Pl,1,Male
+users.csv,Gender,Female \?h,1,Female
+users.csv,Gender,Female #a/,1,Female
+users.csv,Gender,Male qI$,1,Male
+users.csv,Gender,Female Zc_,1,Female
+users.csv,Gender,Female +R-,1,Female
+users.csv,Gender,Female :[!,1,Female
+users.csv,Gender,Male )!<,1,Male
+users.csv,Gender,Female qz],1,Female
+users.csv,Gender,Female ru`,1,Female
+users.csv,Gender,"Female rZ""",1,Female
+users.csv,Gender,Female u)J,1,Female
+users.csv,Gender,Male [D|,1,Male
+users.csv,Gender,Female {|G,1,Female
+users.csv,Gender,Male ZN+,1,Male
+users.csv,Gender,"Male .G""",1,Male
+users.csv,Gender,Female H!v,1,Female
+users.csv,Gender,Male ?v?,1,Male
+users.csv,Gender,Female ]a\,1,Female
+users.csv,Gender,Female cIq,1,Female
+users.csv,Gender,Male :M#,1,Male
+users.csv,Gender,Female >]w,1,Female
+users.csv,EducationLevel,High School t.B,1,High School
+users.csv,EducationLevel,PhD ~l+,1,PhD
+users.csv,EducationLevel,High School |nw,1,High School
+users.csv,EducationLevel,PhD f`S,1,PhD
+users.csv,EducationLevel,Bachelor's Degree P#i,1,Bachelor's Degree
+users.csv,EducationLevel,PhD ptf,1,PhD
+users.csv,EducationLevel,Bachelor's Degree %\R,1,Bachelor's Degree
+users.csv,EducationLevel,High School Tz-,1,High School
+users.csv,EducationLevel,Master's Degree }~b,1,Master's Degree
+users.csv,EducationLevel,High School Fwz,1,High School
+users.csv,EducationLevel,PhD n!r,1,PhD
+users.csv,EducationLevel,High School E*R,1,High School
+users.csv,EducationLevel,Master's Degree Yy*,1,Master's Degree
+users.csv,EducationLevel,PhD O(/,1,PhD
+users.csv,EducationLevel,PhD pmz,1,PhD
+users.csv,EducationLevel,High School YK{,1,High School
+users.csv,EducationLevel,Associate's Degree $d#,1,Associate's Degree
+users.csv,EducationLevel,PhD ))!,1,PhD
+users.csv,EducationLevel,Master's Degree [{B,1,Master's Degree
+users.csv,EducationLevel,High School &dn,1,High School
+users.csv,EducationLevel,Associate's Degree [=X,1,Associate's Degree
+users.csv,Occupation,Manager A@],1,Manager
+users.csv,Occupation,"Salesperson {""k",1,Salesperson
+users.csv,Occupation,Lawyer {=D,1,Lawyer
+users.csv,Occupation,Lawyer $x+,1,Lawyer
+users.csv,Occupation,Accountant u?T,1,Accountant
+users.csv,Occupation,Scientist VjB,1,Scientist
+users.csv,Occupation,Lawyer ?.s,1,Lawyer
+users.csv,Occupation,Engineer .V|,1,Engineer
+users.csv,Occupation,Teacher R\W,1,Teacher
+users.csv,Occupation,Teacher &na,1,Teacher
+users.csv,Occupation,Scientist mKO,1,Scientist
+users.csv,Occupation,Salesperson FM[,1,Salesperson
+users.csv,CarOwner,Yes USj,1,Yes
+users.csv,CarOwner,No @`Q,1,No
+users.csv,CarOwner,No b^D,1,No
+users.csv,CarOwner,No {gT,1,No
+users.csv,CarOwner,No C)_,1,No
+users.csv,CarOwner,Yes ax(,1,Yes
+users.csv,CarOwner,Yes D$>,1,Yes
+users.csv,CarOwner,No XXu,1,No
+users.csv,CarOwner,Yes oYk,1,Yes
+users.csv,CarOwner,Yes oYN,1,Yes
+users.csv,CarOwner,Yes R{G,1,Yes
+users.csv,CarOwner,Yes ]c[,1,Yes
+users.csv,CarOwner,No &Lp,1,No
+users.csv,CarOwner,Yes wm+,1,Yes
+users.csv,CarOwner,"Yes }^""",1,Yes
+users.csv,CarOwner,Yes aII,1,Yes

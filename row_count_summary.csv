@@ -1,0 +1,15 @@
+File,RowsBefore,RowsAfter,RowsRemoved,ColumnsBefore,ColumnsAfter
+categories.csv,5,5,0,2,2
+dates.csv,1461,1461,0,4,4
+order_details_2020.csv,62176,62176,0,6,6
+order_details_2021.csv,61814,61814,0,6,6
+order_details_2022.csv,61265,61265,0,6,6
+order_details_2023.csv,60554,60554,0,6,6
+orders_2020.csv,20591,20591,0,4,4
+orders_2021.csv,20583,20583,0,4,4
+orders_2022.csv,20431,20431,0,4,4
+orders_2023.csv,20240,20240,0,4,4
+products.csv,800,800,0,11,11
+regions.csv,65,65,0,4,4
+subcategories.csv,50,50,0,3,3
+users.csv,15000,15000,0,17,19

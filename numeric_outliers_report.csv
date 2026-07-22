@@ -1,0 +1,25 @@
+File,Column,RuleChecked,AffectedRows
+order_details_2020.csv,Quantity,Quantity must be greater than 0,0
+order_details_2020.csv,UnitPrice,UnitPrice must be greater than 0,0
+order_details_2020.csv,TotalPrice,TotalPrice must be greater than 0,0
+order_details_2020.csv,TotalPrice,TotalPrice must equal Quantity multiplied by UnitPrice,0
+order_details_2021.csv,Quantity,Quantity must be greater than 0,0
+order_details_2021.csv,UnitPrice,UnitPrice must be greater than 0,0
+order_details_2021.csv,TotalPrice,TotalPrice must be greater than 0,0
+order_details_2021.csv,TotalPrice,TotalPrice must equal Quantity multiplied by UnitPrice,0
+order_details_2022.csv,Quantity,Quantity must be greater than 0,0
+order_details_2022.csv,UnitPrice,UnitPrice must be greater than 0,0
+order_details_2022.csv,TotalPrice,TotalPrice must be greater than 0,0
+order_details_2022.csv,TotalPrice,TotalPrice must equal Quantity multiplied by UnitPrice,0
+order_details_2023.csv,Quantity,Quantity must be greater than 0,0
+order_details_2023.csv,UnitPrice,UnitPrice must be greater than 0,0
+order_details_2023.csv,TotalPrice,TotalPrice must be greater than 0,0
+order_details_2023.csv,TotalPrice,TotalPrice must equal Quantity multiplied by UnitPrice,0
+orders_2020.csv,TotalAmount,TotalAmount must be greater than 0,0
+orders_2021.csv,TotalAmount,TotalAmount must be greater than 0,0
+orders_2022.csv,TotalAmount,TotalAmount must be greater than 0,0
+orders_2023.csv,TotalAmount,TotalAmount must be greater than 0,0
+products.csv,Price,Price must be greater than 0,0
+products.csv,StockQuantity,StockQuantity must not be negative,0
+users.csv,AnnualIncome,AnnualIncome must not be negative,0
+users.csv,TotalChildren,TotalChildren must not be negative,0

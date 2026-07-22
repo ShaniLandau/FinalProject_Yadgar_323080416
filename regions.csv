@@ -1,0 +1,66 @@
+regionID,City,Country,Continent
+RGN001,New York,United States,North America
+RGN002,Los Angeles,United States,North America
+RGN003,Chicago,United States,North America
+RGN004,Houston,United States,North America
+RGN005,Phoenix,United States,North America
+RGN006,London,United Kingdom,Europe
+RGN007,Birmingham,United Kingdom,Europe
+RGN008,Manchester,United Kingdom,Europe
+RGN009,Glasgow,United Kingdom,Europe
+RGN010,Liverpool,United Kingdom,Europe
+RGN011,Paris,France,Europe
+RGN012,Marseille,France,Europe
+RGN013,Lyon,France,Europe
+RGN014,Toulouse,France,Europe
+RGN015,Nice,France,Europe
+RGN016,Berlin,Germany,Europe
+RGN017,Hamburg,Germany,Europe
+RGN018,Munich,Germany,Europe
+RGN019,Cologne,Germany,Europe
+RGN020,Frankfurt,Germany,Europe
+RGN021,Madrid,Spain,Europe
+RGN022,Barcelona,Spain,Europe
+RGN023,Valencia,Spain,Europe
+RGN024,Seville,Spain,Europe
+RGN025,Zaragoza,Spain,Europe
+RGN026,Rome,Italy,Europe
+RGN027,Milan,Italy,Europe
+RGN028,Naples,Italy,Europe
+RGN029,Turin,Italy,Europe
+RGN030,Palermo,Italy,Europe
+RGN031,Sydney,Australia,Oceania
+RGN032,Melbourne,Australia,Oceania
+RGN033,Brisbane,Australia,Oceania
+RGN034,Perth,Australia,Oceania
+RGN035,Adelaide,Australia,Oceania
+RGN036,Jerusalem,Israel,Asia
+RGN037,Tel Aviv,Israel,Asia
+RGN038,Haifa,Israel,Asia
+RGN039,Rishon LeZion,Israel,Asia
+RGN040,Petah Tikva,Israel,Asia
+RGN041,Toronto,Canada,North America
+RGN042,Vancouver,Canada,North America
+RGN043,Montreal,Canada,North America
+RGN044,Calgary,Canada,North America
+RGN045,Ottawa,Canada,North America
+RGN046,Mexico City,Mexico,North America
+RGN047,Guadalajara,Mexico,North America
+RGN048,Monterrey,Mexico,North America
+RGN049,Puebla,Mexico,North America
+RGN050,Tijuana,Mexico,North America
+RGN051,Mumbai,India,Asia
+RGN052,Delhi,India,Asia
+RGN053,Bengaluru,India,Asia
+RGN054,Kolkata,India,Asia
+RGN055,Chennai,India,Asia
+RGN056,São Paulo,Brazil,South America
+RGN057,Rio de Janeiro,Brazil,South America
+RGN058,Brasília,Brazil,South America
+RGN059,Salvador,Brazil,South America
+RGN060,Fortaleza,Brazil,South America
+RGN061,Beijing,China,Asia
+RGN062,Shanghai,China,Asia
+RGN063,Guangzhou,China,Asia
+RGN064,Shenzhen,China,Asia
+RGN065,Chongqing,China,Asia

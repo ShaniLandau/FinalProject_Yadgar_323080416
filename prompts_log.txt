@@ -1,0 +1,3692 @@
+ArielLeaf BI Final Project - Prompts Log
+
+Project Group: J
+Submission Track: Coding Vibe
+Generative AI Tool: ChatGPT - Codex
+Execution Environment: Google Colab / Python
+Log Status: Working log - dashboard prompts will be appended later
+
+============================================================
+PROMPT 1 - Review the assignment and choose a track
+============================================================
+
+Full prompt:
+I have a BI course assignment. Review all instructions and the supplied data, compare
+the Power BI and Coding Vibe tracks, and recommend the easier
+and safer track for completing a high-quality submission.
+
+Result:
+The requirements and the 14 supplied CSV files were reviewed.
+Coding Vibe was recommended because Python can provide
+reproducible cleaning, detailed documentation, a responsive
+dashboard, and easier implementation of advanced features.
+
+Correction required:
+The first uploaded archive was rechecked after the user uploaded
+the official Group J archive. A byte-level comparison confirmed
+that all 14 files were identical.
+
+Estimated time:
+20 minutes.
+
+============================================================
+PROMPT 2 - Define the required cleaning workflow
+============================================================
+
+Full prompt:
+Create a step-by-step workflow for Exercise 3 that follows the
+Coding Vibe requirements. It must preserve the original files,
+use Python for cleaning, produce cleaned CSV files, document
+findings and row counts, and create prompts_log.txt,
+errors_log.txt, and a runnable cleaning script.
+
+Result:
+A structured project workflow was defined with separate original,
+cleaned, documentation, and application locations. Google Colab
+was selected as the cleaning environment.
+
+Correction required:
+The initial local Colab folder plan was changed to a permanent
+Google Drive folder so that files would not be lost when the
+runtime ended.
+
+Estimated time:
+15 minutes.
+
+============================================================
+PROMPT 3 - Load and inventory the source data
+============================================================
+
+Full prompt:
+Write Python code for Google Colab that mounts Google Drive,
+creates the project folder, preserves the original Group J ZIP,
+extracts all source CSV files, loads them with pandas, and
+displays the file name, row count, column count, and column names
+for every file.
+
+Result:
+All 14 CSV files were extracted and loaded successfully. A source
+inventory was displayed without modifying the data.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+10 minutes.
+
+============================================================
+PROMPT 4 - Audit required data-quality dimensions
+============================================================
+
+Full prompt:
+Write Python checks for every supplied CSV file covering missing
+values and missing percentages, exact duplicates, duplicate
+primary keys, non-positive prices and quantities, negative stock
+or income, inconsistent text formatting, date validity, future
+dates, case consistency, and data-type convertibility. Save each
+audit result as a CSV report.
+
+Result:
+The audit found missing values in 16 users.csv columns, no exact
+duplicates, no duplicate primary keys, no non-positive numeric
+values, 599 outer-whitespace occurrences, 16 invalid non-empty
+birth dates, and multiple corrupted categorical and business
+format values.
+
+Correction required:
+The general case-consistency check produced candidate matches in
+multilingual names and addresses. These were not automatically
+treated as errors. Controlled categorical fields were checked
+separately to prevent incorrect normalization.
+
+Estimated time:
+40 minutes.
+
+============================================================
+PROMPT 5 - Verify the zero numeric-anomaly result
+============================================================
+
+Full prompt:
+The numeric anomaly checks all returned zero. Independently
+inspect the actual source files and verify whether the code is
+correct or whether an important anomaly was missed.
+
+Result:
+The original numeric checks were confirmed as correct, but an
+additional cross-table consistency check identified 722 orders
+whose TotalAmount did not match the sum of their order details.
+
+Further analysis showed a systematic pattern:
+- 459 affected orders in 2022
+- 263 affected orders in 2023
+
+Correction required:
+The audit was expanded beyond single-column rules to include
+business consistency between Orders and Order Details.
+
+Estimated time:
+25 minutes.
+
+============================================================
+PROMPT 6 - Diagnose the order-total inconsistencies
+============================================================
+
+Full prompt:
+Determine whether the incorrect value is TotalAmount, Quantity,
+UnitPrice, or TotalPrice. Do not correct the data until the
+pattern has been proven.
+
+Result:
+All affected 2022 quantities and totals were multiplied by 2.
+All affected 2023 quantities and totals were multiplied by 3.
+The affected quantities were divisible by these factors, and
+dividing Quantity and TotalPrice reconciled every order exactly.
+
+Correction required:
+The initial possible approach of recalculating TotalAmount was
+rejected. TotalAmount and UnitPrice were retained, while the
+affected Quantity and TotalPrice values were corrected.
+
+Estimated time:
+20 minutes.
+
+============================================================
+PROMPT 7 - Create the findings table
+============================================================
+
+Full prompt:
+Create a consolidated findings table containing the source file,
+column, issue type, number of affected records, and planned
+cleaning action. Include all mandatory audit findings and the
+additional cross-table consistency finding.
+
+Result:
+A 32-row data_quality_findings.csv file was created. It includes
+missing values, whitespace, corrupted categorical values,
+invalid dates, invalid business formats, and the systematic
+multiplication errors.
+
+Correction required:
+The full table was too long for one Colab display, so the final
+six rows were displayed separately. The saved CSV already
+contained all rows.
+
+Estimated time:
+15 minutes.
+
+============================================================
+PROMPT 8 - Clean users.csv
+============================================================
+
+Full prompt:
+Clean users.csv on a separate copy. Remove outer whitespace,
+repair corrupted emails, categories, cities, countries, names,
+and birth dates, handle missing values without deleting users,
+add missing-value flags, remove the sensitive Password column,
+and retain an auditable record of every decision.
+
+Result:
+All 15,000 users were retained. Corrupted values were restored,
+numeric missing values were imputed with medians, 20 genuinely
+missing birth dates remained blank, three missing-value flags
+were added, and Password was removed.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+30 minutes.
+
+============================================================
+PROMPT 9 - Correct affected order-detail rows
+============================================================
+
+Full prompt:
+Correct only the order-detail rows belonging to the proven
+mismatched orders. Divide Quantity and TotalPrice by 2 for the
+affected 2022 orders and by 3 for the affected 2023 orders.
+Retain UnitPrice and verify every order total after correction.
+
+Result:
+- 1,412 detail rows were corrected in 2022.
+- 766 detail rows were corrected in 2023.
+- Zero order-total mismatches remained.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+15 minutes.
+
+============================================================
+PROMPT 10 - Export and validate the cleaned data
+============================================================
+
+Full prompt:
+Standardize the final data types, save all 14 cleaned CSV files
+without overwriting the originals, create a before-and-after row
+count summary, reload the saved files, and run a complete
+post-cleaning validation.
+
+Result:
+All 14 cleaned files were saved. No rows were removed. All nine
+post-cleaning validation checks returned PASS, including
+duplicates, missing values, numeric validity, text formatting,
+order totals, and foreign-key integrity.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+25 minutes.
+
+============================================================
+PROMPT 11 - Fix the date-checking TypeError
+============================================================
+
+Full prompt:
+A TypeError occurred during the date-quality check. Explain the
+cause and provide the complete corrected code.
+
+Result:
+The Boolean Series was summed before conversion to int. The
+corrected code ran successfully and identified 16 invalid
+non-empty BirthDate values.
+
+Correction required:
+Changed int(boolean_series).sum() to
+int(boolean_series.sum()).
+
+Estimated time:
+10 minutes.
+
+============================================================
+PROMPT 12 - Create the required documentation
+============================================================
+
+Full prompt:
+Create errors_log.txt and cleaning_decisions.txt. Document every
+real runtime error, its cause and correction, and explain all
+judgment-based cleaning decisions.
+
+Result:
+Both documentation files were created and saved in the project
+folder.
+
+Correction required:
+A NameError occurred when only the final print statements for
+cleaning_decisions.txt were executed. The complete cell was then
+run and the file was created successfully. The error was added
+to errors_log.txt.
+
+Estimated time:
+20 minutes.
+
+============================================================
+END OF DATA-CLEANING PHASE
+============================================================
+
+Additional prompts for dashboard planning, construction,
+corrections, mobile layout, and bonus features will be appended
+during the next project phases.
+
+
+============================================================
+DASHBOARD DEVELOPMENT - CODING VIBE TRACK
+============================================================
+
+Tool: ChatGPT-Codex (GPT-5)
+Environment: Google Colab / Python 3.12.13
+Dashboard framework: Streamlit 1.59.2
+Visualization library: Plotly 5.24.1
+
+PROMPT D1 - Dashboard planning and data preparation
+
+Full prompt:
+Review the final-project requirements for the Coding Vibe
+track. Build a professional ArielLeaf management dashboard
+with at least five pages: Home, Executive Overview,
+Customers, Products, and an Exercise 4 analytical page.
+Use the cleaned CSV files and preserve reproducible outputs.
+
+Result:
+The cleaned data was combined into an analytical sales model.
+Eleven dashboard-ready CSV files were exported to app/data.
+Management KPIs, trends, customer analysis, product analysis
+and RFM segmentation were prepared.
+
+Correction required:
+A cross-table reconciliation was retained to ensure that
+dashboard revenue matched cleaned order totals exactly.
+
+Estimated time invested: 55 minutes.
+
+------------------------------------------------------------
+
+PROMPT D2 - Executive Overview page
+
+Full prompt:
+Create an Executive Overview page with at least four KPIs,
+a revenue trend, a category breakdown, a year filter that
+affects the entire page, and at least four management
+insights. Use a professional blue and teal design.
+
+Result:
+The page includes six KPI cards, a monthly revenue chart,
+a category chart, an interactive year filter and four
+management insights.
+
+Correction required:
+KPI and chart text initially appeared too light. Custom KPI
+cards and explicit dark chart fonts were added. Streamlit
+was restarted to load the updated view module.
+
+Estimated time invested: 50 minutes.
+
+------------------------------------------------------------
+
+PROMPT D3 - Customers page
+
+Full prompt:
+Create a Customers page with customer KPIs, demographic and
+geographic breakdowns, relevant filters, a configurable
+Top-N customer table and at least four customer insights.
+Ensure that all labels and numbers are clearly visible.
+
+Result:
+The page includes six customer KPIs, continent and income
+filters, a Top-N slider, age and income charts, a country
+chart, four insights and a leading-customer table.
+
+Correction required:
+Filter labels were initially too light and were changed to
+dark, high-contrast text. Multilingual customer names were
+correctly preserved in their original language.
+
+Estimated time invested: 45 minutes.
+
+------------------------------------------------------------
+
+PROMPT D4 - Products and What-If page
+
+Full prompt:
+Create a Products page with product and category KPIs,
+a time trend with category breakdown, relevant filters,
+a Top-10 product table, four insights and an interactive
+What-If price-change parameter displayed graphically.
+
+Result:
+The page includes six KPIs, category and year filters,
+a category trend, leading-category chart, Top-10 table,
+four insights and a price-change revenue simulation.
+
+Correction required:
+All headings, chart axes and values were explicitly styled
+with dark colors to ensure high contrast.
+
+Validation:
+A 10% price increase changed projected revenue from
+$94.31M to $103.74M and updated the chart and insight.
+
+Estimated time invested: 50 minutes.
+
+------------------------------------------------------------
+
+PROMPT D5 - Exercise 4 RFM analysis
+
+Full prompt:
+Create an Exercise 4 analytical page answering which
+customers management should prioritize. Use RFM customer
+segmentation, at least two visuals, an interactive filter,
+at least three insights and recommended management actions.
+
+Result:
+The page includes four KPIs, a segment filter, three charts,
+four insights and a recommended-action table.
+
+Correction required:
+No runtime correction was required after implementation.
+
+Estimated time invested: 40 minutes.
+
+------------------------------------------------------------
+
+PROMPT D6 - Home and explanation page
+
+Full prompt:
+Create a professional explanation page containing the
+project name, submitter names, dashboard description,
+Coding Vibe track, development tool and exact versions.
+Add button-based navigation to every analytical page and
+do not use tabs.
+
+Result:
+The Home page includes all four submitter names, project
+details, tool versions and working navigation buttons.
+
+Correction required:
+The original Home routing structure differed from the
+expected pattern. It was inspected and replaced using exact
+markers. The Hero HTML was then rewritten as continuous
+HTML to prevent it from appearing as literal code.
+
+Estimated time invested: 55 minutes.
+
+------------------------------------------------------------
+
+PROMPT D7 - Responsive mobile layout
+
+Full prompt:
+Ensure that the Coding Vibe dashboard is responsive and
+remains usable in a narrow mobile-width browser window.
+The mobile view must retain central KPIs, charts and
+navigation between all pages.
+
+Result:
+KPI cards stack vertically, charts adapt to the available
+width, and the sidebar becomes a collapsible navigation
+panel accessible from the upper-left arrow.
+
+Correction required:
+No additional code was required because Streamlit's layout
+and the implemented components responded correctly.
+
+Estimated time invested: 20 minutes.
+
+============================================================
+END OF CORE DASHBOARD DEVELOPMENT
+============================================================
+
+
+------------------------------------------------------------
+
+PROMPT D8 - Data Quality and Cleaning Log page
+
+Full prompt:
+Create a dedicated Data Quality and Cleaning Log page
+that is visually distinct from the business-analysis
+pages. Show every issue detected in the original files,
+the affected-row count, cleaning action, rows before and
+after cleaning, discretionary decisions and validation.
+Place the page separately at the bottom of navigation.
+
+Result:
+A brown and amber audit page was added. It contains five
+summary cards, source-file and issue-type filters, an
+issue chart, the complete 32-row findings table, the
+14-file row summary, four decision notes and 9/9 PASS
+post-cleaning validation results.
+
+Correction required:
+The page was moved to the bottom of the navigation menu
+and separated from analysis pages with a dedicated
+DATA DOCUMENTATION heading. A matching Home-page button
+was also added.
+
+Estimated time invested: 45 minutes.
+
+
+
+============================================================
+COMPLETE AI-ASSISTED CLEANING SCRIPT
+============================================================
+
+The following Python script was generated and refined
+during the AI-assisted Coding Vibe cleaning process.
+It is included verbatim as required by the assignment.
+
+```python
+# -*- coding: utf-8 -*-
+"""ArielLeaf_Data_Cleaning_Group_J
+
+Automatically generated by Colab.
+
+Original file is located at
+    https://colab.research.google.com/drive/1Vi8TwYnMA6myj3o0Gyy8JBLce-RJmG9W
+
+# ArielLeaf – BI Final Project
+
+**Project Group:** J  
+**Submission Track:** Coding Vibe  
+**Data-Cleaning Environment:** Google Colab with Python  
+**Generative AI Tool:** ChatGPT – Codex  
+
+This project is submitted under the Coding Vibe track. Data cleaning was performed with Python in Google Colab. ChatGPT–Codex was used to assist with code development, testing, and documentation. The original source files were preserved without modification, and all cleaning operations were performed on separate copies.
+"""
+
+from google.colab import files
+
+uploaded = files.upload()
+
+from google.colab import drive
+import os
+import zipfile
+import shutil
+
+drive.mount("/content/drive")
+
+project_folder = "/content/drive/MyDrive/FinalProject_Yadgar_323080416"
+original_folder = os.path.join(project_folder, "data", "original")
+
+os.makedirs(original_folder, exist_ok=True)
+
+shutil.copy2("group_J.zip", os.path.join(project_folder, "group_J.zip"))
+
+with zipfile.ZipFile("group_J.zip", "r") as zip_ref:
+    zip_ref.extractall(original_folder)
+
+original_files = sorted(os.listdir(original_folder))
+
+print(f"נמצאו {len(original_files)} קבצים:")
+for file_name in original_files:
+    print(file_name)
+
+print("\nתיקיית הפרויקט נשמרה כאן:")
+print(project_folder)
+
+"""# שלב 1 – בדיקת איכות הנתונים
+
+בשלב זה מתבצעת בדיקה שיטתית של קובצי המקור, ללא שינוי הנתונים.  
+הבדיקה כוללת מבנה קבצים, ערכים חסרים, כפילויות, חריגים, שגיאות עיצוב וסוגי נתונים.
+"""
+
+import pandas as pd
+from pathlib import Path
+
+# איתור כל קובצי ה-CSV המקוריים
+csv_files = sorted(Path(original_folder).glob("*.csv"))
+
+# טעינת הקבצים לזיכרון
+dataframes = {
+    file_path.name: pd.read_csv(file_path, low_memory=False)
+    for file_path in csv_files
+}
+
+# יצירת טבלת סקירה ראשונית
+overview_rows = []
+
+for file_name, df in dataframes.items():
+    overview_rows.append({
+        "File": file_name,
+        "Rows": len(df),
+        "Columns": len(df.columns),
+        "ColumnNames": ", ".join(df.columns)
+    })
+
+overview_df = pd.DataFrame(overview_rows)
+
+print(f"נטענו בהצלחה {len(dataframes)} קובצי CSV")
+display(overview_df)
+
+"""## 1.1 בדיקת ערכים ריקים וחסרים
+
+הבדיקה מחשבת עבור כל עמודה את מספר הערכים החסרים ואת שיעורם מתוך כלל הרשומות בקובץ.  
+גם תאים המכילים רק רווחים נחשבים לערכים חסרים.
+"""
+
+# יצירת תיקייה עבור דוחות הבדיקה
+documentation_folder = os.path.join(project_folder, "documentation")
+os.makedirs(documentation_folder, exist_ok=True)
+
+missing_rows = []
+
+for file_name, df in dataframes.items():
+    for column in df.columns:
+
+        # ערכים שמזוהים כחסרים על ידי pandas
+        missing_mask = df[column].isna()
+
+        # בעמודות טקסט: גם תא ריק או תא המכיל רווחים בלבד נחשב חסר
+        if df[column].dtype == "object":
+            blank_mask = df[column].fillna("").astype(str).str.strip().eq("")
+            missing_mask = missing_mask | blank_mask
+
+        missing_count = int(missing_mask.sum())
+        missing_percentage = round((missing_count / len(df)) * 100, 4)
+
+        missing_rows.append({
+            "File": file_name,
+            "Column": column,
+            "TotalRows": len(df),
+            "MissingCount": missing_count,
+            "MissingPercentage": missing_percentage
+        })
+
+missing_report_df = pd.DataFrame(missing_rows)
+
+# שמירת הדוח המלא – כולל עמודות ללא חוסרים
+missing_report_path = os.path.join(
+    documentation_folder,
+    "missing_values_report.csv"
+)
+missing_report_df.to_csv(missing_report_path, index=False)
+
+# הצגת העמודות שבהן נמצאו חוסרים
+columns_with_missing = missing_report_df[
+    missing_report_df["MissingCount"] > 0
+].reset_index(drop=True)
+
+print(f"נמצאו {len(columns_with_missing)} עמודות המכילות ערכים חסרים")
+display(columns_with_missing)
+
+print("\nהדוח המלא נשמר כאן:")
+print(missing_report_path)
+
+"""## 1.2 בדיקת ערכים כפולים
+
+הבדיקה כוללת כפילויות מלאות של רשומות וכפילויות בעמודות המפתח הראשי.  
+חזרה של מפתח זר, כגון לקוח שביצע מספר הזמנות או מוצר שהופיע במספר הזמנות, אינה נחשבת שגיאה.
+"""
+
+# הגדרת המפתח הראשי הצפוי בכל קובץ
+primary_keys = {
+    "categories.csv": "CategoryID",
+    "dates.csv": "Date",
+    "order_details_2020.csv": "OrderDetailID",
+    "order_details_2021.csv": "OrderDetailID",
+    "order_details_2022.csv": "OrderDetailID",
+    "order_details_2023.csv": "OrderDetailID",
+    "orders_2020.csv": "OrderID",
+    "orders_2021.csv": "OrderID",
+    "orders_2022.csv": "OrderID",
+    "orders_2023.csv": "OrderID",
+    "products.csv": "ProductID",
+    "regions.csv": "regionID",
+    "subcategories.csv": "SubcategoryID",
+    "users.csv": "UserID"
+}
+
+duplicate_rows = []
+
+for file_name, df in dataframes.items():
+    key_column = primary_keys[file_name]
+
+    # מספר הרשומות הכפולות במלואן
+    exact_duplicate_count = int(df.duplicated(keep=False).sum())
+
+    # כפילויות במפתח הראשי – ללא ערכים חסרים
+    key_duplicate_mask = (
+        df[key_column].notna()
+        & df[key_column].duplicated(keep=False)
+    )
+    key_duplicate_count = int(key_duplicate_mask.sum())
+
+    duplicate_rows.append({
+        "File": file_name,
+        "PrimaryKey": key_column,
+        "TotalRows": len(df),
+        "ExactDuplicateRows": exact_duplicate_count,
+        "DuplicatePrimaryKeyRows": key_duplicate_count,
+        "UniquePrimaryKeyValues": int(df[key_column].nunique(dropna=True))
+    })
+
+duplicate_report_df = pd.DataFrame(duplicate_rows)
+
+duplicate_report_path = os.path.join(
+    documentation_folder,
+    "duplicate_values_report.csv"
+)
+duplicate_report_df.to_csv(duplicate_report_path, index=False)
+
+display(duplicate_report_df)
+
+print("\nהדוח נשמר כאן:")
+print(duplicate_report_path)
+
+# איחוד זמני של המפתחות מכל השנים לצורך בדיקת ייחודיות כוללת
+all_order_ids = pd.concat(
+    [
+        dataframes[f"orders_{year}.csv"][["OrderID"]]
+        for year in range(2020, 2024)
+    ],
+    ignore_index=True
+)
+
+all_order_detail_ids = pd.concat(
+    [
+        dataframes[f"order_details_{year}.csv"][["OrderDetailID"]]
+        for year in range(2020, 2024)
+    ],
+    ignore_index=True
+)
+
+cross_file_duplicate_report = pd.DataFrame([
+    {
+        "LogicalTable": "Orders",
+        "TotalRows": len(all_order_ids),
+        "UniqueIDs": all_order_ids["OrderID"].nunique(),
+        "DuplicateIDRows": int(
+            all_order_ids["OrderID"].duplicated(keep=False).sum()
+        )
+    },
+    {
+        "LogicalTable": "OrderDetails",
+        "TotalRows": len(all_order_detail_ids),
+        "UniqueIDs": all_order_detail_ids["OrderDetailID"].nunique(),
+        "DuplicateIDRows": int(
+            all_order_detail_ids["OrderDetailID"].duplicated(keep=False).sum()
+        )
+    }
+])
+
+display(cross_file_duplicate_report)
+
+"""## 1.3 בדיקת ערכים מספריים חריגים
+
+נבדקו מחירים וסכומי הזמנה שאינם חיוביים, כמויות שאינן חיוביות, מלאי שלילי, הכנסה שלילית ומספר ילדים שלילי. בנוסף נבדקה התאמה חשבונאית בין הכמות, מחיר היחידה והמחיר הכולל.
+"""
+
+numeric_outlier_rows = []
+
+def add_numeric_check(file_name, column, rule, affected_count):
+    numeric_outlier_rows.append({
+        "File": file_name,
+        "Column": column,
+        "RuleChecked": rule,
+        "AffectedRows": int(affected_count)
+    })
+
+for file_name, df in dataframes.items():
+
+    # בדיקות בקובצי פרטי ההזמנות
+    if file_name.startswith("order_details_"):
+        add_numeric_check(
+            file_name,
+            "Quantity",
+            "Quantity must be greater than 0",
+            (df["Quantity"] <= 0).sum()
+        )
+
+        add_numeric_check(
+            file_name,
+            "UnitPrice",
+            "UnitPrice must be greater than 0",
+            (df["UnitPrice"] <= 0).sum()
+        )
+
+        add_numeric_check(
+            file_name,
+            "TotalPrice",
+            "TotalPrice must be greater than 0",
+            (df["TotalPrice"] <= 0).sum()
+        )
+
+        expected_total = (
+            df["Quantity"] * df["UnitPrice"]
+        ).round(2)
+
+        add_numeric_check(
+            file_name,
+            "TotalPrice",
+            "TotalPrice must equal Quantity multiplied by UnitPrice",
+            (abs(df["TotalPrice"] - expected_total) > 0.01).sum()
+        )
+
+    # בדיקות בקובצי ההזמנות
+    elif file_name.startswith("orders_"):
+        add_numeric_check(
+            file_name,
+            "TotalAmount",
+            "TotalAmount must be greater than 0",
+            (df["TotalAmount"] <= 0).sum()
+        )
+
+    # בדיקות בקובץ המוצרים
+    elif file_name == "products.csv":
+        add_numeric_check(
+            file_name,
+            "Price",
+            "Price must be greater than 0",
+            (df["Price"] <= 0).sum()
+        )
+
+        add_numeric_check(
+            file_name,
+            "StockQuantity",
+            "StockQuantity must not be negative",
+            (df["StockQuantity"] < 0).sum()
+        )
+
+    # בדיקות בקובץ הלקוחות
+    elif file_name == "users.csv":
+        add_numeric_check(
+            file_name,
+            "AnnualIncome",
+            "AnnualIncome must not be negative",
+            (df["AnnualIncome"].dropna() < 0).sum()
+        )
+
+        add_numeric_check(
+            file_name,
+            "TotalChildren",
+            "TotalChildren must not be negative",
+            (df["TotalChildren"].dropna() < 0).sum()
+        )
+
+numeric_outliers_df = pd.DataFrame(numeric_outlier_rows)
+
+numeric_outliers_path = os.path.join(
+    documentation_folder,
+    "numeric_outliers_report.csv"
+)
+numeric_outliers_df.to_csv(numeric_outliers_path, index=False)
+
+display(numeric_outliers_df)
+
+print("\nבדיקות שבהן נמצאו רשומות חריגות:")
+display(
+    numeric_outliers_df[
+        numeric_outliers_df["AffectedRows"] > 0
+    ].reset_index(drop=True)
+)
+
+print("\nהדוח נשמר כאן:")
+print(numeric_outliers_path)
+
+"""### 1.3.1 בדיקת עקביות בין סכום ההזמנה לפרטי ההזמנה
+
+כבדיקה עסקית משלימה, נבדקה התאמה בין `TotalAmount` בטבלת ההזמנות לבין סכום `TotalPrice` של כל פריטי אותה הזמנה. סטייה הגדולה מאגורה אחת נחשבת אי־התאמה.
+"""
+
+order_total_summary = []
+order_total_mismatches = []
+
+for year in range(2020, 2024):
+
+    orders_df = dataframes[f"orders_{year}.csv"].copy()
+    details_df = dataframes[f"order_details_{year}.csv"].copy()
+
+    # חישוב סכום הפריטים לכל הזמנה
+    calculated_totals = (
+        details_df
+        .groupby("OrderID", as_index=False)["TotalPrice"]
+        .sum()
+        .rename(columns={"TotalPrice": "CalculatedOrderTotal"})
+    )
+
+    # חיבור הסכום המחושב לטבלת ההזמנות
+    comparison_df = orders_df.merge(
+        calculated_totals,
+        on="OrderID",
+        how="left",
+        validate="one_to_one"
+    )
+
+    # חישוב ההפרש
+    comparison_df["Difference"] = (
+        comparison_df["TotalAmount"]
+        - comparison_df["CalculatedOrderTotal"]
+    ).round(2)
+
+    mismatch_mask = comparison_df["Difference"].abs() > 0.01
+    year_mismatches = comparison_df[mismatch_mask].copy()
+    year_mismatches["YearFile"] = year
+
+    order_total_summary.append({
+        "Year": year,
+        "TotalOrders": len(comparison_df),
+        "MismatchedOrders": int(mismatch_mask.sum()),
+        "MismatchPercentage": round(
+            mismatch_mask.mean() * 100,
+            4
+        )
+    })
+
+    order_total_mismatches.append(year_mismatches)
+
+order_total_summary_df = pd.DataFrame(order_total_summary)
+
+all_order_total_mismatches_df = pd.concat(
+    order_total_mismatches,
+    ignore_index=True
+)
+
+# שמירת דוחות הבדיקה
+order_total_summary_df.to_csv(
+    os.path.join(
+        documentation_folder,
+        "order_total_consistency_summary.csv"
+    ),
+    index=False
+)
+
+all_order_total_mismatches_df.to_csv(
+    os.path.join(
+        documentation_folder,
+        "order_total_mismatches.csv"
+    ),
+    index=False
+)
+
+display(order_total_summary_df)
+
+print(
+    "\nסה״כ הזמנות שבהן נמצאה אי־התאמה:",
+    len(all_order_total_mismatches_df)
+)
+
+display(all_order_total_mismatches_df.head(10))
+
+"""### 1.3.2 בדיקת תאריכים חריגים ולא תקינים
+
+נבדקו תאריכים שלא ניתן להמיר לפורמט תאריך, תאריכים עתידיים וחוסר התאמה בין שנת ההזמנה לבין הקובץ השנתי שבו היא נמצאת.
+"""
+
+date_check_rows = []
+today = pd.Timestamp.today().normalize()
+
+# בדיקת טבלת התאריכים
+dates_df = dataframes["dates.csv"]
+
+parsed_dates = pd.to_datetime(
+    dates_df["Date"],
+    errors="coerce"
+)
+
+date_check_rows.append({
+    "File": "dates.csv",
+    "Column": "Date",
+    "RuleChecked": "Invalid date format",
+    "AffectedRows": int(
+        (
+            dates_df["Date"].notna()
+            & parsed_dates.isna()
+        ).sum()
+    )
+})
+
+date_check_rows.append({
+    "File": "dates.csv",
+    "Column": "Date",
+    "RuleChecked": "Future date",
+    "AffectedRows": int(
+        (parsed_dates > today).sum()
+    )
+})
+
+# בדיקת תאריכי ההזמנות בכל אחד מהקבצים השנתיים
+for year in range(2020, 2024):
+
+    file_name = f"orders_{year}.csv"
+    df = dataframes[file_name]
+
+    parsed_order_dates = pd.to_datetime(
+        df["OrderDate"],
+        errors="coerce"
+    )
+
+    date_check_rows.append({
+        "File": file_name,
+        "Column": "OrderDate",
+        "RuleChecked": "Invalid date format",
+        "AffectedRows": int(
+            (
+                df["OrderDate"].notna()
+                & parsed_order_dates.isna()
+            ).sum()
+        )
+    })
+
+    date_check_rows.append({
+        "File": file_name,
+        "Column": "OrderDate",
+        "RuleChecked": "Future date",
+        "AffectedRows": int(
+            (parsed_order_dates > today).sum()
+        )
+    })
+
+    date_check_rows.append({
+        "File": file_name,
+        "Column": "OrderDate",
+        "RuleChecked": f"Date must belong to year {year}",
+        "AffectedRows": int(
+            (
+                parsed_order_dates.notna()
+                & (parsed_order_dates.dt.year != year)
+            ).sum()
+        )
+    })
+
+# בדיקת תאריכי הלידה בקובץ הלקוחות
+users_df = dataframes["users.csv"]
+
+parsed_birth_dates = pd.to_datetime(
+    users_df["BirthDate"],
+    errors="coerce"
+)
+
+date_check_rows.append({
+    "File": "users.csv",
+    "Column": "BirthDate",
+    "RuleChecked": "Invalid non-empty date format",
+    "AffectedRows": int(
+        (
+            users_df["BirthDate"].notna()
+            & parsed_birth_dates.isna()
+        ).sum()
+    )
+})
+
+date_check_rows.append({
+    "File": "users.csv",
+    "Column": "BirthDate",
+    "RuleChecked": "Future birth date",
+    "AffectedRows": int(
+        (parsed_birth_dates > today).sum()
+    )
+})
+
+# יצירת דוח מסכם
+date_checks_df = pd.DataFrame(date_check_rows)
+
+# שמירת הדוח בתיקיית התיעוד
+date_checks_path = os.path.join(
+    documentation_folder,
+    "date_quality_report.csv"
+)
+
+date_checks_df.to_csv(
+    date_checks_path,
+    index=False
+)
+
+# הצגת כל הבדיקות
+display(date_checks_df)
+
+# הצגת הבדיקות שבהן נמצאו בעיות בלבד
+print("\nבדיקות שבהן נמצאו בעיות:")
+
+display(
+    date_checks_df[
+        date_checks_df["AffectedRows"] > 0
+    ].reset_index(drop=True)
+)
+
+print("\nהדוח נשמר כאן:")
+print(date_checks_path)
+
+"""## 1.4 בדיקת שגיאות עיצוב בטקסט
+
+נבדקו רווחים מיותרים בתחילת ובסוף ערכי טקסט. רווחים פנימיים בין מילים אינם נחשבים שגיאה.
+"""
+
+whitespace_rows = []
+
+for file_name, df in dataframes.items():
+
+    text_columns = df.select_dtypes(
+        include=["object", "string"]
+    ).columns
+
+    for column in text_columns:
+
+        non_missing_values = df[column].dropna().astype(str)
+
+        whitespace_mask = (
+            non_missing_values
+            != non_missing_values.str.strip()
+        )
+
+        whitespace_rows.append({
+            "File": file_name,
+            "Column": column,
+            "RowsWithOuterWhitespace": int(
+                whitespace_mask.sum()
+            )
+        })
+
+whitespace_report_df = pd.DataFrame(whitespace_rows)
+
+whitespace_report_path = os.path.join(
+    documentation_folder,
+    "whitespace_quality_report.csv"
+)
+
+whitespace_report_df.to_csv(
+    whitespace_report_path,
+    index=False
+)
+
+print("עמודות שבהן נמצאו רווחים מיותרים:")
+
+display(
+    whitespace_report_df[
+        whitespace_report_df[
+            "RowsWithOuterWhitespace"
+        ] > 0
+    ].reset_index(drop=True)
+)
+
+print("\nהדוח המלא נשמר כאן:")
+print(whitespace_report_path)
+
+"""### 1.4.1 בדיקת חוסר אחידות באותיות גדולות וקטנות
+
+נבדק האם אותו ערך טקסטואלי מופיע במספר צורות הנבדלות רק בשימוש באותיות גדולות או קטנות.
+"""
+
+case_issue_rows = []
+
+for file_name, df in dataframes.items():
+
+    text_columns = df.select_dtypes(
+        include=["object", "string"]
+    ).columns
+
+    for column in text_columns:
+
+        values = df[column].dropna().astype(str).str.strip()
+
+        case_check_df = pd.DataFrame({
+            "OriginalValue": values,
+            "NormalizedValue": values.str.casefold()
+        })
+
+        grouped_values = (
+            case_check_df
+            .groupby("NormalizedValue")
+            .agg(
+                VariantCount=(
+                    "OriginalValue",
+                    "nunique"
+                ),
+                Variants=(
+                    "OriginalValue",
+                    lambda x: " | ".join(
+                        sorted(x.unique())
+                    )
+                ),
+                AffectedRows=(
+                    "OriginalValue",
+                    "size"
+                )
+            )
+            .reset_index()
+        )
+
+        inconsistent_groups = grouped_values[
+            grouped_values["VariantCount"] > 1
+        ]
+
+        for _, row in inconsistent_groups.iterrows():
+            case_issue_rows.append({
+                "File": file_name,
+                "Column": column,
+                "NormalizedValue": row["NormalizedValue"],
+                "Variants": row["Variants"],
+                "AffectedRows": int(row["AffectedRows"])
+            })
+
+case_issues_df = pd.DataFrame(
+    case_issue_rows,
+    columns=[
+        "File",
+        "Column",
+        "NormalizedValue",
+        "Variants",
+        "AffectedRows"
+    ]
+)
+
+case_issues_path = os.path.join(
+    documentation_folder,
+    "case_consistency_report.csv"
+)
+
+case_issues_df.to_csv(
+    case_issues_path,
+    index=False
+)
+
+if case_issues_df.empty:
+    print(
+        "לא נמצאו ערכים הנבדלים זה מזה "
+        "רק באותיות גדולות או קטנות."
+    )
+else:
+    print("נמצאו חוסר אחידויות בכתיבה:")
+    display(case_issues_df)
+
+print("\nהדוח נשמר כאן:")
+print(case_issues_path)
+
+"""### 1.4.2 בדיקת ערכים משובשים בעמודות קטגוריאליות
+
+בעמודות בעלות רשימת ערכים עסקית מוגדרת, נבדק האם קיימים ערכים שאינם שייכים לרשימה המותרת. הבדיקה מאפשרת להבחין בין שונות לגיטימית בשמות ובכתובות לבין שיבוש ודאי בערכים קטגוריאליים.
+"""
+
+allowed_categorical_values = {
+    "MaritalStatus": [
+        "Single",
+        "Married",
+        "Divorced"
+    ],
+    "Gender": [
+        "Male",
+        "Female"
+    ],
+    "EducationLevel": [
+        "High School",
+        "Associate's Degree",
+        "Bachelor's Degree",
+        "Master's Degree",
+        "PhD"
+    ],
+    "Occupation": [
+        "Engineer",
+        "Lawyer",
+        "Artist",
+        "Salesperson",
+        "Accountant",
+        "Scientist",
+        "Nurse",
+        "Teacher",
+        "Manager",
+        "Developer"
+    ],
+    "CarOwner": [
+        "Yes",
+        "No"
+    ]
+}
+
+categorical_issue_rows = []
+
+users_df = dataframes["users.csv"]
+
+for column, allowed_values in allowed_categorical_values.items():
+
+    non_missing_values = users_df[column].dropna().astype(str)
+
+    invalid_values = non_missing_values[
+        ~non_missing_values.isin(allowed_values)
+    ]
+
+    for invalid_value, count in invalid_values.value_counts().items():
+
+        suggested_correction = None
+
+        # ניסיון לזהות ערך תקין שנמצא בתחילת הטקסט המשובש
+        for allowed_value in sorted(
+            allowed_values,
+            key=len,
+            reverse=True
+        ):
+            if (
+                invalid_value == allowed_value
+                or invalid_value.startswith(allowed_value + " ")
+            ):
+                suggested_correction = allowed_value
+                break
+
+        categorical_issue_rows.append({
+            "File": "users.csv",
+            "Column": column,
+            "InvalidValue": invalid_value,
+            "AffectedRows": int(count),
+            "SuggestedCorrection": suggested_correction
+        })
+
+categorical_issues_df = pd.DataFrame(
+    categorical_issue_rows,
+    columns=[
+        "File",
+        "Column",
+        "InvalidValue",
+        "AffectedRows",
+        "SuggestedCorrection"
+    ]
+)
+
+categorical_issues_path = os.path.join(
+    documentation_folder,
+    "categorical_values_report.csv"
+)
+
+categorical_issues_df.to_csv(
+    categorical_issues_path,
+    index=False
+)
+
+categorical_summary_df = (
+    categorical_issues_df
+    .groupby(["File", "Column"], as_index=False)
+    ["AffectedRows"]
+    .sum()
+)
+
+print("סיכום ערכים קטגוריאליים משובשים:")
+display(categorical_summary_df)
+
+print("\nדוגמאות לערכים ולתיקון המוצע:")
+display(categorical_issues_df.head(20))
+
+print("\nהדוח נשמר כאן:")
+print(categorical_issues_path)
+
+"""## 1.5 בדיקת סוגי נתונים
+
+נבדק סוג הנתונים שנקלט בכל עמודה, וכן האם ערכים בעמודות מספריות ובתאריכים ניתנים להמרה לסוג הנתונים העסקי המצופה.
+"""
+
+type_check_rows = []
+
+# הגדרת עמודות שאמורות להיות מספריות
+expected_numeric_columns = {
+    "categories.csv": ["CategoryID"],
+    "dates.csv": ["Month", "Year"],
+    "products.csv": [
+        "ProductID",
+        "Price",
+        "StockQuantity"
+    ],
+    "subcategories.csv": [
+        "SubcategoryID",
+        "CategoryID"
+    ],
+    "users.csv": [
+        "AnnualIncome",
+        "TotalChildren"
+    ]
+}
+
+for year in range(2020, 2024):
+    expected_numeric_columns[f"orders_{year}.csv"] = [
+        "TotalAmount"
+    ]
+
+    expected_numeric_columns[
+        f"order_details_{year}.csv"
+    ] = [
+        "ProductID",
+        "Quantity",
+        "UnitPrice",
+        "TotalPrice"
+    ]
+
+# בדיקת עמודות מספריות
+for file_name, columns in expected_numeric_columns.items():
+
+    df = dataframes[file_name]
+
+    for column in columns:
+
+        converted_values = pd.to_numeric(
+            df[column],
+            errors="coerce"
+        )
+
+        invalid_non_empty = (
+            df[column].notna()
+            & converted_values.isna()
+        )
+
+        type_check_rows.append({
+            "File": file_name,
+            "Column": column,
+            "CurrentType": str(df[column].dtype),
+            "ExpectedType": "Numeric",
+            "InvalidNonEmptyValues": int(
+                invalid_non_empty.sum()
+            ),
+            "MissingValues": int(
+                df[column].isna().sum()
+            )
+        })
+
+# הגדרת עמודות שאמורות להיות תאריכים
+expected_date_columns = {
+    "dates.csv": ["Date"],
+    "users.csv": ["BirthDate"]
+}
+
+for year in range(2020, 2024):
+    expected_date_columns[f"orders_{year}.csv"] = [
+        "OrderDate"
+    ]
+
+# בדיקת עמודות תאריך
+for file_name, columns in expected_date_columns.items():
+
+    df = dataframes[file_name]
+
+    for column in columns:
+
+        converted_dates = pd.to_datetime(
+            df[column],
+            errors="coerce"
+        )
+
+        invalid_non_empty = (
+            df[column].notna()
+            & converted_dates.isna()
+        )
+
+        type_check_rows.append({
+            "File": file_name,
+            "Column": column,
+            "CurrentType": str(df[column].dtype),
+            "ExpectedType": "Date",
+            "InvalidNonEmptyValues": int(
+                invalid_non_empty.sum()
+            ),
+            "MissingValues": int(
+                df[column].isna().sum()
+            )
+        })
+
+type_checks_df = pd.DataFrame(type_check_rows)
+
+type_checks_path = os.path.join(
+    documentation_folder,
+    "data_types_report.csv"
+)
+
+type_checks_df.to_csv(
+    type_checks_path,
+    index=False
+)
+
+display(type_checks_df)
+
+print("\nעמודות שבהן נמצאו ערכים שאינם ניתנים להמרה:")
+
+display(
+    type_checks_df[
+        type_checks_df[
+            "InvalidNonEmptyValues"
+        ] > 0
+    ].reset_index(drop=True)
+)
+
+print("\nהדוח נשמר כאן:")
+print(type_checks_path)
+
+"""### 1.4.3 בדיקות פורמט עסקיות נוספות
+
+נבדקו תבנית מזהה הלקוח, סיומת כתובת המייל, התאמת ערי ומדינות הלקוחות לטבלת האזורים, והתאמת שם הלקוח לשם המופיע בכתובת המייל. ערכים חסרים אינם נספרים כאן משום שתועדו בנפרד.
+"""
+
+users_df = dataframes["users.csv"]
+regions_df = dataframes["regions.csv"]
+
+business_format_rows = []
+
+# בדיקת תבנית UserID
+invalid_user_id = (
+    users_df["UserID"].notna()
+    & ~users_df["UserID"].astype(str).str.fullmatch(
+        r"USR\d{5}"
+    )
+)
+
+business_format_rows.append({
+    "File": "users.csv",
+    "Column": "UserID",
+    "RuleChecked": "Must match USR followed by 5 digits",
+    "AffectedRows": int(invalid_user_id.sum())
+})
+
+# בדיקת סיומת המייל
+invalid_email = (
+    users_df["Email"].notna()
+    & ~users_df["Email"].astype(str).str.endswith(
+        "@mycompany.com"
+    )
+)
+
+business_format_rows.append({
+    "File": "users.csv",
+    "Column": "Email",
+    "RuleChecked": "Must end with @mycompany.com",
+    "AffectedRows": int(invalid_email.sum())
+})
+
+# רשימות הערים והמדינות התקינות מטבלת האזורים
+valid_cities = set(
+    regions_df["City"].dropna().astype(str).str.strip()
+)
+
+valid_countries = set(
+    regions_df["Country"].dropna().astype(str).str.strip()
+)
+
+invalid_city = (
+    users_df["City"].notna()
+    & ~users_df["City"].astype(str).str.strip().isin(
+        valid_cities
+    )
+)
+
+invalid_country = (
+    users_df["Country"].notna()
+    & ~users_df["Country"].astype(str).str.strip().isin(
+        valid_countries
+    )
+)
+
+business_format_rows.append({
+    "File": "users.csv",
+    "Column": "City",
+    "RuleChecked": "Must exist in regions.csv",
+    "AffectedRows": int(invalid_city.sum())
+})
+
+business_format_rows.append({
+    "File": "users.csv",
+    "Column": "Country",
+    "RuleChecked": "Must exist in regions.csv",
+    "AffectedRows": int(invalid_country.sum())
+})
+
+# בדיקת התאמת שם פרטי ושם משפחה למייל
+valid_name_email_rows = (
+    users_df["FirstName"].notna()
+    & users_df["LastName"].notna()
+    & users_df["Email"].notna()
+    & users_df["Email"].astype(str).str.endswith(
+        "@mycompany.com"
+    )
+)
+
+name_check_df = users_df.loc[
+    valid_name_email_rows,
+    ["FirstName", "LastName", "Email"]
+].copy()
+
+name_check_df["EmailName"] = (
+    name_check_df["Email"]
+    .str.replace(
+        "@mycompany.com",
+        "",
+        regex=False
+    )
+    .str.replace(
+        r"\d+$",
+        "",
+        regex=True
+    )
+)
+
+name_check_df["ExpectedEmailName"] = (
+    name_check_df["FirstName"].str.strip().str.lower()
+    + "."
+    + name_check_df["LastName"].str.strip().str.lower()
+)
+
+name_mismatch_count = int(
+    (
+        name_check_df["EmailName"]
+        != name_check_df["ExpectedEmailName"]
+    ).sum()
+)
+
+business_format_rows.append({
+    "File": "users.csv",
+    "Column": "FirstName / LastName",
+    "RuleChecked": "Names must correspond to email name",
+    "AffectedRows": name_mismatch_count
+})
+
+business_format_df = pd.DataFrame(
+    business_format_rows
+)
+
+business_format_path = os.path.join(
+    documentation_folder,
+    "business_format_report.csv"
+)
+
+business_format_df.to_csv(
+    business_format_path,
+    index=False
+)
+
+display(business_format_df)
+
+print("\nהדוח נשמר כאן:")
+print(business_format_path)
+
+"""## 1.6 טבלת ממצאים והחלטות ניקוי
+
+הטבלה מרכזת את בעיות האיכות שנמצאו, מספר הרשומות המושפעות והפעולה המתוכננת. פעולות התיקון יתבצעו בשלב הבא על עותקים חדשים בלבד.
+"""
+
+findings_rows = []
+
+# פעולות מתוכננות לטיפול בערכים חסרים
+missing_actions = {
+    "FirstName": "Recover from email when possible; otherwise set to Unknown",
+    "LastName": "Recover from email when possible; otherwise set to Unknown",
+    "Email": "Set missing values to Unknown",
+    "Password": "Remove column because it is irrelevant and sensitive",
+    "Address": "Set missing values to Unknown",
+    "City": "Set missing values to Unknown",
+    "Country": "Set missing values to Unknown",
+    "PhoneNumber": "Set missing values to Unknown",
+    "BirthDate": "Keep as missing; do not invent a birth date",
+    "MaritalStatus": "Replace missing values with Unknown",
+    "Gender": "Replace missing values with Unknown",
+    "AnnualIncome": "Impute with median and add missing-value flag",
+    "TotalChildren": "Impute with median and add missing-value flag",
+    "EducationLevel": "Replace missing values with Unknown",
+    "Occupation": "Replace missing values with Unknown",
+    "CarOwner": "Replace missing values with Unknown"
+}
+
+# ממצאי חוסרים
+for _, row in columns_with_missing.iterrows():
+    findings_rows.append({
+        "File": row["File"],
+        "Column": row["Column"],
+        "IssueType": "Missing values",
+        "AffectedRows": int(row["MissingCount"]),
+        "PlannedAction": missing_actions[row["Column"]]
+    })
+
+# ממצאי רווחים מיותרים
+for _, row in whitespace_report_df[
+    whitespace_report_df["RowsWithOuterWhitespace"] > 0
+].iterrows():
+    findings_rows.append({
+        "File": row["File"],
+        "Column": row["Column"],
+        "IssueType": "Leading or trailing whitespace",
+        "AffectedRows": int(
+            row["RowsWithOuterWhitespace"]
+        ),
+        "PlannedAction": "Remove outer whitespace using strip()"
+    })
+
+# ממצאי ערכים קטגוריאליים משובשים
+for _, row in categorical_summary_df.iterrows():
+    findings_rows.append({
+        "File": row["File"],
+        "Column": row["Column"],
+        "IssueType": "Corrupted categorical value",
+        "AffectedRows": int(row["AffectedRows"]),
+        "PlannedAction": (
+            "Restore the valid category detected "
+            "at the beginning of the value"
+        )
+    })
+
+# תאריכי לידה משובשים
+findings_rows.append({
+    "File": "users.csv",
+    "Column": "BirthDate",
+    "IssueType": "Invalid date format",
+    "AffectedRows": 16,
+    "PlannedAction": (
+        "Extract the valid YYYY-MM-DD date "
+        "from the beginning of the value"
+    )
+})
+
+# פורמטים עסקיים
+business_actions = {
+    "Email": (
+        "Remove corrupted suffix appearing "
+        "after @mycompany.com"
+    ),
+    "City": (
+        "Match the corrupted value to a valid city "
+        "from regions.csv"
+    ),
+    "Country": (
+        "Match the corrupted value to a valid country "
+        "from regions.csv"
+    ),
+    "FirstName / LastName": (
+        "Recover the correct names from the valid email address"
+    )
+}
+
+for _, row in business_format_df[
+    business_format_df["AffectedRows"] > 0
+].iterrows():
+    findings_rows.append({
+        "File": row["File"],
+        "Column": row["Column"],
+        "IssueType": "Invalid business format",
+        "AffectedRows": int(row["AffectedRows"]),
+        "PlannedAction": business_actions[row["Column"]]
+    })
+
+# אי-התאמות בין הזמנות לפרטי הזמנות
+for year, factor in [(2022, 2), (2023, 3)]:
+
+    mismatch_ids = set(
+        all_order_total_mismatches_df.loc[
+            all_order_total_mismatches_df["YearFile"] == year,
+            "OrderID"
+        ]
+    )
+
+    affected_detail_rows = int(
+        dataframes[f"order_details_{year}.csv"][
+            "OrderID"
+        ].isin(mismatch_ids).sum()
+    )
+
+    findings_rows.append({
+        "File": f"orders_{year}.csv",
+        "Column": "TotalAmount",
+        "IssueType": "Cross-table total inconsistency",
+        "AffectedRows": len(mismatch_ids),
+        "PlannedAction": (
+            "Keep TotalAmount as reference; "
+            f"correct inflated detail quantities by factor {factor}"
+        )
+    })
+
+    findings_rows.append({
+        "File": f"order_details_{year}.csv",
+        "Column": "Quantity / TotalPrice",
+        "IssueType": "Systematic multiplication error",
+        "AffectedRows": affected_detail_rows,
+        "PlannedAction": (
+            f"Divide Quantity and TotalPrice by {factor}; "
+            "retain UnitPrice"
+        )
+    })
+
+findings_df = pd.DataFrame(findings_rows)
+
+findings_path = os.path.join(
+    documentation_folder,
+    "data_quality_findings.csv"
+)
+
+findings_df.to_csv(
+    findings_path,
+    index=False
+)
+
+print(f"נוצרו {len(findings_df)} שורות ממצאים")
+display(findings_df)
+
+print("\nטבלת הממצאים נשמרה כאן:")
+print(findings_path)
+
+"""# שלב 2 – ניקוי הנתונים
+
+## 2.1 ניקוי users.csv
+
+הניקוי מתבצע על עותק של הנתונים. קובץ המקור נשמר ללא שינוי. הפעולות כוללות הסרת רווחים, שחזור ערכים משובשים, טיפול בחוסרים, תיקון תאריכים והסרת עמודת הסיסמה.
+"""
+
+import re
+import numpy as np
+
+# יצירת עותקים נפרדים לניקוי
+cleaned_dataframes = {
+    file_name: df.copy(deep=True)
+    for file_name, df in dataframes.items()
+}
+
+users_clean = cleaned_dataframes["users.csv"]
+
+# -------------------------------------------------
+# 1. הסרת רווחים בתחילת ובסוף כל עמודות הטקסט
+# -------------------------------------------------
+text_columns = users_clean.select_dtypes(
+    include=["object", "string"]
+).columns
+
+for column in text_columns:
+    users_clean[column] = (
+        users_clean[column]
+        .astype("string")
+        .str.strip()
+    )
+
+# -------------------------------------------------
+# 2. תיקון כתובות מייל בעלות סיומת משובשת
+# -------------------------------------------------
+email_mask = users_clean["Email"].notna()
+
+extracted_emails = (
+    users_clean.loc[email_mask, "Email"]
+    .str.extract(
+        r"^(.+@mycompany\.com)",
+        expand=False
+    )
+)
+
+users_clean.loc[email_mask, "Email"] = (
+    extracted_emails.fillna(
+        users_clean.loc[email_mask, "Email"]
+    )
+)
+
+# -------------------------------------------------
+# 3. פונקציה לשחזור ערך מרשימת ערכים תקינים
+# -------------------------------------------------
+def recover_allowed_value(value, allowed_values):
+
+    if pd.isna(value):
+        return value
+
+    value = str(value).strip()
+
+    for allowed_value in sorted(
+        allowed_values,
+        key=len,
+        reverse=True
+    ):
+        if value == allowed_value:
+            return allowed_value
+
+        if value.startswith(allowed_value + " "):
+            return allowed_value
+
+    return value
+
+# תיקון ערכים קטגוריאליים
+for column, allowed_values in allowed_categorical_values.items():
+    users_clean[column] = users_clean[column].apply(
+        lambda value: recover_allowed_value(
+            value,
+            allowed_values
+        )
+    )
+
+# תיקון ערים ומדינות לפי טבלת האזורים
+users_clean["City"] = users_clean["City"].apply(
+    lambda value: recover_allowed_value(
+        value,
+        valid_cities
+    )
+)
+
+users_clean["Country"] = users_clean["Country"].apply(
+    lambda value: recover_allowed_value(
+        value,
+        valid_countries
+    )
+)
+
+# -------------------------------------------------
+# 4. שחזור שמות מתוך כתובת המייל
+# -------------------------------------------------
+def extract_name_parts_from_email(email):
+
+    if pd.isna(email):
+        return None
+
+    email = str(email)
+
+    if not email.endswith("@mycompany.com"):
+        return None
+
+    email_name = email.removesuffix(
+        "@mycompany.com"
+    )
+
+    # הסרת המספרים שבסוף כתובת המייל
+    email_name = re.sub(r"\d+$", "", email_name)
+
+    if "." not in email_name:
+        return None
+
+    first_name, last_name = email_name.rsplit(".", 1)
+
+    return first_name, last_name
+
+def recover_name(current_value, email, name_position):
+
+    name_parts = extract_name_parts_from_email(email)
+
+    if name_parts is None:
+        if pd.isna(current_value):
+            return "Unknown"
+        return str(current_value).strip()
+
+    email_name = name_parts[name_position]
+
+    if pd.isna(current_value):
+        return email_name.title()
+
+    current_value = str(current_value).strip()
+
+    # אם השם הקיים תקין – שומרים על האיות המקורי
+    if current_value.casefold() == email_name.casefold():
+        return current_value
+
+    # אם נוספה סיומת משובשת – מסירים אותה
+    if current_value.casefold().startswith(
+        email_name.casefold() + " "
+    ):
+        return current_value[:len(email_name)]
+
+    # אם הערך הוחלף לחלוטין – משחזרים מהמייל
+    return email_name.title()
+
+users_clean["FirstName"] = users_clean.apply(
+    lambda row: recover_name(
+        row["FirstName"],
+        row["Email"],
+        0
+    ),
+    axis=1
+)
+
+users_clean["LastName"] = users_clean.apply(
+    lambda row: recover_name(
+        row["LastName"],
+        row["Email"],
+        1
+    ),
+    axis=1
+)
+
+# -------------------------------------------------
+# 5. תיקון תאריכי הלידה המשובשים
+# -------------------------------------------------
+users_clean["BirthDate"] = (
+    users_clean["BirthDate"]
+    .astype("string")
+    .str.extract(
+        r"(\d{4}-\d{2}-\d{2})",
+        expand=False
+    )
+)
+
+users_clean["BirthDate"] = pd.to_datetime(
+    users_clean["BirthDate"],
+    errors="coerce"
+)
+
+# סימון לקוחות שתאריך הלידה שלהם חסר
+users_clean["BirthDateWasMissing"] = (
+    users_clean["BirthDate"].isna()
+)
+
+# -------------------------------------------------
+# 6. טיפול בחוסרים מספריים
+# -------------------------------------------------
+users_clean["AnnualIncomeWasMissing"] = (
+    users_clean["AnnualIncome"].isna()
+)
+
+annual_income_median = (
+    users_clean["AnnualIncome"].median()
+)
+
+users_clean["AnnualIncome"] = (
+    users_clean["AnnualIncome"]
+    .fillna(annual_income_median)
+)
+
+users_clean["TotalChildrenWasMissing"] = (
+    users_clean["TotalChildren"].isna()
+)
+
+total_children_median = (
+    users_clean["TotalChildren"].median()
+)
+
+users_clean["TotalChildren"] = (
+    users_clean["TotalChildren"]
+    .fillna(total_children_median)
+    .round()
+    .astype("Int64")
+)
+
+# -------------------------------------------------
+# 7. טיפול בחוסרים טקסטואליים
+# -------------------------------------------------
+text_columns_to_fill = [
+    "FirstName",
+    "LastName",
+    "Email",
+    "Address",
+    "City",
+    "Country",
+    "PhoneNumber",
+    "MaritalStatus",
+    "Gender",
+    "EducationLevel",
+    "Occupation",
+    "CarOwner"
+]
+
+for column in text_columns_to_fill:
+    users_clean[column] = (
+        users_clean[column]
+        .fillna("Unknown")
+    )
+
+# -------------------------------------------------
+# 8. הסרת עמודת הסיסמה
+# -------------------------------------------------
+users_clean = users_clean.drop(
+    columns=["Password"]
+)
+
+cleaned_dataframes["users.csv"] = users_clean
+
+# -------------------------------------------------
+# 9. בדיקת תוצאת הניקוי
+# -------------------------------------------------
+print("מספר השורות לאחר הניקוי:", len(users_clean))
+print("מספר העמודות לאחר הניקוי:", len(users_clean.columns))
+print("האם עמודת Password הוסרה:", "Password" not in users_clean.columns)
+
+remaining_missing = (
+    users_clean.isna().sum()
+)
+
+print("\nערכים חסרים שנותרו:")
+display(
+    remaining_missing[
+        remaining_missing > 0
+    ].to_frame("MissingCount")
+)
+
+print("\nחציון הכנסה ששימש להשלמה:")
+print(annual_income_median)
+
+print("\nחציון מספר ילדים ששימש להשלמה:")
+print(total_children_median)
+
+"""## 2.2 תיקון השיבוש בפרטי ההזמנות
+
+בבדיקת העקביות נמצא כי בכמה תקופות הכמויות והמחירים הכוללים הוכפלו באופן שיטתי: פי 2 בשנת 2022 ופי 3 בשנת 2023. התיקון חל רק על שורות השייכות להזמנות שבהן נמצאה אי־התאמה. מחיר היחידה נשמר ללא שינוי.
+"""
+
+order_detail_cleaning_summary = []
+
+for year, correction_factor in [
+    (2022, 2),
+    (2023, 3)
+]:
+
+    details_file = f"order_details_{year}.csv"
+    orders_file = f"orders_{year}.csv"
+
+    details_clean = cleaned_dataframes[
+        details_file
+    ].copy()
+
+    orders_clean = cleaned_dataframes[
+        orders_file
+    ].copy()
+
+    # מזהי ההזמנות שבהן נמצאה אי-התאמה
+    affected_order_ids = set(
+        all_order_total_mismatches_df.loc[
+            all_order_total_mismatches_df[
+                "YearFile"
+            ] == year,
+            "OrderID"
+        ]
+    )
+
+    affected_mask = details_clean[
+        "OrderID"
+    ].isin(affected_order_ids)
+
+    affected_rows_before = int(
+        affected_mask.sum()
+    )
+
+    # בדיקה שהכמויות מתחלקות בגורם התיקון
+    quantities_are_divisible = bool(
+        (
+            details_clean.loc[
+                affected_mask,
+                "Quantity"
+            ] % correction_factor
+            == 0
+        ).all()
+    )
+
+    if not quantities_are_divisible:
+        raise ValueError(
+            f"Quantities in {details_file} "
+            f"are not divisible by "
+            f"{correction_factor}"
+        )
+
+    # תיקון הכמות
+    details_clean.loc[
+        affected_mask,
+        "Quantity"
+    ] = (
+        details_clean.loc[
+            affected_mask,
+            "Quantity"
+        ] / correction_factor
+    ).astype(int)
+
+    # תיקון המחיר הכולל
+    details_clean.loc[
+        affected_mask,
+        "TotalPrice"
+    ] = (
+        details_clean.loc[
+            affected_mask,
+            "TotalPrice"
+        ] / correction_factor
+    ).round(2)
+
+    cleaned_dataframes[
+        details_file
+    ] = details_clean
+
+    # בדיקה מחודשת מול סכומי ההזמנות
+    corrected_totals = (
+        details_clean
+        .groupby("OrderID")["TotalPrice"]
+        .sum()
+    )
+
+    verification_df = orders_clean.copy()
+
+    verification_df[
+        "CalculatedOrderTotal"
+    ] = verification_df[
+        "OrderID"
+    ].map(corrected_totals)
+
+    remaining_mismatches = int(
+        (
+            (
+                verification_df["TotalAmount"]
+                - verification_df[
+                    "CalculatedOrderTotal"
+                ]
+            ).abs()
+            > 0.01
+        ).sum()
+    )
+
+    order_detail_cleaning_summary.append({
+        "Year": year,
+        "CorrectionFactor": correction_factor,
+        "AffectedOrders": len(
+            affected_order_ids
+        ),
+        "CorrectedDetailRows": (
+            affected_rows_before
+        ),
+        "RemainingMismatches": (
+            remaining_mismatches
+        )
+    })
+
+order_detail_cleaning_summary_df = pd.DataFrame(
+    order_detail_cleaning_summary
+)
+
+display(order_detail_cleaning_summary_df)
+
+"""## 2.3 אחידות סוגי נתונים ושמירת הקבצים הנקיים
+
+לאחר התיקונים הוגדרו סוגי הנתונים המתאימים, הוסרו רווחים חיצוניים מכל עמודות הטקסט, והופקו קובצי CSV חדשים. קובצי המקור נשמרו ללא שינוי.
+"""
+
+cleaned_folder = os.path.join(
+    project_folder,
+    "data",
+    "cleaned"
+)
+
+os.makedirs(cleaned_folder, exist_ok=True)
+
+# -------------------------------------------------
+# 1. הסרת רווחים חיצוניים מכל עמודות הטקסט
+# -------------------------------------------------
+for file_name, df in cleaned_dataframes.items():
+
+    text_columns = df.select_dtypes(
+        include=["object", "string"]
+    ).columns
+
+    for column in text_columns:
+        df[column] = (
+            df[column]
+            .astype("string")
+            .str.strip()
+        )
+
+# -------------------------------------------------
+# 2. הגדרת סוגי נתונים בטבלת התאריכים
+# -------------------------------------------------
+cleaned_dataframes["dates.csv"]["Date"] = pd.to_datetime(
+    cleaned_dataframes["dates.csv"]["Date"],
+    errors="coerce"
+)
+
+cleaned_dataframes["dates.csv"]["Month"] = (
+    cleaned_dataframes["dates.csv"]["Month"]
+    .astype("Int64")
+)
+
+cleaned_dataframes["dates.csv"]["Year"] = (
+    cleaned_dataframes["dates.csv"]["Year"]
+    .astype("Int64")
+)
+
+# -------------------------------------------------
+# 3. הגדרת סוגי נתונים בקובצי ההזמנות
+# -------------------------------------------------
+for year in range(2020, 2024):
+
+    orders_file = f"orders_{year}.csv"
+    details_file = f"order_details_{year}.csv"
+
+    cleaned_dataframes[
+        orders_file
+    ]["OrderDate"] = pd.to_datetime(
+        cleaned_dataframes[
+            orders_file
+        ]["OrderDate"],
+        errors="coerce"
+    )
+
+    cleaned_dataframes[
+        orders_file
+    ]["TotalAmount"] = pd.to_numeric(
+        cleaned_dataframes[
+            orders_file
+        ]["TotalAmount"],
+        errors="coerce"
+    )
+
+    for column in [
+        "ProductID",
+        "Quantity"
+    ]:
+        cleaned_dataframes[
+            details_file
+        ][column] = (
+            pd.to_numeric(
+                cleaned_dataframes[
+                    details_file
+                ][column],
+                errors="coerce"
+            )
+            .astype("Int64")
+        )
+
+    for column in [
+        "UnitPrice",
+        "TotalPrice"
+    ]:
+        cleaned_dataframes[
+            details_file
+        ][column] = pd.to_numeric(
+            cleaned_dataframes[
+                details_file
+            ][column],
+            errors="coerce"
+        )
+
+# -------------------------------------------------
+# 4. הגדרת סוגי נתונים בטבלאות הממד
+# -------------------------------------------------
+cleaned_dataframes["categories.csv"]["CategoryID"] = (
+    cleaned_dataframes["categories.csv"]["CategoryID"]
+    .astype("Int64")
+)
+
+cleaned_dataframes["subcategories.csv"][
+    "SubcategoryID"
+] = (
+    cleaned_dataframes["subcategories.csv"][
+        "SubcategoryID"
+    ].astype("Int64")
+)
+
+cleaned_dataframes["subcategories.csv"][
+    "CategoryID"
+] = (
+    cleaned_dataframes["subcategories.csv"][
+        "CategoryID"
+    ].astype("Int64")
+)
+
+cleaned_dataframes["products.csv"]["ProductID"] = (
+    cleaned_dataframes["products.csv"]["ProductID"]
+    .astype("Int64")
+)
+
+cleaned_dataframes["products.csv"]["StockQuantity"] = (
+    cleaned_dataframes["products.csv"]["StockQuantity"]
+    .astype("Int64")
+)
+
+cleaned_dataframes["products.csv"]["Price"] = (
+    pd.to_numeric(
+        cleaned_dataframes["products.csv"]["Price"],
+        errors="coerce"
+    )
+)
+
+cleaned_dataframes["users.csv"]["AnnualIncome"] = (
+    pd.to_numeric(
+        cleaned_dataframes["users.csv"][
+            "AnnualIncome"
+        ],
+        errors="coerce"
+    )
+)
+
+cleaned_dataframes["users.csv"]["TotalChildren"] = (
+    cleaned_dataframes["users.csv"][
+        "TotalChildren"
+    ].astype("Int64")
+)
+
+# -------------------------------------------------
+# 5. שמירת 14 קובצי CSV נקיים
+# -------------------------------------------------
+row_count_rows = []
+
+for file_name, cleaned_df in cleaned_dataframes.items():
+
+    output_path = os.path.join(
+        cleaned_folder,
+        file_name
+    )
+
+    cleaned_df.to_csv(
+        output_path,
+        index=False,
+        date_format="%Y-%m-%d"
+    )
+
+    original_df = dataframes[file_name]
+
+    row_count_rows.append({
+        "File": file_name,
+        "RowsBefore": len(original_df),
+        "RowsAfter": len(cleaned_df),
+        "RowsRemoved": (
+            len(original_df) - len(cleaned_df)
+        ),
+        "ColumnsBefore": len(original_df.columns),
+        "ColumnsAfter": len(cleaned_df.columns)
+    })
+
+row_count_summary_df = pd.DataFrame(
+    row_count_rows
+).sort_values("File").reset_index(drop=True)
+
+row_count_summary_path = os.path.join(
+    documentation_folder,
+    "row_count_summary.csv"
+)
+
+row_count_summary_df.to_csv(
+    row_count_summary_path,
+    index=False
+)
+
+print(
+    f"נשמרו {len(cleaned_dataframes)} "
+    "קובצי CSV נקיים"
+)
+
+display(row_count_summary_df)
+
+print("\nתיקיית הקבצים הנקיים:")
+print(cleaned_folder)
+
+"""## 2.4 אימות איכות לאחר הניקוי
+
+קובצי ה-CSV הנקיים נטענו מחדש מהכונן ונבדקו. האימות כולל כפילויות, חוסרים, חריגים מספריים, רווחים, ערכים קטגוריאליים, התאמת סכומי הזמנות ותקינות הקשרים בין הטבלאות.
+"""
+
+# טעינה מחדש של הקבצים שנשמרו בפועל
+saved_clean_files = sorted(
+    Path(cleaned_folder).glob("*.csv")
+)
+
+saved_clean_dataframes = {
+    file_path.name: pd.read_csv(
+        file_path,
+        low_memory=False
+    )
+    for file_path in saved_clean_files
+}
+
+validation_results = []
+
+def add_validation(check_name, issue_count):
+    validation_results.append({
+        "Check": check_name,
+        "IssueCount": int(issue_count),
+        "Status": (
+            "PASS" if issue_count == 0 else "REVIEW"
+        )
+    })
+
+# 1. מספר הקבצים
+add_validation(
+    "Exactly 14 cleaned CSV files",
+    abs(len(saved_clean_dataframes) - 14)
+)
+
+# 2. כפילויות מלאות
+exact_duplicates_after = sum(
+    int(df.duplicated().sum())
+    for df in saved_clean_dataframes.values()
+)
+
+add_validation(
+    "No exact duplicate rows",
+    exact_duplicates_after
+)
+
+# 3. כפילויות במפתחות ראשיים
+primary_key_duplicates_after = 0
+
+for file_name, key_column in primary_keys.items():
+    df = saved_clean_dataframes[file_name]
+
+    primary_key_duplicates_after += int(
+        df[key_column]
+        .dropna()
+        .duplicated()
+        .sum()
+    )
+
+add_validation(
+    "No duplicate primary keys",
+    primary_key_duplicates_after
+)
+
+# 4. חוסרים בלתי צפויים
+unexpected_missing = 0
+
+for file_name, df in saved_clean_dataframes.items():
+    for column in df.columns:
+
+        missing_count = int(
+            df[column].isna().sum()
+        )
+
+        # 20 תאריכי לידה חסרים נשמרו במכוון
+        if (
+            file_name == "users.csv"
+            and column == "BirthDate"
+        ):
+            missing_count = max(
+                0,
+                missing_count - 20
+            )
+
+        unexpected_missing += missing_count
+
+add_validation(
+    "No unexpected missing values",
+    unexpected_missing
+)
+
+# 5. רווחים בתחילת ובסוף טקסט
+outer_whitespace_after = 0
+
+for df in saved_clean_dataframes.values():
+
+    text_columns = df.select_dtypes(
+        include=["object", "string"]
+    ).columns
+
+    for column in text_columns:
+
+        values = df[column].dropna().astype(str)
+
+        outer_whitespace_after += int(
+            (
+                values
+                != values.str.strip()
+            ).sum()
+        )
+
+add_validation(
+    "No leading or trailing whitespace",
+    outer_whitespace_after
+)
+
+# 6. ערכים קטגוריאליים לא תקינים
+invalid_categories_after = 0
+users_after = saved_clean_dataframes["users.csv"]
+
+for column, allowed_values in (
+    allowed_categorical_values.items()
+):
+    allowed_with_unknown = (
+        set(allowed_values) | {"Unknown"}
+    )
+
+    invalid_categories_after += int(
+        (
+            ~users_after[column]
+            .isin(allowed_with_unknown)
+        ).sum()
+    )
+
+add_validation(
+    "No invalid categorical values",
+    invalid_categories_after
+)
+
+# 7. ערכים מספריים בלתי תקינים
+invalid_numeric_after = 0
+
+for year in range(2020, 2024):
+
+    details_after = saved_clean_dataframes[
+        f"order_details_{year}.csv"
+    ]
+
+    orders_after = saved_clean_dataframes[
+        f"orders_{year}.csv"
+    ]
+
+    invalid_numeric_after += int(
+        (details_after["Quantity"] <= 0).sum()
+    )
+
+    invalid_numeric_after += int(
+        (details_after["UnitPrice"] <= 0).sum()
+    )
+
+    invalid_numeric_after += int(
+        (details_after["TotalPrice"] <= 0).sum()
+    )
+
+    invalid_numeric_after += int(
+        (
+            (
+                details_after["Quantity"]
+                * details_after["UnitPrice"]
+            ).round(2)
+            != details_after["TotalPrice"].round(2)
+        ).sum()
+    )
+
+    invalid_numeric_after += int(
+        (orders_after["TotalAmount"] <= 0).sum()
+    )
+
+products_after = saved_clean_dataframes[
+    "products.csv"
+]
+
+invalid_numeric_after += int(
+    (products_after["Price"] <= 0).sum()
+)
+
+invalid_numeric_after += int(
+    (
+        products_after["StockQuantity"] < 0
+    ).sum()
+)
+
+add_validation(
+    "No invalid numeric values",
+    invalid_numeric_after
+)
+
+# 8. איחוד הזמנות ופרטי הזמנות
+all_orders_after = pd.concat(
+    [
+        saved_clean_dataframes[
+            f"orders_{year}.csv"
+        ]
+        for year in range(2020, 2024)
+    ],
+    ignore_index=True
+)
+
+all_details_after = pd.concat(
+    [
+        saved_clean_dataframes[
+            f"order_details_{year}.csv"
+        ]
+        for year in range(2020, 2024)
+    ],
+    ignore_index=True
+)
+
+# 9. התאמת סכומי ההזמנות
+calculated_order_totals_after = (
+    all_details_after
+    .groupby("OrderID")["TotalPrice"]
+    .sum()
+)
+
+comparison_after = all_orders_after.copy()
+
+comparison_after["CalculatedTotal"] = (
+    comparison_after["OrderID"].map(
+        calculated_order_totals_after
+    )
+)
+
+remaining_total_mismatches = int(
+    (
+        (
+            comparison_after["TotalAmount"]
+            - comparison_after[
+                "CalculatedTotal"
+            ]
+        ).abs()
+        > 0.01
+    ).sum()
+)
+
+add_validation(
+    "Order totals match order details",
+    remaining_total_mismatches
+)
+
+# 10. תקינות קשרים בין הטבלאות
+orphan_orders_users = int(
+    (
+        ~all_orders_after["UserID"].isin(
+            users_after["UserID"]
+        )
+    ).sum()
+)
+
+orphan_details_orders = int(
+    (
+        ~all_details_after["OrderID"].isin(
+            all_orders_after["OrderID"]
+        )
+    ).sum()
+)
+
+orphan_details_products = int(
+    (
+        ~all_details_after["ProductID"].isin(
+            products_after["ProductID"]
+        )
+    ).sum()
+)
+
+referential_issues = (
+    orphan_orders_users
+    + orphan_details_orders
+    + orphan_details_products
+)
+
+add_validation(
+    "No orphan foreign keys",
+    referential_issues
+)
+
+# יצירת ושמירת דוח האימות
+post_cleaning_validation_df = pd.DataFrame(
+    validation_results
+)
+
+post_cleaning_validation_path = os.path.join(
+    documentation_folder,
+    "post_cleaning_validation.csv"
+)
+
+post_cleaning_validation_df.to_csv(
+    post_cleaning_validation_path,
+    index=False
+)
+
+display(post_cleaning_validation_df)
+
+print("\nמספר תאריכי לידה שנותרו חסרים במכוון:")
+print(users_after["BirthDate"].isna().sum())
+
+print("\nדוח האימות נשמר כאן:")
+print(post_cleaning_validation_path)
+
+"""# שלב 3 – תיעוד תהליך הניקוי
+
+## 3.1 תיעוד שגיאות ותיקונים
+"""
+
+errors_log_content = """ArielLeaf Data Cleaning - Errors Log
+Student: Hadar Yadgar
+Project: Group J
+Environment: Google Colab / Python
+Date: 2026-07-17
+
+============================================================
+ERROR 1 - Date quality check
+============================================================
+
+Stage:
+Checking invalid and future dates.
+
+Error message:
+TypeError: cannot convert the series to <class 'int'>
+
+Cause:
+The code attempted to convert a pandas Boolean Series to an
+integer before counting the True values. The .sum() operation
+was placed outside the int() conversion.
+
+Original logic:
+int(boolean_series).sum()
+
+Correction:
+The order of operations was changed so that the Boolean values
+were counted first and only the resulting scalar was converted
+to an integer.
+
+Corrected logic:
+int(boolean_series.sum())
+
+Result:
+The corrected code executed successfully. It identified 16
+non-empty BirthDate values with invalid formatting. No data was
+modified or lost as a result of the error.
+
+============================================================
+ADDITIONAL NOTES
+============================================================
+
+No additional runtime errors occurred during the data-audit,
+cleaning, export, or post-cleaning validation stages.
+
+A cross-table consistency check was added after the initial
+numeric checks returned zero anomalies. This was an analytical
+enhancement rather than a runtime error, and it is therefore
+documented in the prompts and cleaning-decisions logs.
+"""
+
+errors_log_path = os.path.join(
+    project_folder,
+    "errors_log.txt"
+)
+
+with open(
+    errors_log_path,
+    "w",
+    encoding="utf-8"
+) as file:
+    file.write(errors_log_content)
+
+print("errors_log.txt נוצר בהצלחה")
+print(errors_log_path)
+
+"""## 3.2 תיעוד החלטות הניקוי
+
+בסעיף זה נשמר הסבר מפורט להחלטות שהתקבלו במהלך הניקוי, לרבות טיפול בחוסרים, שחזור ערכים משובשים, שמירת הרשומות ותיקון אי־ההתאמות בין ההזמנות לפרטיהן.
+"""
+
+cleaning_decisions_content = """ArielLeaf Data Cleaning - Cleaning Decisions
+Project: Group J
+Submission Track: Coding Vibe
+Environment: Google Colab / Python
+Date: 2026-07-17
+
+============================================================
+1. NUMBER OF SOURCE FILES
+============================================================
+
+The assignment refers to nine ArielLeaf CSV datasets, while the
+provided Group J archive contains 14 physical CSV files.
+
+Orders and Order Details are each divided into four annual files
+for 2020-2023. All 14 files were audited and cleaned separately.
+Cross-file checks were also performed on the combined logical
+tables.
+
+============================================================
+2. PRESERVATION OF SOURCE DATA
+============================================================
+
+The original files were preserved without modification under:
+data/original/
+
+All transformations were performed on copies and exported to:
+data/cleaned/
+
+No original source file was overwritten.
+
+============================================================
+3. DUPLICATES
+============================================================
+
+No exact duplicate rows or duplicate primary keys were found.
+Therefore, no rows were removed.
+
+Repeated UserID values in Orders and repeated ProductID values
+in Order Details were retained because they represent valid
+one-to-many business relationships.
+
+============================================================
+4. MISSING TEXT VALUES
+============================================================
+
+Missing descriptive and categorical text values were replaced
+with "Unknown". This preserved all customer records without
+assigning an unsupported category.
+
+============================================================
+5. MISSING NUMERIC VALUES
+============================================================
+
+Missing AnnualIncome values were imputed using the median
+(49,865). Missing TotalChildren values were imputed using the
+median (1).
+
+The median was selected because it is less sensitive to extreme
+values than the mean.
+
+The following flag columns were added:
+- AnnualIncomeWasMissing
+- TotalChildrenWasMissing
+
+============================================================
+6. MISSING BIRTH DATES
+============================================================
+
+Twenty missing BirthDate values were not imputed because
+inventing a date would create false age information.
+
+A BirthDateWasMissing flag was added so these records remain
+identifiable during age-based analysis.
+
+============================================================
+7. CORRUPTED CATEGORICAL VALUES
+============================================================
+
+Corrupted categorical values contained a valid category followed
+by a random suffix. The valid category was restored only in
+fields with a controlled list of permitted values.
+
+Examples:
+- A corrupted Female value was restored to Female.
+- A corrupted Married value was restored to Married.
+- A corrupted Yes value was restored to Yes.
+
+Names, addresses and multilingual text were not normalized only
+because of capitalization differences, since these differences
+may represent valid spelling or language variations.
+
+============================================================
+8. NAME RECOVERY
+============================================================
+
+Forty-two inconsistent first or last names were compared with
+the valid name portion of the customer's email address.
+
+Random suffixes were removed. Where a name was missing or fully
+corrupted, it was recovered from the valid email address.
+
+============================================================
+9. EMAIL, CITY AND COUNTRY REPAIR
+============================================================
+
+Nineteen email values contained a valid company email followed
+by a random suffix. Only the suffix after @mycompany.com was
+removed.
+
+Corrupted City and Country values were restored only when their
+valid prefix matched a value appearing in regions.csv:
+- 19 City values
+- 14 Country values
+
+============================================================
+10. DATE REPAIR
+============================================================
+
+Sixteen BirthDate values contained a valid YYYY-MM-DD date
+followed by a random suffix. The valid date component was
+extracted and converted to a date type.
+
+No future order dates or order dates assigned to the wrong
+annual file were found.
+
+============================================================
+11. ORDER DETAIL MULTIPLICATION ERROR
+============================================================
+
+A cross-table check found 722 orders whose TotalAmount did not
+match the sum of their detail rows.
+
+The pattern was systematic:
+- 459 orders in 2022 had detail quantities and totals multiplied
+  by exactly 2.
+- 263 orders in 2023 had detail quantities and totals multiplied
+  by exactly 3.
+
+The quantities were divisible by the corresponding factor.
+Dividing Quantity and TotalPrice by that factor reconciled every
+affected order exactly.
+
+Therefore:
+- 1,412 detail rows in 2022 were divided by 2.
+- 766 detail rows in 2023 were divided by 3.
+- TotalAmount and UnitPrice were retained unchanged.
+
+After correction, zero order-total mismatches remained.
+
+============================================================
+12. PASSWORD COLUMN
+============================================================
+
+The Password column was removed because it is sensitive,
+irrelevant to business analysis, and should not be exposed in
+the dashboard.
+
+============================================================
+13. ROW RETENTION AND FINAL VALIDATION
+============================================================
+
+No rows were deleted from any file. Row counts before and after
+cleaning are identical for all 14 files.
+
+Post-cleaning validation confirmed:
+- No unexpected missing values
+- No exact duplicate rows
+- No duplicate primary keys
+- No invalid numeric values
+- No invalid categorical values
+- No leading or trailing whitespace
+- No order-total mismatches
+- No orphan foreign keys
+"""
+
+cleaning_decisions_path = os.path.join(
+    documentation_folder,
+    "cleaning_decisions.txt"
+)
+
+with open(
+    cleaning_decisions_path,
+    "w",
+    encoding="utf-8"
+) as file:
+    file.write(cleaning_decisions_content)
+
+print("cleaning_decisions.txt נוצר בהצלחה")
+print(cleaning_decisions_path)
+
+second_error_entry = """
+
+============================================================
+ERROR 2 - Cleaning decisions file creation
+============================================================
+
+Stage:
+Creating cleaning_decisions.txt.
+
+Error message:
+NameError: name 'cleaning_decisions_path' is not defined
+
+Cause:
+Only the final print statements were executed before the
+variable cleaning_decisions_path had been defined.
+
+Correction:
+The complete code cell was executed. It defined the content,
+created the file path, wrote the text file, and then printed the
+successful result.
+
+Result:
+cleaning_decisions.txt was created successfully in the
+documentation folder. No data files were affected.
+"""
+
+with open(
+    errors_log_path,
+    "a",
+    encoding="utf-8"
+) as file:
+    file.write(second_error_entry)
+
+print("השגיאה השנייה נוספה ל-errors_log.txt")
+print(errors_log_path)
+
+"""## 3.3 תיעוד הפרומפטים
+
+קובץ הפרומפטים מתעד את הבקשות שניתנו לכלי הבינה, התוצאה שהתקבלה, התיקונים שנדרשו וזמן העבודה המשוער. הקובץ יעודכן גם בשלבי בניית הדשבורד.
+"""
+
+prompts_log_content = """ArielLeaf BI Final Project - Prompts Log
+
+Project Group: J
+Submission Track: Coding Vibe
+Generative AI Tool: ChatGPT - Codex
+Execution Environment: Google Colab / Python
+Log Status: Working log - dashboard prompts will be appended later
+
+============================================================
+PROMPT 1 - Review the assignment and choose a track
+============================================================
+
+Full prompt:
+I have a BI course assignment. Review all instructions and the supplied data, compare
+the Power BI and Coding Vibe tracks, and recommend the easier
+and safer track for completing a high-quality submission.
+
+Result:
+The requirements and the 14 supplied CSV files were reviewed.
+Coding Vibe was recommended because Python can provide
+reproducible cleaning, detailed documentation, a responsive
+dashboard, and easier implementation of advanced features.
+
+Correction required:
+The first uploaded archive was rechecked after the user uploaded
+the official Group J archive. A byte-level comparison confirmed
+that all 14 files were identical.
+
+Estimated time:
+20 minutes.
+
+============================================================
+PROMPT 2 - Define the required cleaning workflow
+============================================================
+
+Full prompt:
+Create a step-by-step workflow for Exercise 3 that follows the
+Coding Vibe requirements. It must preserve the original files,
+use Python for cleaning, produce cleaned CSV files, document
+findings and row counts, and create prompts_log.txt,
+errors_log.txt, and a runnable cleaning script.
+
+Result:
+A structured project workflow was defined with separate original,
+cleaned, documentation, and application locations. Google Colab
+was selected as the cleaning environment.
+
+Correction required:
+The initial local Colab folder plan was changed to a permanent
+Google Drive folder so that files would not be lost when the
+runtime ended.
+
+Estimated time:
+15 minutes.
+
+============================================================
+PROMPT 3 - Load and inventory the source data
+============================================================
+
+Full prompt:
+Write Python code for Google Colab that mounts Google Drive,
+creates the project folder, preserves the original Group J ZIP,
+extracts all source CSV files, loads them with pandas, and
+displays the file name, row count, column count, and column names
+for every file.
+
+Result:
+All 14 CSV files were extracted and loaded successfully. A source
+inventory was displayed without modifying the data.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+10 minutes.
+
+============================================================
+PROMPT 4 - Audit required data-quality dimensions
+============================================================
+
+Full prompt:
+Write Python checks for every supplied CSV file covering missing
+values and missing percentages, exact duplicates, duplicate
+primary keys, non-positive prices and quantities, negative stock
+or income, inconsistent text formatting, date validity, future
+dates, case consistency, and data-type convertibility. Save each
+audit result as a CSV report.
+
+Result:
+The audit found missing values in 16 users.csv columns, no exact
+duplicates, no duplicate primary keys, no non-positive numeric
+values, 599 outer-whitespace occurrences, 16 invalid non-empty
+birth dates, and multiple corrupted categorical and business
+format values.
+
+Correction required:
+The general case-consistency check produced candidate matches in
+multilingual names and addresses. These were not automatically
+treated as errors. Controlled categorical fields were checked
+separately to prevent incorrect normalization.
+
+Estimated time:
+40 minutes.
+
+============================================================
+PROMPT 5 - Verify the zero numeric-anomaly result
+============================================================
+
+Full prompt:
+The numeric anomaly checks all returned zero. Independently
+inspect the actual source files and verify whether the code is
+correct or whether an important anomaly was missed.
+
+Result:
+The original numeric checks were confirmed as correct, but an
+additional cross-table consistency check identified 722 orders
+whose TotalAmount did not match the sum of their order details.
+
+Further analysis showed a systematic pattern:
+- 459 affected orders in 2022
+- 263 affected orders in 2023
+
+Correction required:
+The audit was expanded beyond single-column rules to include
+business consistency between Orders and Order Details.
+
+Estimated time:
+25 minutes.
+
+============================================================
+PROMPT 6 - Diagnose the order-total inconsistencies
+============================================================
+
+Full prompt:
+Determine whether the incorrect value is TotalAmount, Quantity,
+UnitPrice, or TotalPrice. Do not correct the data until the
+pattern has been proven.
+
+Result:
+All affected 2022 quantities and totals were multiplied by 2.
+All affected 2023 quantities and totals were multiplied by 3.
+The affected quantities were divisible by these factors, and
+dividing Quantity and TotalPrice reconciled every order exactly.
+
+Correction required:
+The initial possible approach of recalculating TotalAmount was
+rejected. TotalAmount and UnitPrice were retained, while the
+affected Quantity and TotalPrice values were corrected.
+
+Estimated time:
+20 minutes.
+
+============================================================
+PROMPT 7 - Create the findings table
+============================================================
+
+Full prompt:
+Create a consolidated findings table containing the source file,
+column, issue type, number of affected records, and planned
+cleaning action. Include all mandatory audit findings and the
+additional cross-table consistency finding.
+
+Result:
+A 32-row data_quality_findings.csv file was created. It includes
+missing values, whitespace, corrupted categorical values,
+invalid dates, invalid business formats, and the systematic
+multiplication errors.
+
+Correction required:
+The full table was too long for one Colab display, so the final
+six rows were displayed separately. The saved CSV already
+contained all rows.
+
+Estimated time:
+15 minutes.
+
+============================================================
+PROMPT 8 - Clean users.csv
+============================================================
+
+Full prompt:
+Clean users.csv on a separate copy. Remove outer whitespace,
+repair corrupted emails, categories, cities, countries, names,
+and birth dates, handle missing values without deleting users,
+add missing-value flags, remove the sensitive Password column,
+and retain an auditable record of every decision.
+
+Result:
+All 15,000 users were retained. Corrupted values were restored,
+numeric missing values were imputed with medians, 20 genuinely
+missing birth dates remained blank, three missing-value flags
+were added, and Password was removed.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+30 minutes.
+
+============================================================
+PROMPT 9 - Correct affected order-detail rows
+============================================================
+
+Full prompt:
+Correct only the order-detail rows belonging to the proven
+mismatched orders. Divide Quantity and TotalPrice by 2 for the
+affected 2022 orders and by 3 for the affected 2023 orders.
+Retain UnitPrice and verify every order total after correction.
+
+Result:
+- 1,412 detail rows were corrected in 2022.
+- 766 detail rows were corrected in 2023.
+- Zero order-total mismatches remained.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+15 minutes.
+
+============================================================
+PROMPT 10 - Export and validate the cleaned data
+============================================================
+
+Full prompt:
+Standardize the final data types, save all 14 cleaned CSV files
+without overwriting the originals, create a before-and-after row
+count summary, reload the saved files, and run a complete
+post-cleaning validation.
+
+Result:
+All 14 cleaned files were saved. No rows were removed. All nine
+post-cleaning validation checks returned PASS, including
+duplicates, missing values, numeric validity, text formatting,
+order totals, and foreign-key integrity.
+
+Correction required:
+No correction was required.
+
+Estimated time:
+25 minutes.
+
+============================================================
+PROMPT 11 - Fix the date-checking TypeError
+============================================================
+
+Full prompt:
+A TypeError occurred during the date-quality check. Explain the
+cause and provide the complete corrected code.
+
+Result:
+The Boolean Series was summed before conversion to int. The
+corrected code ran successfully and identified 16 invalid
+non-empty BirthDate values.
+
+Correction required:
+Changed int(boolean_series).sum() to
+int(boolean_series.sum()).
+
+Estimated time:
+10 minutes.
+
+============================================================
+PROMPT 12 - Create the required documentation
+============================================================
+
+Full prompt:
+Create errors_log.txt and cleaning_decisions.txt. Document every
+real runtime error, its cause and correction, and explain all
+judgment-based cleaning decisions.
+
+Result:
+Both documentation files were created and saved in the project
+folder.
+
+Correction required:
+A NameError occurred when only the final print statements for
+cleaning_decisions.txt were executed. The complete cell was then
+run and the file was created successfully. The error was added
+to errors_log.txt.
+
+Estimated time:
+20 minutes.
+
+============================================================
+END OF DATA-CLEANING PHASE
+============================================================
+
+Additional prompts for dashboard planning, construction,
+corrections, mobile layout, and bonus features will be appended
+during the next project phases.
+"""
+
+prompts_log_path = os.path.join(
+    project_folder,
+    "prompts_log.txt"
+)
+
+with open(
+    prompts_log_path,
+    "w",
+    encoding="utf-8"
+) as file:
+    file.write(prompts_log_content)
+
+print("prompts_log.txt נוצר בהצלחה")
+print(prompts_log_path)
+
+from pathlib import Path
+
+notebook_matches = list(
+    Path("/content/drive/MyDrive").rglob(
+        "ArielLeaf_Data_Cleaning_Group_J.ipynb"
+    )
+)
+
+print(f"נמצאו {len(notebook_matches)} מחברות מתאימות:")
+
+for notebook_path in notebook_matches:
+    print(notebook_path)
+
+all_notebooks = list(
+    Path("/content/drive/MyDrive").rglob("*.ipynb")
+)
+
+print(f"נמצאו בסך הכול {len(all_notebooks)} מחברות ב-Drive")
+
+print("\nמחברות שהשם שלהן מכיל ArielLeaf:")
+
+arielleaf_notebooks = []
+
+for notebook_path in all_notebooks:
+    if "arielleaf" in notebook_path.name.lower():
+        arielleaf_notebooks.append(notebook_path)
+        print(notebook_path)
+
+print(
+    "\nמספר מחברות ArielLeaf שנמצאו:",
+    len(arielleaf_notebooks)
+)
+
+print("כל מחברות ה-Colab שנמצאו:")
+
+for notebook_path in all_notebooks:
+    print(notebook_path)
+
+import shutil
+import subprocess
+import sys
+
+# המחברת שנמצאה ב-Google Drive
+source_notebook_path = Path(
+    "/content/drive/MyDrive/Colab Notebooks/Untitled0.ipynb"
+)
+
+# יצירת תיקיית הסקריפטים בפרויקט
+scripts_folder = Path(project_folder) / "scripts"
+scripts_folder.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+# שם תקין לעותק המחברת בתוך הפרויקט
+project_notebook_path = (
+    scripts_folder
+    / "ArielLeaf_Data_Cleaning_Group_J.ipynb"
+)
+
+# העתקת המחברת לתיקיית הפרויקט
+shutil.copy2(
+    source_notebook_path,
+    project_notebook_path
+)
+
+# המרת המחברת לקובץ Python
+conversion_result = subprocess.run(
+    [
+        "jupyter",
+        "nbconvert",
+        "--to",
+        "script",
+        str(project_notebook_path),
+        "--output",
+        "data_cleaning",
+        "--output-dir",
+        str(scripts_folder)
+    ],
+    capture_output=True,
+    text=True
+)
+
+print("עותק המחברת נשמר כאן:")
+print(project_notebook_path)
+
+print("\nתוצאת יצירת הסקריפט:")
+print(conversion_result.stdout)
+print(conversion_result.stderr)
+
+# הצגת הקבצים שנוצרו
+print("\nהקבצים בתיקיית scripts:")
+
+for file_path in sorted(scripts_folder.iterdir()):
+    print(file_path.name)
+
+generated_script_path = (
+    scripts_folder / "data_cleaning.txt"
+)
+
+final_script_path = (
+    scripts_folder / "data_cleaning.py"
+)
+
+if generated_script_path.exists():
+    generated_script_path.rename(
+        final_script_path
+    )
+
+print("קובץ הסקריפט נשמר כאן:")
+print(final_script_path)
+
+print("\nהקבצים בתיקיית scripts:")
+
+for file_path in sorted(scripts_folder.iterdir()):
+    print(file_path.name)
+
+errors_log_content_final = """ArielLeaf Data Cleaning - Errors Log
+Student: Hadar Yadgar
+Project: Group J
+Submission Track: Coding Vibe
+Environment: Google Colab / Python
+Date: 2026-07-17
+
+============================================================
+ERROR 1 - DATE QUALITY CHECK
+============================================================
+
+Stage:
+Checking invalid and future dates.
+
+Error message:
+TypeError: cannot convert the series to <class 'int'>
+
+Cause:
+The code attempted to convert a pandas Boolean Series to an
+integer before counting its True values. The .sum() operation
+was placed outside the int() conversion.
+
+Original logic:
+int(boolean_series).sum()
+
+Correction:
+The Boolean values were counted first, and only the resulting
+single number was converted to an integer.
+
+Corrected logic:
+int(boolean_series.sum())
+
+Result:
+The corrected code executed successfully and identified 16
+non-empty BirthDate values with invalid formatting. No data was
+modified or lost as a result of the error.
+
+============================================================
+ERROR 2 - CLEANING DECISIONS FILE CREATION
+============================================================
+
+Stage:
+Creating cleaning_decisions.txt.
+
+Error message:
+NameError: name 'cleaning_decisions_path' is not defined
+
+Cause:
+Only the final print statements were executed before the
+variable cleaning_decisions_path had been defined.
+
+Correction:
+The complete code cell was executed. It defined the content,
+created the file path, wrote the text file, and then printed the
+successful result.
+
+Result:
+cleaning_decisions.txt was created successfully in the
+documentation folder. No data files were affected.
+
+============================================================
+FINAL NOTES
+============================================================
+
+A total of two runtime errors occurred during the data-cleaning
+phase. Both errors were corrected and verified.
+
+No additional runtime errors occurred during data loading,
+quality auditing, cleaning, CSV export, or post-cleaning
+validation.
+
+The cross-table consistency check added after the initial
+numeric checks was an analytical enhancement rather than a
+runtime error. It is documented in prompts_log.txt and
+cleaning_decisions.txt.
+"""
+
+with open(
+    errors_log_path,
+    "w",
+    encoding="utf-8"
+) as file:
+    file.write(errors_log_content_final)
+
+print("errors_log.txt סודר ועודכן בהצלחה")
+print(errors_log_path)
+```
+
+============================================================
+END OF CLEANING SCRIPT
+============================================================
+
+
+============================================================
+PROMPT D9 - BONUS RETURNS INTELLIGENCE
+============================================================
+
+Full prompt:
+Create a high-quality returns-analysis bonus for the ArielLeaf
+dashboard. The supplied source files do not contain return
+transactions, so create a transparent and reproducible simulated
+returns table without modifying the original or cleaned CSV files.
+
+Connect every return to valid order, order-detail, customer and
+product keys. Apply reasonable category-specific return rates,
+limit returned quantities to purchased quantities, calculate refund
+amounts, and clearly mark all records as simulated bonus data.
+
+Build a responsive Returns Intelligence dashboard page with filters,
+KPIs, a time trend, analysis by category and return reason, leading
+customers, management insights and a detailed table. Add separate
+bonus navigation in the sidebar and a shortcut from the Home page.
+
+Result:
+A reproducible returns.csv table containing 14,787 simulated return
+records was created with random seed 42. Four supporting analytical
+CSV files were generated for category, customer, monthly and reason
+analysis. Ten integrity checks passed with zero issues.
+
+A responsive Returns Intelligence page was created and connected to
+the sidebar under a separate BONUS ANALYTICS section and to the Home
+page. Its filters and navigation were tested successfully.
+
+Correction required:
+The first visual version displayed nested HTML elements as literal
+code in the Returns hero and Home shortcut. Applying textwrap.dedent
+was not sufficient. Both components were changed to Streamlit's
+dedicated st.html renderer, after which they displayed correctly.
+
+Estimated time invested:
+Approximately 55 minutes.
+
+
+============================================================
+PROMPT D10 - ADVANCED NAVIGATION BONUS
+============================================================
+
+Full prompt:
+Add advanced navigation to the ArielLeaf dashboard without using
+tabs. Keep the existing permanent sidebar and Home-page navigation,
+and add a responsive navigation panel at the bottom of every
+analytical page.
+
+The panel should display the current page and provide buttons for
+the previous page, Home and the next page. It must work consistently
+on all dashboard pages and remain usable in a narrow mobile window.
+
+Result:
+A reusable bottom navigation panel was added globally through
+app.py. It appears on every page except Home and automatically uses
+the dashboard page order. The previous, Home and next buttons were
+tested successfully across the application.
+
+Correction required:
+No correction was required. The first implementation passed syntax
+validation and worked successfully in both desktop and narrow views.
+
+Estimated time invested:
+Approximately 20 minutes.
+
+
+============================================================
+PROMPT D11 - HIDDEN BUSINESS INSIGHT BONUS
+============================================================
+
+Full prompt:
+Find a non-obvious business insight in the cleaned ArielLeaf data.
+The insight must sound like a conclusion reached by a human analyst,
+not generic AI-generated text.
+
+Support it with exact numbers, explain why it matters to management
+and recommend a practical action. Add it to the Customer Value &
+Retention page as an interactive hidden feature that is revealed by
+a button. Include a supporting visualization and a transparent
+campaign-sizing scenario.
+
+Result:
+The RFM data revealed that 605 At Risk customers account for only
+4.03% of customers but historically generated 5.43% of revenue.
+Their average historical value is $8,457 across 7.33 orders, equal
+to 86% of a Champion's value and 2.72 times the value of a
+Hibernating customer. However, they have been inactive for about
+548 days.
+
+An interactive analyst note, segment comparison chart and win-back
+campaign-sizing control were added to the retention page.
+
+Correction required:
+The first reveal button opened the insight but could not close it.
+Toggle behavior was added. The button label then reflected the
+previous state for one render cycle, so st.rerun was added after
+the state change. The final button now opens, closes and displays
+the correct label in both states.
+
+Estimated time invested:
+Approximately 35 minutes.
+
+
+============================================================
+D12 - BONUS 4: DYNAMIC TOOLTIP
+============================================================
+
+Full prompt:
+Add an advanced dynamic tooltip to the Executive Overview
+revenue-trend chart. When the user hovers over a monthly point,
+show the month, revenue, change from the previous month, number
+of orders, active customers and average order value. The tooltip
+must respond to the selected year filter and remain readable.
+
+Result:
+The monthly revenue chart was enhanced with a dynamic Plotly
+tooltip using the cleaned monthly-performance data. The tooltip
+shows a complete monthly business profile and changes with the
+year filter.
+
+Correction required:
+Yes. The initial tooltip text had insufficient contrast. The
+tooltip was corrected to use a white background, dark navy text
+and a teal border. The failed exact-string replacement was also
+replaced with a safer insertion method. The correction is
+documented in errors_log.txt.
+
+Estimated time invested:
+Approximately 25 minutes.
+
+
+============================================================
+D13 - BONUS 5: CLICK-THROUGH PRODUCT DRILLDOWN
+============================================================
+
+Full prompt:
+Add an interactive click-through drilldown to the Products page.
+The user should be able to click a product-category column and
+open detailed information for the selected category, including
+KPIs, subcategory performance and leading products. The feature
+must work with the existing page filters and responsive layout.
+
+Result:
+An interactive Plotly category chart was added to the Products
+page. Selecting a category opens four KPIs, a horizontal
+subcategory-revenue chart and a table of the ten leading
+products. The displayed analysis follows the path Category to
+Subcategory to Product.
+
+Correction required:
+Yes. The initial drilldown worked, but its chart labels and KPI
+values had insufficient contrast. A first styling correction was
+overridden by the dashboard's global CSS. The final correction
+used targeted Plotly SVG styling and independent HTML KPI cards.
+The visual corrections are documented in errors_log.txt.
+
+Estimated time invested:
+Approximately 40 minutes.

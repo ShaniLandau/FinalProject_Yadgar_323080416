@@ -1,0 +1,17 @@
+File,Column,RuleChecked,AffectedRows
+dates.csv,Date,Invalid date format,0
+dates.csv,Date,Future date,0
+orders_2020.csv,OrderDate,Invalid date format,0
+orders_2020.csv,OrderDate,Future date,0
+orders_2020.csv,OrderDate,Date must belong to year 2020,0
+orders_2021.csv,OrderDate,Invalid date format,0
+orders_2021.csv,OrderDate,Future date,0
+orders_2021.csv,OrderDate,Date must belong to year 2021,0
+orders_2022.csv,OrderDate,Invalid date format,0
+orders_2022.csv,OrderDate,Future date,0
+orders_2022.csv,OrderDate,Date must belong to year 2022,0
+orders_2023.csv,OrderDate,Invalid date format,0
+orders_2023.csv,OrderDate,Future date,0
+orders_2023.csv,OrderDate,Date must belong to year 2023,0
+users.csv,BirthDate,Invalid non-empty date format,16
+users.csv,BirthDate,Future birth date,0
