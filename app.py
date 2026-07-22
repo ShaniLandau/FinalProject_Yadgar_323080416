@@ -307,39 +307,39 @@ if active_page == "Home":
 
 elif active_page == "Returns Intelligence":
     render_returns(
-        Path(__file__).resolve().parent / "data"
+        Path(__file__).resolve().parent
     )
 
 
 elif active_page == "Data Quality & Cleaning":
     render_data_quality(
-        Path(__file__).resolve().parent / "data"
+        Path(__file__).resolve().parent
     )
 
 
 elif active_page == "Executive Overview":
     render_overview(
-        Path(__file__).resolve().parent / "data"
+        Path(__file__).resolve().parent
     )
 
 
 elif active_page == "Customers":
     render_customers(
-        Path(__file__).resolve().parent / "data"
+        Path(__file__).resolve().parent
     )
 
 
 
 elif active_page == "Products":
     render_products(
-        Path(__file__).resolve().parent / "data"
+        Path(__file__).resolve().parent
     )
 
 
 
 elif active_page == "Customer Value & Retention":
     render_retention(
-        Path(__file__).resolve().parent / "data"
+        Path(__file__).resolve().parent
     )
 
 
