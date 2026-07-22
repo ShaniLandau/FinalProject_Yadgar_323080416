@@ -1,13 +1,13 @@
 
 import streamlit as st
 from pathlib import Path
-from views.home import render_home as render_home_page
-from views.overview import render_overview
-from views.customers import render_customers
-from views.products import render_products
-from views.retention import render_retention
-from views.data_quality import render_data_quality
-from views.returns import render_returns
+from home import render_home as render_home_page
+from overview import render_overview
+from customers import render_customers
+from products import render_products
+from retention import render_retention
+from data_quality import render_data_quality
+from returns import render_returns
 
 st.set_page_config(
     page_title="ArielLeaf BI Dashboard",
